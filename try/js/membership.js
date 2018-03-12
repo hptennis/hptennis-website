@@ -133,7 +133,7 @@ function init() {
         $.each(data.Sheet1, function (key,val) {
             // console.log("key:"+key);
             //console.log("val:"+val);
-            $('#membersTable').append('<tr><td>'+val.firstname+'</td><td>'+val.surname+'</td><td>'+val.email+'</td></tr>');
+            $('#membersTable').append('<tr><td>'+val.firstname+'</td><td>'+val.surname+'</td><td>'+val.email+'</td><td>'+val.phone+'</td></tr>');
 
         });
         //     items.push("<li id='" + key + "'>" + val + "</li>");
