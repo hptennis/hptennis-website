@@ -14,15 +14,15 @@
 
     <form id="foo">
 
-            <p>
-                    <label for="name">serial:</label>
-                    <input id="serial" name="serial" type="text" value="-1">
         <p>
-            <label for="name">Name:</label>
-            <input id="firstname" name="firstname" type="text" value="">
-        </p>
-        <label for="surname">Surname:</label>
-        <input id="surname" name="surname" type="text" value="">
+            <label for="name">serial:</label>
+            <input id="serial" name="serial" type="text" value="-1">
+            <p>
+                <label for="name">Name:</label>
+                <input id="firstname" name="firstname" type="text" value="">
+            </p>
+            <label for="surname">Surname:</label>
+            <input id="surname" name="surname" type="text" value="">
         </p>
         <label for="email">Email:</label>
         <input id="email" name="email" type="text" value="">
@@ -79,13 +79,26 @@
 
         // var url = "https://script.google.com/macros/s/AKfycby6wkVv9xbATIt8JVeZR71nYxnaKy3n60UJznWo5PYdPaTH2lmT/exec";
 
+        // var url = "https://script.google.com/macros/s/AKfycby6wkVv9xbATIt8JVeZR71nYxnaKy3n60UJznWo5PYdPaTH2lmT/exec";
         var url = "https://script.google.com/macros/s/AKfycby6wkVv9xbATIt8JVeZR71nYxnaKy3n60UJznWo5PYdPaTH2lmT/exec";
-                  
+
         // url  = "https://script.google.com/a/hampdenparktennis.co.uk/macros/s/AKfycbwxj4XcJptMiQbR1yEeNNArrdcQXFhGcQ5zSIkt9bO2/dev"  
-                  
+
         // var urlDev = "https://script.google.com/a/hampdenparktennis.co.uk/macros/s/AKfycbwxj4XcJptMiQbR1yEeNNArrdcQXFhGcQ5zSIkt9bO2/dev";
 
 
+
+        $.getJSON(url, function (data) {
+            var items = [];
+            $.each(data, function (key, val) {
+                items.push("<li id='" + key + "'>" + val + "</li>");
+            });
+
+            $("<ul/>", {
+                "class": "my-new-list",
+                html: items.join("")
+            }).appendTo("body");
+        })
         $("#myBtn").click(function (event) {
             var surname = $('#surname2').val();
             var name = $('#name2').val();
@@ -101,15 +114,14 @@
                 },
                 success: function (response, textStatus, jqXHR) {
                     $('#myTextarea2').val(JSON.stringify(response));
-                    if (response == "not found")
-                    {
-                        alert ("Those names were not found please try again");
+                    if (response == "not found") {
+                        alert("Those names were not found please try again");
                     }
                     else {
-                    $('#serial').val(response[1]);
-                    $('#firstname').val(response[2]);
-                    $('#surname').val(response[3]);
-                    $('#email').val(response[4]);
+                        $('#serial').val(response[1]);
+                        $('#firstname').val(response[2]);
+                        $('#surname').val(response[3]);
+                        $('#email').val(response[4]);
                     }
 
 
@@ -118,7 +130,7 @@
                 },
                 error: function (jqXHR, textStatus, errorThrown) {
                     console.log("error:", textStatus);
-                    
+
                     //Do Something to handle error
                     // console.error(
                     //     "The following error occurred: " +
@@ -177,7 +189,7 @@
             $inputs.prop("disabled", true);
 
             var url = "https://script.google.com/macros/s/AKfycby6wkVv9xbATIt8JVeZR71nYxnaKy3n60UJznWo5PYdPaTH2lmT/exec";
-                      
+
 
             // Fire off the request to sheets
             request = $.ajax({
