@@ -133,6 +133,7 @@ function init() {
         $.each(data.Sheet1, function (key,val) {
             // console.log("key:"+key);
             //console.log("val:"+val);
+            // added phone column to table
             $('#membersTable').append('<tr><td>'+val.firstname+'</td><td>'+val.surname+'</td><td>'+val.email+'</td><td>'+val.phone+'</td></tr>');
 
         });
