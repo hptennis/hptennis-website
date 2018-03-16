@@ -16,11 +16,56 @@
         <div class="w3-container">
             <div id="membershipDetails">
                 <div class="w3-center">
-                    <h2>JUNIORS SUBSCRIPTION FORM 2018/19</h2>
+                    <h2 class="w3-text-teal">JUNIORS SUBSCRIPTION FORM 2018/19</h2>
                 </div>
-
-               
+                <div class="w3-row w3-center">
+                    <div class="w3-col m4 w3-text-teal">
+                        <h4>Annual Subscriptions</h4>
+                    </div>
+                    <div class="w3-col m6">
+                        <p>£39 per child for one year from April 2018 to end March 2019- Under 18.</p>
+                    </div>
+                </div>
+                <div class="w3-row w3-center">
+                    <div class="w3-col m4 w3-text-teal">
+                        <h4>Student Subscriptions</h4>
+                    </div>
+                    <div class="w3-col m6">
+                        <p>£52 for a student ie. Under 25 years of age &amp; in full time education</p>
+                    </div>
+                </div>
+                <div class="w3-row w3-center">
+                    <div class="w3-col m4 w3-text-teal">
+                        <h4>Junior Trial Subscriptions</h4>
+                    </div>
+                    <div class="w3-col m6">
+                        <p>£15 Junior Trial 3 Month Membership includes 1 free group lesson</p>
+                    </div>
+                </div>
+                <div class="w3-row w3-center">
+                    <div class="w3-col m4 w3-text-teal">
+                        <h4>Free Parent Membership.</h4>
+                    </div>
+                    <div class="w3-col m6">
+                        <p>FREE parent membership giving parents a chance to play but only with their own children when courts
+                            are free.
+                            <i>Full members have priority.</i>
+                        </p>
+                    </div>
+                </div>
+                <div class="w3-row w3-center">
+                    <div class="w3-col m4 w3-text-teal">
+                        <h4>Group coaching</h4>
+                    </div>
+                    <div class="w3-col m6">
+                        <p> £4.00 per hour - maximum 12 children in a group available on Saturday mornings, Mon, Tues &amp; Wed
+                            evenings.
+                        </p>
+                    </div>
+                </div>
             </div>
+
+
 
 
             <div class="w3-bar w3-padding-16">
@@ -92,57 +137,191 @@
                                 </p>
                             </div>
                             <div class="w3-row-padding"></div>
-                            <button type="button" class="w3-btn w3-ripple w3-teal w3-right w3-padding" onclick="displayNext()">Next ></button>
+                            <button type="button" class="w3-btn w3-ripple w3-teal w3-right w3-padding" onclick="displayParent()">Next ></button>
                         </div>
                         <p>
                     </div>
                 </div>
 
 
-                <!-- id02 -->
 
-                <div id="id03" class="w3-panel  w3-display-container" style="display:none">
+                <div id="id05Parent" class="w3-panel  w3-display-container" style="display:none">
                     <div class="w3-card-4">
+                        <div class="w3-container">
+                            <div class="w3-teal">
+                                <h2 class="w3-margin-left">Parent/Gurdian Details</h2>
+                            </div>
 
-                        <div class="w3-container w3-teal">
-                            <h2>Payment Details</h2>
+                            <div class="w3-padding">
+                                <label class="w3-text-teal" for="id05ParentorGuard">Parent or Guardian</label>
+                                <input id="id05ParentorGuard" class="w3-input w3-border w3-round" type="text" name="id05ParentorGuard" placeholder="full name"
+                                    value="">
+                            </div>
+
+                            <div class="w3-padding">
+                                <div class="w3-half">
+                                    <label class="w3-text-teal" for="id05phone">Phone Number</label>
+                                    <input id="id05phone" onblur="copyPhoneNumber()" class="w3-input w3-border w3-round" type="text" name="id05phone" placeholder="Phone number"
+                                        value="">
+                                </div>
+
+                                <div class="w3-half">
+                                    <label class="w3-text-teal" for="id05emergencyPhone">Emergency Phone Number</label>
+                                    <input id="id05emergencyPhone" class="w3-input w3-border w3-round" type="text" name="id05emergencyPhone" placeholder="Emergency Phone number"
+                                        value="">
+                                </div>
+
+                            </div>
+                            <div class="w3-padding">
+                                <label class="w3-text-teal" for="id05pgEmail">Email Address</label>
+                                <input title="Please enter the Parent/Guardian email address" id="id05pgEmail" class="w3-input w3-border w3-round" type="text"
+                                    name="id05pgEmail" placeholder="Email address" value="">
+                            </div>
+
+
+                            <div class="w3-padding">
+                                <label class="w3-text-teal" for="id05pgMedical">Medial or Other special conditions</label>
+                                <!-- <input id="id05pgEmail" class="w3-input w3-border w3-round" type="text" name="id05pgEmail" placeholder="Email address" value=""> -->
+                                <textarea rows="3" id="id05pgMedical" class="w3-input w3-border w3-round" name="id05pgMedical" style="resize:none" placeholder="Please describe any special care needs, dietary requirements, allergies or medical conditions (Please enter none if not applicable)"></textarea>
+
+                            </div>
+                            <div class="w3-padding">
+                                <label class="w3-text-teal">Parent / Guardian Declaration</label>
+                                <!-- <input id="id05pgEmail" class="w3-input w3-border w3-round" type="text" name="id05pgEmail" placeholder="Email address" value=""> -->
+                                <p>By Completing this form, I agree to the child name above taking part in the general activities
+                                    of the club. He/she has agreed to follow the junior rules of the club, which they receive
+                                    on joining the club and I agree to accept the code of conduct for parents (copy on junior
+                                    noticeboard). To my knowledge, he/she has no special care needs, dietary requirements,
+                                    allergies or medical conditions that could affect his/her safety at the club, other than
+                                    those declared on this form. I understand that in the event of injury, illness or other
+                                    medical need, all reasonable steps will be taken to contact me and to deal with the situation
+                                    appropriately.I understand that I must inform the club of any changes to the information
+                                    provided on this form.
+                                </p>
+                                <input id="id05pgDeclaration" class="w3-check" type="checkbox">
+                                <Label class="w3-margin-left w3-padding-16">Agree</Label>
+                            </div>
+                            <div class="w3-padding">
+                                <label class="w3-text-teal">Photo consent</label>
+                                <!-- <input id="id05pgEmail" class="w3-input w3-border w3-round" type="text" name="id05pgEmail" placeholder="Email address" value=""> -->
+                                <p>
+                                    I give permission for my child/children to be involved in any press photos/filming sometimes required for club promotions
+                                    &amp; use of video footage of them during coaching to help with their technique analysis.
+                                </p>
+                                <div class="w3-half">
+                                    <input id="id05pgPhotoAgree" class="w3-radio" type="radio" name="photoConsent" value="agree" checked>
+                                    <Label>Agree</Label>
+                                    <input id="id05pgPhotoDisagree" class="w3-radio" type="radio" name="photoConsent" value="disagree">
+                                    <Label>Disagree</Label>
+                                </div>
+                            </div>
+                            <div class="w3-row-padding">
+                                <button type="button" class="w3-btn w3-ripple w3-teal w3-right w3-padding" onclick="displayBTM()">Next ></button>
+                                <p></p>
+                            </div>
+                            <div class="w3-row-padding">
+                                <p>
+                            </div>
                         </div>
-                        <div class="w3-container w3-padding-large">
+                    </div>
+                </div>
+                <div id="id06BTMNumber" class="w3-panel  w3-display-container" style="display:none">
+                    <div class="w3-card-4">
+                        <div class="w3-container">
+                            <div class="w3-teal">
+                                <h2 class="w3-margin-left">BTM Number</h2>
+                            </div>
 
-                                <div>
-                                        <p>Any queries please contact  Hugh Ball (Hon Sec) 01323
-                                            500461 </p>
-                                    </div>
-                                    <div>
-                                            <p class=w3-text-red><strong>*On line payments are preferable</strong></p>
-                                            <p><strong>On line payments can be paid direct to Lloyds Bank, account details below.</strong></p>
-                                                <p><strong>Sort Code: 30-98-90. Account No:15344868</strong></p>
-                                    
-                                                <strong>IT IS ESSENTIAL YOU RECORD YOUR NAME AS REFERENCE ON YOUR ON LINE PAYMENT DETAILS.</strong>
-                                                <br>
-                                                <p>It would be much appreciated, if you could email the
-                                                <a href="mailto:secretary@hampdenparktennis.co.uk">the club secretary(secretary@hampdenparktennis.co.uk)</a> when payment has been made.</p>
-                                            </p>
-                                        </div>
-                                    <div>
-                                        <p>Payment can still be made by cheque made payable to <strong>Hampden Park Tennis Club</strong></p> 
-                                        <p>(payment can also be
-                                            made by 2 X 6 monthly or 4 X 3 monthly postdated cheques).</p> 
-                                            <p>* Please send cheques to:</p>
-                                    </div>
-                                    <div>
-                                        <p><strong> Mr Hugh Ball, 142 Willingdon Park Drive. Eastbourne BN22 0DG</strong></p>
-                                    </div>
-                            <label for="id03membershiptype">Membership Type</label>
-                            <select id="id03membershiptype" class="w3-select w3-border" name="id03membershiptype" required>
-                                <option value="" disabled selected>Please select your membership type</option>
-                                <option value="adult">Adult Full Membership (£180)</option>
-                                <option value="family">Family(£288)</option>
-                                <option value="student">Student (£52)</option>
-                                <option value="offpeak">Off Peak Membership (£90)</option>
-                                <option value="trialA">Trial Membership Adult (£36)</option>
-                            </select>
-                            <!-- <select id="id03membershiptype" class="w3-select w3-border required" name="id03membershiptype" required>
+                            <div class="w3-padding">
+                                <p>
+                                    British Tennis Membership is FREE and has a number of benefits, including:</p>
+                                <ul>
+                                    <li>Free entry into Wimbledon ticket draw</li>
+                                    <li>Discount on Major Tennis event tickets (including Aegon International in Eastbourne)</li>
+                                </ul>
+                                <p>
+                                    Also if as a player you want to play for club team and enter tournaments a BTM number is required. To register for a British
+                                    Tennis Membership see
+                                    <a href="https://www.lta.org.uk/member/signup/?productID=1-NLNYR">https://www.lta.org.uk/member/signup/?productID=1-NLNYR</a>.
+                                </p>
+                                <p>
+                                    If you are already a member but don't know your number you can find it here:
+                                    <a href="https://www.lta.org.uk/competitions/player/">https://www.lta.org.uk/competitions/player/</a>
+                                </p>
+                            </div>
+                            <div class="w3-row-padding">
+                                <button type="button" class="w3-btn w3-ripple w3-teal w3-right w3-padding" onclick="displayPaymentDetails()">Next ></button>
+                                <p></p>
+                            </div>
+                            <div class="w3-row-padding">
+                                <p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+        </div>
+        </form>
+
+
+
+        </div>
+        </div>
+
+
+
+        <!-- id02 -->
+
+        <div id="id03" class="w3-panel  w3-display-container" style="display:none">
+            <div class="w3-card-4">
+
+                <div class="w3-container w3-teal">
+                    <h2>Payment Details</h2>
+                </div>
+                <div class="w3-container w3-padding-large">
+
+                    <div>
+                        <p>
+                            Any queries please contact Jenny Hughes on 01323 655567 or 07831097864
+                        </p>
+                        <p>ANNUAL SUBSCRIPTIONS</p>
+                        <p>£39 per child for one year from April 2018 to end March 2019- Under 18.</p>
+                        <p>Junior Trial</p>        
+                                <p>£15 Junior Trial 3 Month Membership includes 1 free group lesson</p>
+                    </div>
+                    <div>
+                        <p>
+                            <strong>Payment can be made by bank transfer to Lloyds Bank, account details below.</strong>
+                        </p>
+                        <p>
+                            <strong>Sort Code: 30-98-90. Account No:15344868</strong>
+                        </p>
+
+                    </div>
+                    <div>
+                        <p class=w3-text-red>
+                            <strong>Payments by bank transfer preferable</strong>
+                        </p>
+                        <p>
+                            <strong>IT IS ESSENTIAL YOU RECORD YOUR NAME AS REFERENCE ON YOUR ON LINE PAYMENT DETAILS.</strong>
+                        </p>
+                        <br>
+                    </div>
+                    <div>
+                        <p>Alternatively you can pay by cash or cheque made out to
+                            <strong>Hampden Park Tennis Club</strong> &amp; give or send to Jenny Hughes at 12 Melvill Lane, Eastbourne,
+                            East Sussex, BN20 9EA If you have any queries please telephone me on 01323 655567 or 07831097864
+
+                        </p>
+                    </div>
+                   
+
+                    <label for="id03membershiptype">Membership Type</label>
+                    <select id="id03membershiptype" class="w3-select w3-border" name="id03membershiptype" required>
+                        <option value="junior">Junior Membership (£39)</option>
+                        <option value="juniorTrial">Junior Trial(£15)</option>
+                    </select>
+                    <!-- <select id="id03membershiptype" class="w3-select w3-border required" name="id03membershiptype" required>
                             <option value="" disabled selected>Please select your membership type</option>
                             <option value="adult">Adult Full Membership (£180)</option>
                             <option value="family">Family(£288)</option>
@@ -150,17 +329,16 @@
                             <option value="offpeak">Off Peak Membership (£90)</option>
                             <option value="trialA">Trial Membership Adult (£36)</option>
                         </select> -->
-                            <h2>Payment method</h2>
-                            <label for="id03paymenttype">Method of payment</label>
-                            <select id="id03paymenttype" class="w3-select w3-border" name="id03paymenttype" required>
-                                <option value="" disabled selected>Select your method of payment</option>
-                                <option value="online">Online</option>
-                                <option value="singleCheque">Single Cheque</option>
-                                <option value="multipleCheque">Multiple Cheque</option>
-                            </select>
+                    <h2>Payment method</h2>
+                    <label for="id03paymenttype">Method of payment</label>
+                    <select id="id03paymenttype" class="w3-select w3-border" name="id03paymenttype" required>
+                        <option value="" disabled selected>Select your method of payment</option>
+                        <option value="online">Online</option>
+                        <option value="singleCheque">Cheque/Cash</option>
+                    </select>
 
 
-                            <!-- <label for="paymethod">Select Payment Method</label>
+                    <!-- <label for="paymethod">Select Payment Method</label>
                     <p>
                         <input  class="w3-radio" type="radio" name="paymethod" value="online" required>
                         <label >Online</label>
@@ -173,71 +351,71 @@
                         <input  class="w3-radio" type="radio" name="paymethod" value="multiChq">
                         <label >Multiple Cheque</label>
                     </p> -->
-                        </div>
-
-                    </div>
-                    <p>
-                        <button id="btnSubmit" type="button" class="w3-btn w3-ripple w3-teal w3-left">Submit</button>
-                        <p>
                 </div>
-            </form>
 
-            <div id="id02" class="w3-panel  w3-display-container" style="display:none">
-                    <div class="w3-card-4">
-            
-                        <div class="w3-container w3-teal">
-                            <h2>Membership Renewal</h2>
-                        </div>
-            
-                        <div class="w3-container w3-padding-large">
-                            <form id="findMember">
-                                <div class="w3-row-padding">
-                                    <div class="w3-half">
-                                        <label class="w3-text-teal" for="id02firstname">First Name</label>
-                                        <input id="id02firstname" class="w3-input w3-border w3-round" type="text" name="id02firstname" placeholder="First Name">
-                                    </div>
-                                    <div class="w3-half">
-                                        <label class="w3-text-teal" for="id02lastname">Last Name</label>
-                                        <input id="id02lastname" class="w3-input w3-border" type="text" name="id02lastname" placeholder="Second Name">
-                                    </div>
-                                </div>
-                                <p></p>
-                                <div class="w3-row-padding"></div>
-                                <button id="btnFindMember" type="button" class="w3-btn w3-ripple w3-teal w3-right w3-padding">Search ></button>
-                            </form>
-                        </div>
-                    </div>
-            
-            
+            </div>
+            <p>
+                <button id="btnSubmit" type="button" class="w3-btn w3-ripple w3-teal w3-left">Submit</button>
+                <p>
+        </div>
+        </form>
+
+        <div id="id02" class="w3-panel  w3-display-container" style="display:none">
+            <div class="w3-card-4">
+
+                <div class="w3-container w3-teal">
+                    <h2>Membership Renewal</h2>
                 </div>
-          
 
-
-            <div id="id04-modal" class="w3-modal">
-                <div class="w3-modal-content">
-                    <header class="w3-container w3-teal">
-                        <span onclick="document.getElementById('id04-modal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                        <h2>Membership Request Processed</h2>
-                    </header>
-                    <div class="w3-container">
-                        <p>Many thanks for your membership request.</p>
-                        <p>It has been succesfully processed.</p>
+                <div class="w3-container w3-padding-large">
+                    <form id="findMember">
+                        <div class="w3-row-padding">
+                            <div class="w3-half">
+                                <label class="w3-text-teal" for="id02firstname">First Name</label>
+                                <input id="id02firstname" class="w3-input w3-border w3-round" type="text" name="id02firstname" placeholder="First Name">
+                            </div>
+                            <div class="w3-half">
+                                <label class="w3-text-teal" for="id02lastname">Last Name</label>
+                                <input id="id02lastname" class="w3-input w3-border" type="text" name="id02lastname" placeholder="Second Name">
+                            </div>
+                        </div>
                         <p></p>
-                        <p>If you are paying online please pay at your earliest convenience, and
-                            <b>ensure you record your name as reference</b>. also if you could email the
-                            <a href="mailto:secretary@hampdenparktennis.co.uk">the club secretary</a> when payment has been made it would be much appreciated</p>
-                        <p>If you are paying by cheque(s) please make payable to
-                            <b>Hampden Park Tennis Club</b> amd send cheques to:</p>
-                        <p>
-                            <b>Mr Hugh Ball, 142 Willingdon Park Drive. Eastbourne BN22 0DG</b>
-                        </p>
-                    </div>
-                    <footer class="w3-container w3-teal">
-                        <p>Hampden Park Tennis Club</p>
-                        <!-- <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-right">Close</span> -->
-                    </footer>
+                        <div class="w3-row-padding"></div>
+                        <button id="btnFindMember" type="button" class="w3-btn w3-ripple w3-teal w3-right w3-padding">Search ></button>
+                    </form>
                 </div>
             </div>
+
+
+        </div>
+
+
+
+        <div id="id04-modal" class="w3-modal">
+            <div class="w3-modal-content">
+                <header class="w3-container w3-teal">
+                    <span onclick="document.getElementById('id04-modal').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    <h2>Membership Request Processed</h2>
+                </header>
+                <div class="w3-container">
+                    <p>Many thanks for your membership request.</p>
+                    <p>It has been succesfully processed.</p>
+                    <p></p>
+                    <p>If you are paying online please pay at your earliest convenience, and
+                        <b>ensure you record your name as reference</b>. also if you could email the
+                        <a href="mailto:secretary@hampdenparktennis.co.uk">the club secretary</a> when payment has been made it would be much appreciated</p>
+                    <p>If you are paying by cheque(s) please make payable to
+                        <b>Hampden Park Tennis Club</b> amd send cheques to:</p>
+                    <p>
+                        <b>Mr Hugh Ball, 142 Willingdon Park Drive. Eastbourne BN22 0DG</b>
+                    </p>
+                </div>
+                <footer class="w3-container w3-teal">
+                    <p>Hampden Park Tennis Club</p>
+                    <!-- <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-right">Close</span> -->
+                </footer>
+            </div>
+        </div>
 
 
         </div>
@@ -256,8 +434,8 @@
             <!--<script src="js/tabletop.js"></script>-->
             <script src="js/validation.js"></script>
 
-            <script src="js/membership.js"></script>
-            <script src="js/findMember.js"></script>
+            <script src="js/juniormembership.js"></script>
+            <!--<script src="js/findMember.js"></script> -->
 
 
 
