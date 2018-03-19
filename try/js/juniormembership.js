@@ -23,7 +23,7 @@ function displaydefault() {
 
 function displayNew(serial) {
 
-    $('#id01-serial').val(serial);
+    $('#id01serial').val(serial);
     membershipDetails.css("display", "none");
     newMembForm.css("display", "block");
     $('#details').css("visibility", "visible");
