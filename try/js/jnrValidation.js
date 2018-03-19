@@ -21,6 +21,9 @@ $().ready(function () {
                 minlength: 3,
                 letterhyphensonly: true
             },
+            id01dob: {
+                required: true
+            },
             id01address1 : {
                 required: true,
                 minlength: 8,
@@ -42,6 +45,40 @@ $().ready(function () {
             id01phone: {
                 required: true,
                 phoneUK: true
+            },
+            id05ParentorGuard: {
+                required: true,
+                minlength: 8,
+                letterswithbasicpunc: true
+            },
+            id05phone: {
+                required: true,
+                phoneUK: true
+            },
+            id05emergencyPhone: {
+                required: true,
+                phoneUK: true
+            },
+            id05pgEmail: {
+                required: true,
+                email: true
+            },
+            id05pgMedical: {
+                required: true,
+                minlength: 4,
+                letterswithbasicpunc: true
+            },
+            id05pgDeclaration: {
+                required: true
+            },
+            id05pgPhotoAgree: {
+                required: true
+            },
+            id03membershiptype: {
+                required: true
+            },
+            id03paymenttype: {
+                required: true
             }
         },
         messages: {

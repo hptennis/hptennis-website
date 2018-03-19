@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<title>HP Membership Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="css/w3css4/w3.css">-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/membership.css">
+
+<body>
+
+    <form id="memberForm" class="w3-container">
+        <div id="default" class="w3-card" style="display:block">
+            <header class="w3-container w3-teal">
+                <h2 class="w3-margin-left">Membership</h2>
+            </header>
+            <div class="w3-row w3-padding">
+                <div class="w3-half">
+                    <label class="w3-text-teal" for="id01firstname">First Name</label>
+                    <input id="id01firstname" class="w3-input w3-border w3-round" type="text" name="id01firstname" placeholder="First Name">
+                </div>
+
+            </div>
+
+            <div class="w3-row w3-padding">
+                <button type="button" class="w3-btn w3-ripple w3-teal w3-right w3-padding" onclick="displayNext1()">Next ></button>
+            </div>
+
+        </div>
+
+        <div id="next1" class="w3-card" style="display:none">
+            <header class="w3-container w3-teal">
+                <h2 class="w3-margin-left">next 1</h2>
+            </header>
+            <div class="w3-row w3-padding">
+                <div class="w3-half">
+                    <label class="w3-text-teal" for="id01lastname">Last Name</label>
+                    <input id="id01lastname" class="w3-input w3-border" type="text" name="id01lastname" placeholder="Last Name">
+                </div>
+
+            </div>
+
+            <div class="w3-row w3-padding">
+                <button type="button" class="w3-btn w3-ripple w3-teal w3-right w3-padding" onclick="displayNext()">Next ></button>
+            </div>
+
+        </div>
+
+
+        <div id="next" class="w3-card" style="display:none">
+            <header class="w3-container w3-teal">
+                <h2 class="w3-margin-left">Next</h2>
+            </header>
+            <div class="w3-row w3-padding">
+                <div class="w3-half">
+                    <label class="w3-text-teal" for="id01address1">Address 1</label>
+                    <input id="id01address1" class="w3-input w3-border w3-round" type="text" name="id01address1" placeholder="Address 1">
+                </div>
+
+            </div>
+            <div class="w3-row w3-padding">
+
+                <h2>Payment method</h2>
+                <label for="id03paymenttype">Method of payment</label>
+                <select id="id03paymenttype" class="w3-select w3-border" name="id03paymenttype" required>
+                    <option value="" disabled selected>Select your method of payment</option>
+                    <option value="online">Online</option>
+                    <option value="chequeCash">Cheque/Cash</option>
+                </select>
+            </div>
+            <div class="w3-row w3-padding">
+                <div class="w3-row w3-padding">
+                    <button id="btnSubmit" type="button" class="w3-btn w3-ripple w3-teal w3-left">Submit</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </form>
+
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+    <!--<script src="js/tabletop.js"></script>-->
+    <script src="js/validation.js"></script>
+
+
+    <script>
+
+        function displayNext1() {
+            $("#memberForm").validate;
+            if ($('#id01firstname').valid()) {
+                $('#default').css("display", "none");
+                $('#next1').css("display", "block");
+            }
+
+
+        }
+
+        function displayNext() {
+            $("#memberForm").validate;
+            if ($('#id01lastname').valid()) {
+                $('#default').css("display", "none");
+                $('#next1').css("display", "none");
+                $('#next').css("display", "block");
+            }
+
+
+        }
+
+        $("#btnSubmit").click(function (event) {
+
+            $("#memberForm").validate;
+
+            var v1 = $('#id01firstname').valid();
+            var v2 = $('#id01lastname').valid();
+            var v3 = $('#id01address1').valid();
+            var v4 = $('#id03paymenttype').valid();
+
+            event.preventDefault();
+            if (v1 & v2 & v3 & v4) {
+                alert("ok");
+            }
+        });
+
+
+
+    </script>
+
+</body>
