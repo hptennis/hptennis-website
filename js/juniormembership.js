@@ -23,6 +23,10 @@ function displaydefault() {
 
 function displayNew(serial) {
 
+    if (serial === -1)
+    {
+        $("#jnrMemberForm")[0].reset();
+    }
     $('#id01serial').val(serial);
     membershipDetails.css("display", "none");
     newMembForm.css("display", "block");
@@ -34,6 +38,7 @@ function displayNew(serial) {
 
 function displayExisting() {
     existingMembForm.css("display", "block");
+    $('#findMember')[0].reset();
     membershipDetails.css("display", "none");
     $('#details').css("visibility", "visible");
     newMembForm.css("display", "none");
@@ -64,21 +69,19 @@ function copyPhoneNumber() {
 }
 
 function validateId01() {
-    $("#memberForm").validate;
-    return $("#id01firstname").valid();// &
-        // $("#id01lastname").valid() &
-        // $("#id01dob").valid() &
-        // $("#id01address1").valid() &
-        // $("#id01address2").valid() &
-        // $("#id01postcode").valid() &
-        // $("#id01email").valid() &
-        // $("#id01phone").valid();
+    $("#jnrMemberForm").validate;
+    return $("#id01firstname").valid() &
+        $("#id01lastname").valid() &
+        $("#id01dob").valid() &
+        $("#id01address1").valid() &
+        $("#id01address2").valid() &
+        $("#id01postcode").valid() &
+        $("#id01email").valid() &
+        $("#id01phone").valid();
 }
 
 function validateParent() {
-    $("#memberForm").validate;
-
-    return $("#id05ParentorGuard").valid();
+    $("#jnrMemberForm").validate;
 
     var val1 =  $("#id05pgDeclaration").valid();
     var val2 =  $("#id05pgPhotoAgree").valid();
@@ -95,7 +98,7 @@ function validateParent() {
 $("#btnSubmit").click(function (event) {
 
     event.preventDefault();
-    $("#memberForm").validate;
+    $("#jnrMemberForm").validate;
     // var v = $("#id01firstname").valid();
     // var v1 = $('#id03paymenttype').valid();
     var v2 = $('#id03membershiptype').valid();
@@ -153,7 +156,7 @@ $("#btnSubmit").click(function (event) {
 
                     $("body").toggleClass("wait");
                     paymentPanel.css("display", "none");
-                    // $("#memberForm")[0].reset();
+                    $("#jnrMemberForm")[0].reset();
                     displaydefault();
                     // alert ("success!");
                     // disaply modal

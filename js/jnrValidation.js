@@ -1,7 +1,7 @@
 $().ready(function () {
     // validate the comment form when it is submitted
     // validate signup form on keyup and submit
-    $("#memberForm").validate({
+    $("#jnrMemberForm").validate({
         errorPlacement: function (error, element) {
             // Append error within linked label
             $(element)
@@ -160,7 +160,7 @@ $().ready(function () {
         messages: {
             id02firstname: {
                 required: "Please enter a firstname",
-                minlength: "Your first name must consist of at least 3 characters!!!!!!"
+                minlength: "Your first name must consist of at least 3 characters"
             },
             id02lastname: {
                 required: "Please enter a lastname",
