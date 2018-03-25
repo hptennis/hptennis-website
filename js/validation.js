@@ -13,7 +13,7 @@ $().ready(function () {
         rules: {
             id01firstname: {
                 required: true,
-                minlength: 3,
+                minlength: 2,
                 lettersonly: true
             },
             id01lastname: {

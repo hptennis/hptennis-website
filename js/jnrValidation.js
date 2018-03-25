@@ -26,12 +26,12 @@ $().ready(function () {
             },
             id01address1 : {
                 required: true,
-                minlength: 8,
+                minlength: 5,
                 letterswithbasicpunc: true
             },
             id01address2 : {
                 required: false,
-                minlength: 8,
+                minlength: 5,
                 letterswithbasicpunc: true
             },
             id01postcode: {
