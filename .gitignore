@@ -4,5 +4,4 @@
 .idea/dictionaries
 .idea/
 /temp/
-/images/thumbs.db
-
+**/Thumbs.db
