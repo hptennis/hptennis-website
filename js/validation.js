@@ -47,7 +47,7 @@ $().ready(function () {
         messages: {
             id01firstname: {
                 required: "Please enter a firstname",
-                minlength: "Your first name must consist of at least 3 characters"
+                minlength: "Your first name must consist of at least 2 characters"
             },
             id01lastname: {
                 required: "Please enter a lastname",
