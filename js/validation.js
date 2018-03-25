@@ -111,7 +111,7 @@ $().ready(function () {
         rules: {
             id02firstname: {
                 required: true,
-                minlength: 3,
+                minlength: 2,
                 lettersonly: true
             },
             id02lastname: {
@@ -123,7 +123,7 @@ $().ready(function () {
         messages: {
             id02firstname: {
                 required: "Please enter a firstname",
-                minlength: "Your first name must consist of at least 3 characters!!!!!!"
+                minlength: "Your first name must consist of at least 2 characters"
             },
             id02lastname: {
                 required: "Please enter a lastname",
