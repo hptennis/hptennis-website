@@ -1,76 +1,152 @@
 <!DOCTYPE html>
-<html>
-<title>HP Membership Page</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--<link rel="stylesheet" href="css/w3css4/w3.css">-->
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="css/membership.css">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HP Membership Page</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/membership.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
 
+</head>
 <body>
 
-    <div class="w3-container w3-teal">
-        <h1>Hampden Park Tennis Membership</h1>
-
-    </div>
-    <p>
-        <div class="w3-container">
-           
-
-          
-
-
+        <div class="w3-container w3-teal">
+                <h1>Hampden Park Tennis Membership</h1>
+        
+            </div>
+            <p>
             <div class="w3-container">
-                <div class="results">
-                    <h2 class="results__heading">Members</h2>
-                    <table id="membersTable" class="w3-table-all">
-                        <thead>
-                            <tr>
-                                <th>First Name</th>
-                                <th>Surname</th>
-                                <th>Email</th>
-                                <th>Phone</th>
-                            </tr>
-                        </thead>
-                        <tbody>
 
-                        </tbody>
+                    <table id="example" class="display" style="width:100%">
+                            <thead>
+                                    <!-- <tr>
+                                        <th>Date</th>
+                                        <th>Number</th>
+                                        <th>Name</th>
+                                        <th>Surname</th>
+                                        <th>Addres1</th>
+                                        <th>Town</th>
+                                        <th>Post Code</th>
+                                        <th>Phone</th>
+                                        <th>Email</th>
+                                        <th>XXX</th>
+                                        <th>Membership</th>
+                                        <th>Renewal</th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                            <th>Date</th>
+                                            <th>Number</th>
+                                            <th>Name</th>
+                                            <th>Surname</th>
+                                            <th>Addres1</th>
+                                            <th>Town</th>
+                                            <th>Post Code</th>
+                                            <th>Phone</th>
+                                            <th>Email</th>
+                                            <th>XXX</th>
+                                            <th>Membership</th>
+                                            <th>Renewal</th>
+                                    </tr> -->
+                                </tfoot>
                     </table>
 
-                    <button class="w3-button  w3-teal" onclick="init()">Refresh Table</button>
-
-
-                </div>
             </div>
+    
 
+        <script src="js/lib/jquery.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
 
+        <script>
+          var dataSet = [
+          [ "Tiger Nixon", "System Architect", "Edinburgh", "5421", "2011/04/25", "$320,800" ],
+          [ "Garrett Winters", "Accountant", "Tokyo", "8422", "2011/07/25", "$170,750" ],
+          [ "Ashton Cox", "Junior Technical Author", "San Francisco", "1562", "2009/01/12", "$86,000" ],
+          [ "Cedric Kelly", "Senior Javascript Developer", "Edinburgh", "6224", "2012/03/29", "$433,060" ],
+          [ "Airi Satou", "Accountant", "Tokyo", "5407", "2008/11/28", "$162,700" ],
+          [ "Brielle Williamson", "Integration Specialist", "New York", "4804", "2012/12/02", "$372,000" ],
+          [ "Herrod Chandler", "Sales Assistant", "San Francisco", "9608", "2012/08/06", "$137,500" ],
+          [ "Rhona Davidson", "Integration Specialist", "Tokyo", "6200", "2010/10/14", "$327,900" ],
+          [ "Colleen Hurst", "Javascript Developer", "San Francisco", "2360", "2009/09/15", "$205,500" ],
+          [ "Sonya Frost", "Software Engineer", "Edinburgh", "1667", "2008/12/13", "$103,600" ],
+          [ "Jena Gaines", "Office Manager", "London", "3814", "2008/12/19", "$90,560" ],
+          [ "Quinn Flynn", "Support Lead", "Edinburgh", "9497", "2013/03/03", "$342,000" ],
+          [ "Charde Marshall", "Regional Director", "San Francisco", "6741", "2008/10/16", "$470,600" ],
+          [ "Haley Kennedy", "Senior Marketing Designer", "London", "3597", "2012/12/18", "$313,500" ],
+          [ "Tatyana Fitzpatrick", "Regional Director", "London", "1965", "2010/03/17", "$385,750" ],
+          [ "Michael Silva", "Marketing Designer", "London", "1581", "2012/11/27", "$198,500" ],
+          [ "Paul Byrd", "Chief Financial Officer (CFO)", "New York", "3059", "2010/06/09", "$725,000" ],
+          [ "Gloria Little", "Systems Administrator", "New York", "1721", "2009/04/10", "$237,500" ],
+          [ "Bradley Greer", "Software Engineer", "London", "2558", "2012/10/13", "$132,000" ],
+          [ "Dai Rios", "Personnel Lead", "Edinburgh", "2290", "2012/09/26", "$217,500" ],
+          [ "Jenette Caldwell", "Development Lead", "New York", "1937", "2011/09/03", "$345,000" ],
+          [ "Yuri Berry", "Chief Marketing Officer (CMO)", "New York", "6154", "2009/06/25", "$675,000" ],
+          [ "Caesar Vance", "Pre-Sales Support", "New York", "8330", "2011/12/12", "$106,450" ],
+          [ "Doris Wilder", "Sales Assistant", "Sidney", "3023", "2010/09/20", "$85,600" ],
+          [ "Angelica Ramos", "Chief Executive Officer (CEO)", "London", "5797", "2009/10/09", "$1,200,000" ],
+          [ "Gavin Joyce", "Developer", "Edinburgh", "8822", "2010/12/22", "$92,575" ],
+          [ "Jennifer Chang", "Regional Director", "Singapore", "9239", "2010/11/14", "$357,650" ],
+          [ "Brenden Wagner", "Software Engineer", "San Francisco", "1314", "2011/06/07", "$206,850" ],
+          [ "Fiona Green", "Chief Operating Officer (COO)", "San Francisco", "2947", "2010/03/11", "$850,000" ],
+          [ "Shou Itou", "Regional Marketing", "Tokyo", "8899", "2011/08/14", "$163,000" ],
+          [ "Michelle House", "Integration Specialist", "Sidney", "2769", "2011/06/02", "$95,400" ],
+          [ "Suki Burks", "Developer", "London", "6832", "2009/10/22", "$114,500" ],
+          [ "Prescott Bartlett", "Technical Author", "London", "3606", "2011/05/07", "$145,000" ],
+          [ "Gavin Cortez", "Team Leader", "San Francisco", "2860", "2008/10/26", "$235,500" ],
+          [ "Martena Mccray", "Post-Sales support", "Edinburgh", "8240", "2011/03/09", "$324,050" ],
+          [ "Unity Butler", "Marketing Designer", "San Francisco", "5384", "2009/12/09", "$85,675" ]
+      ];
 
+      var dataSet2;
+      var table;
 
-        </div>
+      var url = "https://script.google.com/macros/s/AKfycby6wkVv9xbATIt8JVeZR71nYxnaKy3n60UJznWo5PYdPaTH2lmT/exec";
 
+       $.getJSON(url, function (data) {
+                    dataSet2 = data;
+                    // table.draw(true);
+                    console.log("data:" + dataSet2);
+                });
+      
 
+            $(document).ready(function() {
 
+               
 
-        <p>
-            <div class="w3-container w3-teal w3-center">
-                <p>Hampden Park Tennis Club (12/3/2018 - 17:13)</p>
-            </div>
+               
 
+                setTimeout(function(){ 
+                    table= $('#example').DataTable({
+                    data: dataSet2,
+                    "order": [[ 3, "asc" ]],
+                    "scrollX": true,
+                    columns: [
+                        { title: "Date" },
+                        { title: "Number" },
+                        { title: "Name" },
+                        { title: "Surname." },
+                        { title: "Addres1" },
+                        { title: "Address2" },
+                        { title: "Post Code" },
+                        { title: "Phone" },
+                        { title: "Email" },
+                        { title: "XXX" },
+                        { title: "Membership" },
+                        { title: "Renewal" }
+                                       
+                    ],
+                    
+                            }
 
-            <script src="js/lib/jquery.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
-            <!--<script src="js/tabletop.js"></script>-->
-            <script src="js/validation.js"></script>
+                );
+                 }, 2000);
 
-            <script src="js/membership.js"></script>
-            <script src="js/findMember.js"></script>
-
-
-
-
-            <!-- <script src="js/m2.js"></script> -->
-
-
-
+                //  table.draw(true);
+              
+                } );
+        </script>
 </body>
-
 </html>

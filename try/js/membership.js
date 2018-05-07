@@ -150,6 +150,11 @@ function init() {
     //     simpleSheet: true
     // })
 
+    $.getJSON("http://cors.io/spreadsheets.google.com/feeds/list/1CB8LUatQhFCQ-j6SLTAqkJMSKYjncfedyXSYVMeWNho/od6/public/values?alt=json", function(data) {
+        //first row "title" column
+        console.log(data.feed.entry[0]['gsx$title']['$t']);
+    });
+
     $.getJSON(json_url, function (data) {
 
 
