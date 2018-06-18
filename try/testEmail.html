@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Email</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+<body>
+
+        <div class="w3-container">
+                <p>Test page for emails for HP tennis</p>
+
+                <button id="testSecr" class="w3-btn w3-blue">Send Test Email to secretary</button>
+                <button id="testEmail" class="w3-btn w3-blue">Send Test Email to Dummy member (testUser)</button>
+
+                <p id="response"></p>
+        </div>
+
+
+    <script src="js/lib/jquery.min.js"></script>
+
+    <script>
+    
+
+    var sheet_url = "https://script.google.com/macros/s/AKfycby6wkVv9xbATIt8JVeZR71nYxnaKy3n60UJznWo5PYdPaTH2lmT/exec";
+    
+    
+
+   $("#testSecr").click(function (event) {
+
+        event.preventDefault();
+
+        $("#response").html("");
+
+        var url = sheet_url+"?action=test";
+
+        $.getJSON(url, function (data) {
+                // dataSet2 = data;
+                // table.draw(true);
+            
+        $("#response").html("test secratary emails response is:"+JSON.stringify(data)); 
+
+        });
+    });
+
+
+    $("#testEmail").click(function (event) {
+
+        event.preventDefault();
+
+        $("#response").html("");
+
+        var url = sheet_url+"?action=testEmail";
+
+        $.getJSON(url, function (data) {
+                // dataSet2 = data;
+                // table.draw(true);
+            
+        $("#response").html("test members email response is:"+JSON.stringify(data)); 
+
+        })
+    });
+    </script>
+    
+</body>
+</html>
