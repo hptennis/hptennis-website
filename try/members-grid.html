@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,32 @@
     <title>HP Membership Page</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/membership.css">
-    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.2/css/buttons.dataTables.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.10.18/b-1.5.2/b-flash-1.5.2/b-html5-1.5.2/b-print-1.5.2/datatables.min.css">
+    
+    
 
 </head>
+
 <body>
 
-        <div class="w3-container w3-teal">
-                <h1>Hampden Park Tennis Membership</h1>
-        
-            </div>
-            <p>
-            <div class="w3-container">
+    <div class="w3-container w3-teal">
+        <h1>Hampden Park Tennis Membership</h1>
 
-                    <table id="example" class="display" style="width:100%">
-                            <thead>
-                                    <!-- <tr>
+    </div>
+    <p>
+        <div class="w3-container">
+            <div class="w3-row w3-padding-16">
+                <button id="btnEmailView" class="w3-button w3-black">Show Email View</button>
+                <button id="btnFullView" class="w3-button w3-black">Show Full View</button>
+                <!-- <button id="btUpdate" class="w3-button w3-black">Update</button> -->
+            </div>
+
+
+            <table id="example" class="display" style="width:100%">
+                <thead>
+                    <!-- <tr>
                                         <th>Date</th>
                                         <th>Number</th>
                                         <th>Name</th>
@@ -51,102 +63,446 @@
                                             <th>Membership</th>
                                             <th>Renewal</th>
                                     </tr> -->
-                                </tfoot>
-                    </table>
+                    </tfoot>
+            </table>
 
+            <div id="id01" class="w3-modal">
+                <div class="w3-modal-content">
+
+                    <header class="w3-container w3-teal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                        <h2>Member Detail</h2>
+                    </header>
+
+                    <div class="w3-container">
+                        <form id="memberform">
+                            <input id="id01serial" class="" type="text" name="id01serial" placeholder="" hidden>
+                            <div class="w3-row">
+                                <div class="w3-half">
+                                    <label class="w3-text-teal" for="id01firstname">First Name</label>
+                                    <input id="id01firstname" class="w3-input w3-border w3-round" type="text" name="id01firstname" placeholder="First Name">
+                                </div>
+                                <div class="w3-half">
+                                    <label class="w3-text-teal" for="id01lastname">Last Name</label>
+                                    <input id="id01lastname" class="w3-input w3-border" type="text" name="id01lastname" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="w3-row">
+                                <div class="w3-rest">
+                                    <label class="w3-text-teal" for="id01address1">Address Line 1</label>
+                                    <input id="id01address1" class="w3-input w3-border" name="id01address1" type="text">
+                                </div>
+                            </div>
+                            <div class="w3-row">
+                                <div class="w3-half">
+                                    <label class="w3-text-teal" for="id01address2">Address Line 2</label>
+                                    <input id="id01address2" class="w3-input w3-border" name="id01address2" type="text">
+                                </div>
+                                <div class="w3-half">
+                                    <label class="w3-text-teal" for="id01postcode">Post Code</label>
+                                    <input id="id01postcode" class="w3-input w3-border" name="id01postcode" type="text">
+                                </div>
+                            </div>
+
+                            <div class="w3-row">
+                                <div class="w3-half">
+                                    <label class="w3-text-teal" for="id01email">Email Address</label>
+                                    <input id="id01email" class="w3-input w3-border w3-round" type="text" name="id01email" placeholder="email address">
+                                </div>
+                                <div class="w3-half">
+                                    <label class="w3-text-teal" for="id01phone">Phone Number</label>
+                                    <input id="id01phone" class="w3-input w3-border" type="text" name="id01phone" placeholder="Phone number">
+                                </div>
+                            </div>
+                            <div class="w3-row">
+                                <div class="w3-half">
+                                    <label class="w3-text-teal" for="id01mtype">Membership Type</label>
+                                    <!-- <input id="id01mtype" class="w3-input w3-border w3-round" type="text" name="id01mtype" placeholder="Membership Type"> -->
+                                    <select id="id01mtype" class="w3-select w3-border" name="id03membershiptype" required>
+                                        <option value="" disabled selected>Please select your membership type</option>
+                                        <option value="adult">Adult Full Membership (£180)</option>
+                                        <option value="family">Family(£288)</option>
+                                        <option value="student">Student (£52)</option>
+                                        <option value="offpeak">Off Peak Membership (£90)</option>
+                                        <option value="trialA">Trial Membership Adult (£36)</option>
+                                    </select>
+
+                                </div>
+                                <div class="w3-half">
+                                    <label class="w3-text-teal" for="id01endDate">Trial End Date</label>
+                                    <input id="id01endDate" class="w3-input w3-border" type="date" name="id01endDate" placeholder="Trial End Date">
+                                </div>
+                            </div>
+                            <div class="w3-row w3-padding-16">
+                                <button id="btnDelete" class="w3-button w3-black">Delete</button>
+                                <button id="btUpdate" class="w3-button w3-black">Update</button>
+                            </div>
+                        </form>
+                    </div>
+                    <footer class="w3-container w3-teal">
+                        <p></p>
+                    </footer>
+
+                </div>
             </div>
-    
+
+        </div>
+
 
         <script src="js/lib/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
         <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
+        <script src="https://cdn.datatables.net/select/1.2.7/js/dataTables.select.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+        <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.10.18/b-1.5.2/b-flash-1.5.2/b-html5-1.5.2/b-print-1.5.2/datatables.min.js"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
 
         <script>
-          var dataSet = [
-          [ "Tiger Nixon", "System Architect", "Edinburgh", "5421", "2011/04/25", "$320,800" ],
-          [ "Garrett Winters", "Accountant", "Tokyo", "8422", "2011/07/25", "$170,750" ],
-          [ "Ashton Cox", "Junior Technical Author", "San Francisco", "1562", "2009/01/12", "$86,000" ],
-          [ "Cedric Kelly", "Senior Javascript Developer", "Edinburgh", "6224", "2012/03/29", "$433,060" ],
-          [ "Airi Satou", "Accountant", "Tokyo", "5407", "2008/11/28", "$162,700" ],
-          [ "Brielle Williamson", "Integration Specialist", "New York", "4804", "2012/12/02", "$372,000" ],
-          [ "Herrod Chandler", "Sales Assistant", "San Francisco", "9608", "2012/08/06", "$137,500" ],
-          [ "Rhona Davidson", "Integration Specialist", "Tokyo", "6200", "2010/10/14", "$327,900" ],
-          [ "Colleen Hurst", "Javascript Developer", "San Francisco", "2360", "2009/09/15", "$205,500" ],
-          [ "Sonya Frost", "Software Engineer", "Edinburgh", "1667", "2008/12/13", "$103,600" ],
-          [ "Jena Gaines", "Office Manager", "London", "3814", "2008/12/19", "$90,560" ],
-          [ "Quinn Flynn", "Support Lead", "Edinburgh", "9497", "2013/03/03", "$342,000" ],
-          [ "Charde Marshall", "Regional Director", "San Francisco", "6741", "2008/10/16", "$470,600" ],
-          [ "Haley Kennedy", "Senior Marketing Designer", "London", "3597", "2012/12/18", "$313,500" ],
-          [ "Tatyana Fitzpatrick", "Regional Director", "London", "1965", "2010/03/17", "$385,750" ],
-          [ "Michael Silva", "Marketing Designer", "London", "1581", "2012/11/27", "$198,500" ],
-          [ "Paul Byrd", "Chief Financial Officer (CFO)", "New York", "3059", "2010/06/09", "$725,000" ],
-          [ "Gloria Little", "Systems Administrator", "New York", "1721", "2009/04/10", "$237,500" ],
-          [ "Bradley Greer", "Software Engineer", "London", "2558", "2012/10/13", "$132,000" ],
-          [ "Dai Rios", "Personnel Lead", "Edinburgh", "2290", "2012/09/26", "$217,500" ],
-          [ "Jenette Caldwell", "Development Lead", "New York", "1937", "2011/09/03", "$345,000" ],
-          [ "Yuri Berry", "Chief Marketing Officer (CMO)", "New York", "6154", "2009/06/25", "$675,000" ],
-          [ "Caesar Vance", "Pre-Sales Support", "New York", "8330", "2011/12/12", "$106,450" ],
-          [ "Doris Wilder", "Sales Assistant", "Sidney", "3023", "2010/09/20", "$85,600" ],
-          [ "Angelica Ramos", "Chief Executive Officer (CEO)", "London", "5797", "2009/10/09", "$1,200,000" ],
-          [ "Gavin Joyce", "Developer", "Edinburgh", "8822", "2010/12/22", "$92,575" ],
-          [ "Jennifer Chang", "Regional Director", "Singapore", "9239", "2010/11/14", "$357,650" ],
-          [ "Brenden Wagner", "Software Engineer", "San Francisco", "1314", "2011/06/07", "$206,850" ],
-          [ "Fiona Green", "Chief Operating Officer (COO)", "San Francisco", "2947", "2010/03/11", "$850,000" ],
-          [ "Shou Itou", "Regional Marketing", "Tokyo", "8899", "2011/08/14", "$163,000" ],
-          [ "Michelle House", "Integration Specialist", "Sidney", "2769", "2011/06/02", "$95,400" ],
-          [ "Suki Burks", "Developer", "London", "6832", "2009/10/22", "$114,500" ],
-          [ "Prescott Bartlett", "Technical Author", "London", "3606", "2011/05/07", "$145,000" ],
-          [ "Gavin Cortez", "Team Leader", "San Francisco", "2860", "2008/10/26", "$235,500" ],
-          [ "Martena Mccray", "Post-Sales support", "Edinburgh", "8240", "2011/03/09", "$324,050" ],
-          [ "Unity Butler", "Marketing Designer", "San Francisco", "5384", "2009/12/09", "$85,675" ]
-      ];
+            var dataSet = [
+                ["Tiger Nixon", "System Architect", "Edinburgh", "5421", "2011/04/25", "$320,800"],
+                ["Garrett Winters", "Accountant", "Tokyo", "8422", "2011/07/25", "$170,750"],
+                ["Ashton Cox", "Junior Technical Author", "San Francisco", "1562", "2009/01/12", "$86,000"],
+                ["Cedric Kelly", "Senior Javascript Developer", "Edinburgh", "6224", "2012/03/29", "$433,060"],
+                ["Airi Satou", "Accountant", "Tokyo", "5407", "2008/11/28", "$162,700"],
+                ["Brielle Williamson", "Integration Specialist", "New York", "4804", "2012/12/02", "$372,000"],
+                ["Herrod Chandler", "Sales Assistant", "San Francisco", "9608", "2012/08/06", "$137,500"],
+                ["Rhona Davidson", "Integration Specialist", "Tokyo", "6200", "2010/10/14", "$327,900"],
+                ["Colleen Hurst", "Javascript Developer", "San Francisco", "2360", "2009/09/15", "$205,500"],
+                ["Sonya Frost", "Software Engineer", "Edinburgh", "1667", "2008/12/13", "$103,600"],
+                ["Jena Gaines", "Office Manager", "London", "3814", "2008/12/19", "$90,560"],
+                ["Quinn Flynn", "Support Lead", "Edinburgh", "9497", "2013/03/03", "$342,000"],
+                ["Charde Marshall", "Regional Director", "San Francisco", "6741", "2008/10/16", "$470,600"],
+                ["Haley Kennedy", "Senior Marketing Designer", "London", "3597", "2012/12/18", "$313,500"],
+                ["Tatyana Fitzpatrick", "Regional Director", "London", "1965", "2010/03/17", "$385,750"],
+                ["Michael Silva", "Marketing Designer", "London", "1581", "2012/11/27", "$198,500"],
+                ["Paul Byrd", "Chief Financial Officer (CFO)", "New York", "3059", "2010/06/09", "$725,000"],
+                ["Gloria Little", "Systems Administrator", "New York", "1721", "2009/04/10", "$237,500"],
+                ["Bradley Greer", "Software Engineer", "London", "2558", "2012/10/13", "$132,000"],
+                ["Dai Rios", "Personnel Lead", "Edinburgh", "2290", "2012/09/26", "$217,500"],
+                ["Jenette Caldwell", "Development Lead", "New York", "1937", "2011/09/03", "$345,000"],
+                ["Yuri Berry", "Chief Marketing Officer (CMO)", "New York", "6154", "2009/06/25", "$675,000"],
+                ["Caesar Vance", "Pre-Sales Support", "New York", "8330", "2011/12/12", "$106,450"],
+                ["Doris Wilder", "Sales Assistant", "Sidney", "3023", "2010/09/20", "$85,600"],
+                ["Angelica Ramos", "Chief Executive Officer (CEO)", "London", "5797", "2009/10/09", "$1,200,000"],
+                ["Gavin Joyce", "Developer", "Edinburgh", "8822", "2010/12/22", "$92,575"],
+                ["Jennifer Chang", "Regional Director", "Singapore", "9239", "2010/11/14", "$357,650"],
+                ["Brenden Wagner", "Software Engineer", "San Francisco", "1314", "2011/06/07", "$206,850"],
+                ["Fiona Green", "Chief Operating Officer (COO)", "San Francisco", "2947", "2010/03/11", "$850,000"],
+                ["Shou Itou", "Regional Marketing", "Tokyo", "8899", "2011/08/14", "$163,000"],
+                ["Michelle House", "Integration Specialist", "Sidney", "2769", "2011/06/02", "$95,400"],
+                ["Suki Burks", "Developer", "London", "6832", "2009/10/22", "$114,500"],
+                ["Prescott Bartlett", "Technical Author", "London", "3606", "2011/05/07", "$145,000"],
+                ["Gavin Cortez", "Team Leader", "San Francisco", "2860", "2008/10/26", "$235,500"],
+                ["Martena Mccray", "Post-Sales support", "Edinburgh", "8240", "2011/03/09", "$324,050"],
+                ["Unity Butler", "Marketing Designer", "San Francisco", "5384", "2009/12/09", "$85,675"]
+            ];
 
-      var dataSet2;
-      var table;
+            var dataSet2;
+            var table;
 
-      var url = "https://script.google.com/macros/s/AKfycby6wkVv9xbATIt8JVeZR71nYxnaKy3n60UJznWo5PYdPaTH2lmT/exec";
+            var url = "https://script.google.com/macros/s/AKfycby6wkVv9xbATIt8JVeZR71nYxnaKy3n60UJznWo5PYdPaTH2lmT/exec";
 
-       $.getJSON(url, function (data) {
-                    dataSet2 = data;
-                    // table.draw(true);
-                    console.log("data:" + dataSet2);
-                });
-      
+            $.getJSON(url, function (data) {
+                dataSet2 = data;
+                // table.draw(true);
+                console.log("data:" + dataSet2);
+            });
 
-            $(document).ready(function() {
 
-               
+            $(document).ready(function () {
 
-               
+                var table;
 
-                setTimeout(function(){ 
-                    table= $('#example').DataTable({
-                    data: dataSet2,
-                    "order": [[ 3, "asc" ]],
-                    "scrollX": true,
-                    columns: [
-                        { title: "Date" },
-                        { title: "Number" },
-                        { title: "Name" },
-                        { title: "Surname." },
-                        { title: "Addres1" },
-                        { title: "Address2" },
-                        { title: "Post Code" },
-                        { title: "Phone" },
-                        { title: "Email" },
-                        { title: "XXX" },
-                        { title: "Membership" },
-                        { title: "Renewal" }
-                                       
-                    ],
-                    
+                // $( "#id01endDate" ).datepicker();
+
+                setTimeout(function () {
+                    table = $('#example').DataTable({
+                        dom: 'lBrftip',
+                        buttons: [
+                        'copy', 'csv', 'excel', 'pdf'
+                        ],
+                        select: true,
+                        data: dataSet2,
+                        "order": [[3, "asc"]],
+                        "scrollX": true,
+                        columns: [
+                            { title: "Date" },
+                            { title: "Number" },
+                            { title: "Name" },
+                            { title: "Surname." },
+                            { title: "Address 1" },
+                            { title: "Address 2" },
+                            { title: "Post Code" },
+                            { title: "Phone" },
+                            { title: "Email" },
+                            { title: "By Email" },
+                            { title: "Membership" },
+                            { title: "Renewal" },
+                            { title: "Trial End" }
+                        ],
+                        "columnDefs": [
+                            {
+                                "targets": [0],
+                                //  render: $.fn.dataTable.render.moment( 'YYYY-MM-DD HH:mm:ss.SSS', 'DD-MM-YYYY HH:mm:ss' )
+                                render: function (data, type, row) {
+                                    return moment(data).format('DD-MM-YY HH:MM');
+                                }
+                            },
+                            {
+                                "targets": [1],
+                                "visible": false,
+                                "searchable": false
+                            },
+                            {
+                                "targets": [12],
+                                //  render: $.fn.dataTable.render.moment( 'YYYY-MM-DD HH:mm:ss.SSS', 'DD-MM-YYYY HH:mm:ss' )
+                                render: function (data, type, row) {
+                                    // var date = moment(data);
+
+
+                                    return getShortDate(data);// date.isValid() ? date.format('DD-MM-YY'): "";
+                                }
                             }
 
-                );
-                 }, 2000);
+                        ]
+                    }
+                    );
+
+                    table
+                        .on('select', function (e, dt, type, indexes) {
+                            var rowData = table.rows(indexes).data().toArray();
+                            console.log("row selected:" + JSON.stringify(rowData));
+                            $("#id01serial").val(rowData[0][1]);
+                            $("#id01firstname").val(rowData[0][2]);
+                            $("#id01lastname").val(rowData[0][3]);
+                            $("#id01address1").val(rowData[0][4]);
+                            $("#id01address2").val(rowData[0][5]);
+                            $("#id01postcode").val(rowData[0][6]);
+                            $("#id01email").val(rowData[0][8]);
+                            $("#id01phone").val(rowData[0][7]);
+                            $("#id01mtype").val(rowData[0][10]);
+                            // var date = moment(rowData[0][12]);
+                            // var dateVal = date.isValid() ? date.format('DD-MM-YY'): "";
+                            $("#id01endDate").val(getDateForInput(rowData[0][12]));
+
+
+                            document.getElementById('id01').style.display = 'block'
+                            // events.prepend('<div><b>' + type + ' selection</b> - ' + JSON.stringify(rowData) + '</div>');
+                        })
+                        .on('deselect', function (e, dt, type, indexes) {
+                            var rowData = table.rows(indexes).data().toArray();
+                            console.log("row deselected:" + JSON.stringify(rowData));
+
+                            // events.prepend('<div><b>' + type + ' <i>de</i>selection</b> - ' + JSON.stringify(rowData) + '</div>');
+                        });
+
+                }, 2000);
+
+
 
                 //  table.draw(true);
-              
-                } );
+
+            });
+
+            function getShortDate(dateStr) {
+                var date = moment(dateStr);
+                var dateVal = date.isValid() ? date.format('DD-MM-YY') : "";
+                return dateVal;
+            }
+
+            function getDateForInput(dateStr) {
+
+                var now = new Date();
+
+                var day = ("0" + now.getDate()).slice(-2);
+                var month = ("0" + (now.getMonth() + 1)).slice(-2);
+
+                var today = now.getFullYear() + "-" + (month) + "-" + (day);
+                var date = moment(dateStr);
+                var dateVal = date.isValid() ? date.format('YYYY-MM-DD') : "";
+
+                console.log("getDateForInput:", dateVal);
+                return dateVal;
+            }
+
+
+            function validateId01() {
+
+                return true;
+
+                $("#memberForm").validate;
+                return $("#id01firstname").valid() &
+                    $("#id01lastname").valid()
+
+                    // & $("#id01address1").valid() 
+                    // & $("#id01address2").valid() 
+                    // & $("#id01postcode").valid() 
+                    // & $("#id01email").valid() 
+                    // & $("#id01phone").valid() 
+                    ;
+            }
+
+            function validateId03() {
+                $("#memberForm").validate;
+
+
+                return $("#id03membershiptype").valid() &
+                    $("#id03paymenttype").valid();
+            }
+
+
+            $("#btnEmailView").click(function (event) {
+
+                var table = $('#example').DataTable();
+
+                table.column(0).visible(false, false);
+                table.column(4).visible(false, false);
+                table.column(5).visible(false, false);
+                table.column(6).visible(false, false);
+                table.column(9).visible(false, false);
+                table.column(10).visible(false, false);
+                table.column(11).visible(false, false);
+                table.column(12).visible(false, false);
+                table.columns.adjust().draw(false); // adjust column sizing and redraw
+
+            });
+
+            $("#btnFullView").click(function (event) {
+
+                var table = $('#example').DataTable();
+                table.column(0).visible(true, false);
+                table.column(4).visible(true, false);
+                table.column(5).visible(true, false);
+                table.column(6).visible(true, false);
+                table.column(9).visible(true, false);
+                table.column(10).visible(true, false);
+                table.column(11).visible(true, false);
+                table.column(12).visible(true, false);
+                table.columns.adjust().draw(false); // adjust column sizing and redraw
+
+            });
+
+
+            $("#btUpdate").click(function (event) {
+
+                if (validateId01()) {
+
+                    var serial = $('#id01serial').val();
+                    var name = $('#id01firstname').val();
+                    var surname = $('#id01lastname').val();
+                    var address1 = $('#id01address1').val();
+                    var address2 = $('#id01address2').val();
+                    var postcode = $('#id01postcode').val();
+                    var email = $('#id01email').val();
+                    var phone = $('#id01phone').val();
+                    var membership_type = $('#id03membershiptype').val();
+                    var endDate = $("#id01endDate").val();
+
+                    event.preventDefault();
+                    $("body").toggleClass("wait");
+                    $.ajax({
+                        url: url,
+                        type: "post", //send it through get method
+                        data: {
+                            ajaxid: 4,
+                            action: 'update',
+                            serial: serial,
+                            firstname: name,
+                            surname: surname,
+                            address1: address1,
+                            address2: address2,
+                            postcode: postcode,
+                            phone: phone,
+                            email: email,
+                            membership_type: membership_type,
+                            endDate: endDate
+                        },
+                        success: function (response, textStatus, jqXHR) {
+                            {
+
+                                $("body").toggleClass("wait");
+                                alert("record updated");
+                                location.reload();
+
+                                // alert ("success!");
+                                // disaply modal
+                                // $('#id04-modal').css("display", "block");
+
+                            }
+                        },
+                        error: function (jqXHR, textStatus, errorThrown) {
+                            console.log("error:", textStatus);
+
+                            alert("An error occured with update, contact grant");
+
+                            //Do Something to handle error
+                            // console.error(
+                            //     "The following error occurred: " +
+                            //     textStatus, errorThrown
+                            // );
+                        }
+                    });
+                };
+
+            });
+
+
+            $("#btnDelete").click(function (event) {
+
+
+
+
+                var serial = $('#id01serial').val();
+
+                confirm("Confirm you wish to delete this entry!");
+
+                event.preventDefault();
+                $("body").toggleClass("wait");
+                $.ajax({
+                    url: url,
+                    type: "post", //send it through get method
+                    data: {
+                        ajaxid: 4,
+                        serial: serial,
+                        action: 'delete'
+                    },
+                    success: function (response, textStatus, jqXHR) {
+                        {
+
+                            $("body").toggleClass("wait");
+
+                            var table = $('#example').DataTable();
+
+                            // table.ajax.reload(function (json) {
+                            //    console.log("reloaded");
+                            // });
+
+                            location.reload();
+
+                            // alert("success!");
+                            // disaply modal
+
+
+                        }
+                    },
+                    error: function (jqXHR, textStatus, errorThrown) {
+                        console.log("error:", textStatus);
+
+                        alert("An error occured with delete, contact grant");
+
+                        //Do Something to handle error
+                        // console.error(
+                        //     "The following error occurred: " +
+                        //     textStatus, errorThrown
+                        // );
+                    }
+                });
+            });
+
         </script>
 </body>
+
 </html>
