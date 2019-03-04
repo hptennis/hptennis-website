@@ -1,9 +1,0 @@
-body.wait, body.wait *{
-    cursor: wait !important;   
-   }
-
-.error {
-    color: red;
-    font-style: italic;
-    font-weight: bold;
-}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Page</title>
+    <script src="https://www.gstatic.com/firebasejs/5.7.0/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.0/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.0/firebaseui.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+       
+
+       
+                <!-- <form class="w3-container"> -->
+                <form class="w3-container w3-card-4">
+                        <h2 class="w3-text-blue">Login</h2>
+                <label for="email"><b>Email</b></label>
+                <input class="w3-input" type="text" placeholder="Enter Email" name="email" required>
+            
+                <label for="psw"><b>Password</b></label>
+                <input class="w3-input" type="password" placeholder="Enter Password" name="pwd" required>
+            
+                <button class="w3-btn w3-blue"  onclick="submitLogin()" >Login</button>
+                <button class="w3-btn w3-blue"  onclick="signUp()" >Sign Up</button>
+                </form>
+        
+    
+    
+    
+    <script src="firebase.js"></script>
+    <script src="login.js"></script>
+    
+</body>
+</html>
