@@ -33,7 +33,7 @@ var clicked;
         if (clicked==="login")
            login();
         else if (clicked==="signup")
-           signup();
+            signUp();
         else
             alert ("Error should not get here");
 
