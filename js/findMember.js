@@ -35,6 +35,13 @@ $("#btnFindMember").click(function (event) {
                 }
                 else {
                     // $('#id01-serial').val(response[1]);
+
+                    var user = firebase.auth().currentUser;
+                    if (user.email!==response[8])
+                    {
+                        alert ("Members email address does not match signed in email - is this correct?")
+                    }
+
                     console.log(response[2] + "-" + response[3]);
                     $('#id01firstname').val(response[2]);
                     $('#id01lastname').val(response[3]);

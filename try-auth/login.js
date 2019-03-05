@@ -133,7 +133,8 @@ function login(){
 
     firebase.auth().onAuthStateChanged(function(user) {
         if (user) {
-            window.location.href = "main.html";
+            window.location.href = "membership.html?existing=true";
+            //displayExisting();
         } else {
            
         }

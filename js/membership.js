@@ -13,6 +13,8 @@ var json_url = "https://script.googleusercontent.com/a/macros/hampdenparktennis.
 var publicSpreadsheetUrl = 'https://docs.google.com/spreadsheets/d/1CB8LUatQhFCQ-j6SLTAqkJMSKYjncfedyXSYVMeWNho/edit?usp=sharing';
 
 
+var loginEnabled = false;
+
 function validateId01() {
     $("#memberForm").validate;
     return $("#id01firstname").valid() &
@@ -60,7 +62,11 @@ function displaydefault() {
 
 
 function displayNew(serial) {
-
+    
+    if (serial===-1)
+    {
+        $('#memberForm').trigger("reset");   // gtf 20190305
+    }
     $('#id01-serial').val(serial);
     membershipDetails.css("display", "none");
     newMembForm.css("display", "block");
@@ -68,6 +74,12 @@ function displayNew(serial) {
     existingMembForm.css("display", "none");
     paymentForm.css("display", "none");
     window.location.href='#id01';
+}
+
+function forceLogin()
+{
+    loginEnabled=true;
+    window.location.href='login.html';
 }
 
 function displayExisting() {
@@ -78,6 +90,18 @@ function displayExisting() {
     paymentForm.css("display", "none");
     window.location.href='#id02';
 }
+
+firebase.auth().onAuthStateChanged(function(user) {
+    if (loginEnabled)
+    {
+    if (user) {
+            
+        } 
+    else {
+        window.location = "login.html";
+    }
+        }
+      });
 
 
 
@@ -181,6 +205,16 @@ function init() {
 
 }
 
+let searchParams = new URLSearchParams(window.location.search)
+
+$( document ).ready(function() {
+
+    if (searchParams.has('existing'))
+    {
+        displayExisting();
+    }
+    
+});
 
 window.addEventListener('DOMContentLoaded', init);
 

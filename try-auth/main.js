@@ -8,11 +8,11 @@ window.onload = function () {
     firebase.auth().signOut();
  }
 
- firebase.auth().onAuthStateChanged(function(user) {
-    if (user) {
+//  firebase.auth().onAuthStateChanged(function(user) {
+//     if (user) {
         
-    } else {
-        window.location = "login.html"
-    }
-  });
+//     } else {
+//         window.location = "login.html";
+//     }
+//   });
 
