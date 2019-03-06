@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--<link rel="stylesheet" href="css/w3css4/w3.css">-->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="css/membership.css">
+<link rel="stylesheet" href="../css/membership.css">
 
 <body>
 
@@ -24,7 +24,7 @@
                         <p>ADULT MEMBER</p>
                     </div>
                     <div class="w3-third w3-container w3-center">
-                        <p>£180</p>
+                        <p>£192</p>
                     </div>
                     <div class="w3-third w3-container  w3-left">
                         <p></p>
@@ -36,7 +36,7 @@
                         <p>STUDENT MEMBER</p>
                     </div>
                     <div class="w3-third w3-container w3-center">
-                        <p>£52</p>
+                        <p>£60</p>
                     </div>
                     <div class="w3-third w3-container w3-left">
                         <p> Under 25 years, otherwise refer to committee</p>
@@ -48,7 +48,7 @@
                         <p>OFF PEAK MEMBER</p>
                     </div>
                     <div class="w3-third w3-container w3-center">
-                        <p>£90</p>
+                        <p>£108</p>
                     </div>
                     <div class="w3-third w3-container w3-left">
                         <p>Weekday usage before 4 pm</p>
@@ -73,7 +73,7 @@
                         <p>FAMILY</p>
                     </div>
                     <div class="w3-third w3-container w3-center">
-                        <p>£288</p>
+                        <p>£306</p>
                     </div>
                     <div class="w3-third w3-container w3-left">
                         <p>Couples plus their children under 18</p>
@@ -97,7 +97,7 @@
                         <p>GUEST</p>
                     </div>
                     <div class="w3-third w3-container w3-center">
-                        <p>£3</p>
+                        <p>£5</p>
                     </div>
                     <div class="w3-third w3-container w3-left">
                         <p>Per visit (guests must be known and signed in by full member)</p>
@@ -109,7 +109,7 @@
                         <p>WINTER MEMBERSHIP</p>
                     </div>
                     <div class="w3-third w3-container w3-center">
-                        <p>£90</p>
+                        <p>£108</p>
                     </div>
                     <div class="w3-third w3-container w3-left">
                         <p>1st Oct to 31st March</p>
@@ -121,7 +121,7 @@
                         <p>ADULT TRIAL MEMBERSHIP</p>
                     </div>
                     <div class="w3-third w3-container w3-center">
-                        <p>£36</p>
+                        <p>£39</p>
                     </div>
                     <div class="w3-third w3-container w3-left">
                         <p>3 Months</p>
@@ -141,6 +141,18 @@
                 </div>
 
                 <div class="w3-row">
+                        <div class="w3-third w3-container w3-center">
+                            <p>JUNIOR WINTER MEMBERSHIP</p>
+                        </div>
+                        <div class="w3-third w3-container w3-center">
+                            <p>£20</p>
+                        </div>
+                        <div class="w3-third w3-container w3-left">
+                            <p>1st Oct to 31st March</p>
+                        </div>
+                    </div>
+
+                <div class="w3-row">
                     <div class="w3-full w3-container w3-center">
                         <p>Late payment penalty of £6 on all subs received after March 31st</p>
                         <br>
@@ -156,7 +168,8 @@
 
             <div class="w3-bar w3-padding-16">
                 <button class="w3-button  w3-teal" onclick="displayNew(-1)">New Member</button>
-                <button class="w3-button w3-teal" onclick="displayExisting()">Membership Renewal</button>
+                <!-- <button class="w3-button w3-teal" onclick="displayExisting()">Membership Renewal</button> -->
+                <button class="w3-button w3-teal" onclick="forceLogin()">Membership Renewal</button>
                 <span id="details" style="visibility:hidden">
                     <button class="w3-button w3-teal" onclick="detailsShow()">Membership Details</button>
                 </span>
@@ -267,19 +280,20 @@
                             <label for="id03membershiptype">Membership Type</label>
                             <select id="id03membershiptype" class="w3-select w3-border" name="id03membershiptype" required>
                                 <option value="" disabled selected>Please select your membership type</option>
-                                <option value="adult">Adult Full Membership (£180)</option>
-                                <option value="family">Family(£288)</option>
-                                <option value="student">Student (£52)</option>
-                                <option value="offpeak">Off Peak Membership (£90)</option>
-                                <option value="trialA">Trial Membership Adult (£36)</option>
+                                <option value="adult">Adult Full Membership (£192)</option>
+                                <option value="family">Family(£306)</option>
+                                <option value="student">Student (£60)</option>
+                                <option value="offpeak">Off Peak Membership (£108)</option>
+                                <option value="winter">Winter Membership (£108)</option>
+                                <option value="trialA">Trial Membership Adult (£39)</option>
                             </select>
                             <!-- <select id="id03membershiptype" class="w3-select w3-border required" name="id03membershiptype" required>
                             <option value="" disabled selected>Please select your membership type</option>
-                            <option value="adult">Adult Full Membership (£180)</option>
-                            <option value="family">Family(£288)</option>
-                            <option value="student">Student (£52)</option>
-                            <option value="offpeak">Off Peak Membership (£90)</option>
-                            <option value="trialA">Trial Membership Adult (£36)</option>
+                            <option value="adult">Adult Full Membership (£192)</option>
+                            <option value="family">Family(£306)</option>
+                            <option value="student">Student (£60)</option>
+                            <option value="offpeak">Off Peak Membership (£108)</option>
+                            <option value="trialA">Trial Membership Adult (£39)</option>
                         </select> -->
                             <h2>Payment method</h2>
                             <label for="id03paymenttype">Method of payment</label>
@@ -387,14 +401,26 @@
                 <p>Hampden Park Tennis Club (12/3/2018 - 17:13)</p>
             </div>
 
+            <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-app.js"></script>
 
-            <script src="js/lib/jquery.min.js"></script>
+      <!-- Add additional services that you want to use -->
+      <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-database.js"></script>
+    
+    <script src="firebase.js"></script>
+
+
+            <script src="../js/lib/jquery.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
             <!--<script src="js/tabletop.js"></script>-->
-            <script src="js/validation.js"></script>
+            <script src="../js/validation.js"></script>
 
-            <script src="js/membership.js"></script>
-            <script src="js/findMember.js"></script>
+            <script src="../js/membership.js"></script>
+            <script src="../js/findMember.js"></script>
+
+             <!-- Firebase App is always required and must be first -->
+      
+    <script src="main.js"></script>
 
 
 
