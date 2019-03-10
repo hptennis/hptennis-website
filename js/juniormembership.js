@@ -5,6 +5,17 @@ var newMembForm = $('#newMember');
 var existingMembForm = $('#id02');
 var paymentPanel = $('#payment');
 var membershipDetails = $('#membershipDetails');
+var divMain = $('#divMain');
+var divLogin = $('#divLogin');
+var divSignedIn = $('#signedIn');
+var divSignedOut = $('#signedOut');
+
+$( document ).ready(function() {
+   
+    
+});
+
+var showExisting=false;
 
 
 function detailsShow() {
@@ -13,13 +24,29 @@ function detailsShow() {
     window.location.href = '#membershipDetails';
 }
 
-function displaydefault() {
-    detailsShow();
-    newMembForm.css("display", "none");
-    existingMembForm.css("display", "none");
-    paymentPanel.css("display", "none");
+function membershipRenewalBtn()
+{
+
+    var user = firebase.auth().currentUser;
+    showExisting=true;
+    if (user) {
+        displayExisting();
+        } else {
+            displayLogin();
+        }
+
+    loginEnabled=true;
+    //window.location.href='jnrlogin.html';
+   
 }
 
+
+function displayLogin() 
+{
+    newMembForm.css("display", "none");
+    divMain.css("display", "none");
+    divLogin.css("display", "block");
+}
 
 function displayNew(serial) {
 
@@ -34,6 +61,14 @@ function displayNew(serial) {
     existingMembForm.css("display", "none");
     paymentPanel.css("display", "none");
     window.location.href = '#id01';
+}
+
+function displaydefault()
+{
+    divMain.css("display", "block");
+    newMembForm.css("display", "none");
+    existingMembForm.css("display", "none");
+    membershipDetails.css("display", "block");
 }
 
 function displayExisting() {
@@ -187,6 +222,10 @@ $("#addSibling").click(function (event) {
 
 });
 
+$( document ).ready(function() {
+    displaydefault();
+});
+
 
 $("#btnFindMember").click(function (event) {
 
@@ -260,4 +299,181 @@ $("#btnFindMember").click(function (event) {
     }
 
 });
+
+
+var validator = $("form[name='jnrloginFrm']").validate({
+    //   debug: true,
+     rules: {
+    // The key name on the left side is the name attribute
+    // of an input field. Validation rules are defined
+    // on the right side
+
+    //devGrp: "required",
+    email: {
+      required: true,
+      email: true
+    },
+    pwd:  { required: true, 
+       
+        minlength: 6
+    },  
+    },
+    // Specify validation error messages
+    messages: {
+        email: "Please enter a valid email address",
+        //devGrp: "Please select one or more Device Groups",
+       
+        
+        pwd: "Please a password with at leat 6 characters",
+    },
+    // Make sure the form is submitted to the destination defined
+    // in the "action" attribute of the form when valid
+    submitHandler: function(form) {
+        
+        event.preventDefault();
+
+        if (clicked==="login")
+           login();
+        else if (clicked==="signup")
+            signUp();
+        else
+            alert ("Error should not get here");
+
+        
+    }
+    });
+
+    function login(){
+
+        event.preventDefault();
+        
+        var email=document.getElementsByName("email")[0].value;
+        var password=document.getElementsByName("pwd")[0].value;
+    
+        firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+            // Handle Errors here.
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            console.log ("errorCode:", errorCode);
+            console.log("errorMessage:", errorMessage);
+    
+            alert (errorMessage);
+          });
+    
+    
+    
+        }
+    
+        function signUp(){
+    
+            event.preventDefault();
+            
+            var email=document.getElementsByName("email")[0].value
+            var password=document.getElementsByName("pwd")[0].value
+        
+            firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+                // Handle Errors here.
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                console.log ("errorCode:", errorCode);
+                console.log("errorMessage:", errorMessage);
+              });
+        
+        
+        
+            }
+    
+            function reset(emailAddress)
+            {
+                var auth = firebase.auth();
+                auth.sendPasswordResetEmail(emailAddress).then(function() {
+                    alert ("Please check your email for a reset link");
+                    displayLogin();
+                   
+    
+                  }).catch(function(error) {
+                    // An error happened.
+                    console.log("an error has occured sending reset email");
+                  });
+                  
+            }
+
+            firebase.auth().onAuthStateChanged(function(user) {
+                console.log("auth changed :", user);
+                if (user) {
+
+                    // showHide(false, "signedOut");
+                    // showHide(true, "signedIn");
+
+                    // divSignedOut.css("visibility", "none");
+                    // divSignedIn.css("visibility", "block");
+                    var template = $('#template').html();
+                    Mustache.parse(template);
+                    var rendered = Mustache.render(template, {email: user.email});
+                    $('#userEmail').html(rendered);
+                   signOutShow();
+
+                    divLogin.css("display", "none");
+                    if (showExisting)
+                    {
+                        displayExisting();
+                        showExisting=false;
+                    }
+                    else
+                    {
+                        
+                        displaydefault();
+                    }
+                } else {
+                    
+                    
+                    // divSignedIn.css("visibility", "none");
+                    // divSignedOut.css("visibility", "block");
+                    signInShow();
+                    displaydefault();
+                }
+              });
+
+            //   function showHide(show, elemId) {
+            //     var element = document.getElementById(elemId);
+            //     if (show)
+            //         // element.className += " w3-show";
+            //         element.className = element.className.replace("w3-hide", "w3-show");
+        
+            //     else
+            //         element.className = element.className.replace("w3-show", "w3-hide");
+            //     } 
+                
+                function signOut() {
+                    // Sign out of Firebase.
+                    firebase.auth().signOut().then(function() {
+                        console.log('Signed Out');
+                        displaydefault();
+                        //signedOut();
+                      }, function(error) {
+                        console.error('Sign Out Error', error);
+                      });
+                    }  
+                 $("#signOut").bind("click",signOut);
+                    
+                $("#signIn").bind("click",signIn);
+            
+                
+                function signIn() {
+                        // Sign into Firebase using popup auth & Google as the identity provider.
+                        // var provider = new firebase.auth.GoogleAuthProvider();
+                        // firebase.auth().signInWithPopup(provider);
+                        displayLogin();
+
+                    }
+
+                    function signInShow(){
+                        $("#signIn").show();
+                        $("#signOut").hide();
+                    }
+                    
+                    function signOutShow(){
+                        $("#signOut").show();
+                        $("#signIn").hide();
+                    }
 

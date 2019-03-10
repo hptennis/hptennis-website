@@ -5,15 +5,31 @@
 <!--<link rel="stylesheet" href="css/w3css4/w3.css">-->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="css/membership.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
 
     <div class="w3-container w3-teal">
         <h1>Hampden Park Tennis Membership</h1>
+        <div class="w3-display-topright w3-margin">
+            <div id="user-container">
+                    <div  id=signOut>
+                        <i id="user-name" class="fa fa-user fa-lg">&nbsp;<span id="userEmail"></span></i>
+                        <button id="signOut" class="w3-button">Sign-out</button>
+                    </div>
+                    <div id=signIn>
+                    <!-- <button hidden id="sign-in" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text-white"> -->
+                        <i class="fa fa-user fa-lg"></i>
+                        <button id="signIn" class="w3-button">Sign-in</button>
+                    </div>
+
+                 
+            </div>
+        </div>
 
     </div>
     <p>
-        <div class="w3-container">
+        <div id="dvMain" class="w3-container">
             <div id="membershipDetails">
                 <div class="w3-center">
                     <h2 class="w3-text-teal">JUNIORS SUBSCRIPTION FORM 2018/19</h2>
@@ -71,7 +87,9 @@
             <div class="w3-bar w3-padding-16">
                 <button class="w3-button  w3-teal" onclick="displayNew(-1)">New Member</button>
                 <!-- <button class="w3-button  w3-teal" onclick="displayPaymentDetails()">Pay</button> -->
-                <button class="w3-button w3-teal" onclick="displayExisting()">Membership Renewal</button>
+                <!-- <button class="w3-button w3-teal" onclick="displayExisting()">Membership Renewal</button> -->
+                <button class="w3-button w3-teal" onclick="membershipRenewalBtn()">Membership Renewal</button>
+                
                 <span id="details" style="visibility:hidden">
                     <button class="w3-button w3-teal" onclick="detailsShow()">Membership Details</button>
                 </span>
@@ -425,6 +443,37 @@
             </div>
 
 
+               
+
+            <div id="divLogin" class="w3-modal"  >
+                <div class="w3-modal-content w3-center" style="width:30%">
+        
+                    <div class="w3-card-4">
+                        <div class="w3-container w3-teal">
+                        <h2>Login Form</h2>
+                        </div>
+                        <span onclick="document.getElementById('divLogin').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                    
+                        <form id="jnrloginFrm" name="jnrloginFrm" class="w3-container">
+                            <label for="email"><b>Email</b></label>
+                            <input class="w3-input" type="text" placeholder="Enter Email" name="email" required>
+                            <br>
+                        
+                            <label for="pwd"><b>Password</b></label>
+                            <input class="w3-input" type="password" placeholder="Enter Password" name="pwd" required>
+                            <br>
+            
+                        
+                            <button class="w3-btn w3-teal" name="submit" onclick="clicked='login'" value="login">Login</button>
+                            <button class="w3-btn w3-teal" name="submit" onclick="clicked='signup'" value="signup">Sign Up</button>
+                        </form>
+                        
+                        <button class="w3-button w3-block w3-light-grey" onclick="window.location.href='resetpass.html'">Forgot Password</button>
+                    </div>
+                 </div>
+            </div>
+
+
         </div>
 
 
@@ -435,14 +484,29 @@
                 <p>Hampden Park Tennis Club (19/3/2018 - 21:18)</p>
             </div>
 
+            <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-app.js"></script>
+
+            <!-- Add additional services that you want to use -->
+            <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-database.js"></script>
+          
+          <script src="firebase.js"></script>
+
 
             <script src="js/lib/jquery.min.js"></script>
             <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
             <!--<script src="js/tabletop.js"></script>-->
             <script src="js/jnrValidation.js"></script>
 
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.js"></script>
+
             <script src="js/juniormembership.js"></script>
             <!--<script src="js/findMember.js"></script> -->
+
+            <script id="template" type="x-tmpl-mustache">
+                    {{email}}
+            </script>
+
 
 
 

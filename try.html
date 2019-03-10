@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<title>HP Membership Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="css/w3css4/w3.css">-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="css/membership.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<body onload="loadUser()">
+
+
+    <div class="w3-container w3-teal">
+        <h1>Hampden Park Tennis Membership</h1>
+        <div class="w3-display-topright">
+            <div class="w3-row" id="user-container">
+                    <div  id=signedIn>
+                            <i id="user-name" class="fa fa-user fa-lg">&nbsp;<span id="userEmail"></span></i>  
+                             
+                        <button id="signOut" class="w3-button w3-white w3-round w3-tiny">Sign-out</button>
+                    </div>
+                    <div id=signedOut>
+                    <!-- <button hidden id="sign-in" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text-white"> -->
+                        <i class="fa fa-user fa-lg">&nbsp;<span></span></i>
+                        <button id="signIn" class="w3-button">Sign-in</button>
+                    </div>
+
+                 
+            </div>
+    </div>
+    
+
+    </div>
+    <div id="target">Loading...</div>
+
+    <span><i id="user-name" class="fa fa-user fa-lg"></i>  
+                        <div  id="userEmail"></div></span>
+
+    <button class="w3-btn w3-black" onclick="signedIn()">on</button>
+    <button class="w3-btn w3-black" onclick="signedOut()">Off</button>
+
+
+
+
+
+
+
+
+        <p>
+                <div class="w3-container w3-teal w3-center">
+                    <p>Hampden Park Tennis Club (19/3/2018 - 21:18)</p>
+                </div>
+    
+                <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-app.js"></script>
+    
+                <!-- Add additional services that you want to use -->
+                <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-auth.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/5.8.5/firebase-database.js"></script>
+              
+              <script src="jnrfirebase.js"></script>
+    
+    
+                <script src="js/lib/jquery.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.min.js"></script>
+                <!--<script src="js/tabletop.js"></script>-->
+                <script src="js/jnrValidation.js"></script>
+    
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.js"></script>
+    
+                <!-- <script src="js/juniormembership.js"></script> -->
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.js"></script>
+<script id="template" type="x-tmpl-mustache">
+{{email}}
+</script>
+
+<script>
+    function loadUser() {
+  var template = $('#template').html();
+  Mustache.parse(template);   // optional, speeds up future uses
+  var rendered = Mustache.render(template, {email: "grant@tf.com"});
+  $('#userEmail').html(rendered);
+}
+
+
+function signedIn(){
+    $("#signedOut").show();
+    $("#signedIn").hide();
+}
+
+function signedOut(){
+    $("#signedOut").hide();
+    $("#signedIn").show();
+}
+
+</script>
+</body>
+</html>
