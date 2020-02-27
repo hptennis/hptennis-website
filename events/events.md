@@ -1,5 +1,4 @@
 ---
-layout: null
 title: Hampden Park Tennis Events
 ---
 # Easter Holiday Junior Tennis Coaching Course
