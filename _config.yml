@@ -4,5 +4,5 @@ plugins:
     enabled: true
     collections: true
 include:
-    - try.md
+    - trymd.md
 
