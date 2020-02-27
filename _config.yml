@@ -1,8 +1,10 @@
 plugins:
-    - jekyll-relative-links
-  relative_links:
-    enabled: true
-    collections: true
+  - jekyll-relative-links
+relative_links:
+  enabled: true
+  collections: true
 include:
-    - trymd.md
+  - CONTRIBUTING.md
+  - LICENSE.md
 
+theme: jekyll-theme-tactile
