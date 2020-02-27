@@ -1,3 +1,7 @@
+---
+layout: null
+title: Hampden Park Tennis Events
+---
 # Easter Holiday Junior Tennis Coaching Course
 
 ## Wednesday 15th April - Friday 17th April inclusive
