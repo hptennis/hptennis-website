@@ -9,7 +9,7 @@ title: Hampden Park Tennis Events
 All ages & standards welcome  
 Cost: Members £30  Non members £36  
 
-**To book call Jenny Hughes, Club Coach on 07831097864**
+**To book call Jenny Hughes, Club Coach on 07831-097864**
 
 ## Summer Holiday Junior Tennis Coaching Courses
 
@@ -18,4 +18,4 @@ Monday 27th July - Wednesday 29th July
 All ages & standards welcome  
 Cost: Members £30  Non members £36  
     
-**To book call Jenny Hughes, Club Coach on 07831097864**
+**To book call Jenny Hughes, Club Coach on 07831-097864**
