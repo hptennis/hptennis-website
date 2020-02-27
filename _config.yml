@@ -7,3 +7,5 @@ include:
   - CONTRIBUTING.md
   - LICENSE.md
 
+plugins:
+  - jekyll-default-layout
