@@ -21,3 +21,5 @@ All ages & standards welcome
 Cost: Members £30  Non members £36  
     
 **To book call Jenny Hughes, Club Coach on 07831-097864**
+
+28/02/2020
