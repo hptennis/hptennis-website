@@ -5,3 +5,4 @@
 .idea/
 /temp/
 **/Thumbs.db
+ .jekyll-cache

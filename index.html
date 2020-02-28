@@ -520,6 +520,26 @@
 
         </section>
 
+        
+        <div class="divider-new">
+            <h2 class="h2-responsive">Future Events</h2>
+        </div>
+
+        <!--Section: future events-->
+        <section id="future-events" >
+                    </div>
+            <div class="future"  >
+                <div id="future-events-content">
+                    <div w3-include-html="events/events.html"></div>
+                </div>
+            </div>
+
+        
+        </section>
+        <!--Section: future events-->
+
+
+
         <div class="divider-new">
             <h2 class="h2-responsive">What's On</h2>
         </div>
@@ -1041,6 +1061,34 @@
 
    <script>
 
+    function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+        /*make an HTTP request using the attribute value as the file name:*/
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /*remove the attribute, and call this function once more:*/
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+            }
+        }      
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /*exit the function:*/
+        return;
+        }
+    }
+    };
+
    function initMap() {
 
      var var_location = new google.maps.LatLng(50.794379, 0.271862);
@@ -1057,6 +1105,7 @@
 
         // google.maps.event.addDomListener(window, 'load', init_map);
  </script>
+
  <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeHsJMLyBkTjqZjVeBfmm0ilzBQPgHO28&callback=initMap">
  </script>
@@ -1064,6 +1113,7 @@
     <!--Animations initialization-->
     <script>
         new WOW().init();
+        includeHTML();
     </script>
 
 </body>
