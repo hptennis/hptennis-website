@@ -1,8 +1,7 @@
-# User-specific stuff:
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/dictionaries
-.idea/
-/temp/
-**/Thumbs.db
- .jekyll-cache
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+images/Thumbs.db
+temp/
