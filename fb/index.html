@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <meta charset="utf-8">
+ <title>Sample CRUD Firebase Javascript - 01 Read Data</title>
+ <!-- <link rel="stylesheet" href="style.css"> -->
+ </head>
+ <body>
+ <h1>Firebase CRUD with Vanilla Javascript<br/><small><em>01 Read Data</em></small></h1>
+ 
+ <ul id="userList"></ul>
+
+<div id="userDetail">
+ <p >Name :<strong class="detailName"></strong></p>
+ <p >Age: <strong class="detailAge"></strong></p>
+ <p >Email: <strong class="detailEmail"></strong></p>
+ </div>
+
+ <h2>Links</h2>
+ <a href="crud.html">crud</a><br>
+ <a href="members-grid.html">members-grid.html</a><br>
+
+ 
+ <!-- firebase sdk link goes here -->
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous">
+</script>
+
+<script src="../js/jquery.datetimepicker.full.js"></script>
+
+
+`
+<script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/select/1.2.7/js/dataTables.select.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/additional-methods.js"></script>
+
+
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-database.js"></script>
+
+  
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script> -->
+
+
+
+ <script type="text/javascript" src="app.js"></script>
+
+ <script>
+
+// The core Firebase JS SDK is always required and must be listed first 
+// TODO: Add SDKs for Firebase products that you want to use
+//      https://firebase.google.com/docs/web/setup#config-web-app 
+
+
+  // Your web app's Firebase configuration
+ 
+ var firebaseConfig = {
+    apiKey: "AIzaSyACL7vD3at2aFbtj985_3wSphYvW-rIG3E",
+    authDomain: "membershipdb.firebaseapp.com",
+    databaseURL: "https://membershipdb.firebaseio.com",
+    projectId: "membershipdb",
+    storageBucket: "membershipdb.appspot.com",
+    messagingSenderId: "831601336894",
+    appId: "1:831601336894:web:6c82a92adaa5fff1"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+
+const database = firebase.database();
+const usersRef = dbRef.child('membership');
+
+
+function loadLicenses() {
+
+console.log("loadLicenses");
+
+    
+    var callbackAdded = function(snap) {
+
+        console.log("callbackAdded");
+
+        var row = snap.val();
+        
+
+        console.log("row from db:", snap.key);
+        console.log("row from db:", row);
+
+        //var dataRow = buildLicenseRow(snap.key, snap.val());
+        // var license = new License(row.notValidBefore,row.notValidAfter ,snap.key,row.customer,row.serial, row.hcf,row.maintDate,row.state, row.version,row.s2s,row.wrm);
+
+        var table = $('#example').DataTable ();
+        table.rows.add([license]).draw();
+
+    };
+
+    var callbackChanged = function(snap) {
+        console.log("callbackChanged");
+    
+        // var dataRow = buildLicenseRow(snap.key, snap.val());
+        // var table = $('#example').DataTable ();
+        // table.draw();
+        location.reload();
+        // table.rows.add([dataRow]).draw();
+
+    };
+
+    var membersRef= firebase.database().ref('/members/');
+
+    membersRef.on('child_added', callbackAdded);
+    membersRef.on('child_changed', callbackChanged);
+
+
+    membersRef.on('child_removed', (data) => {
+        console.log ("on child removed data.key:" +data.key);
+
+
+        //var licensedNode = document.getElementById(data.key);
+     //licensedNode.parentNode.removeChild(licensedNode);
+     });
+}
+
+function writeMemberData(data) {
+    // alert ("send to firebase");
+    // firebase.database().ref('licenses/' + key).set({
+        //str = str.replace(/-/g, ' ');
+    // A post entry.
+    var memberData = {
+        name: "Grant",
+        surname: "TF",
+        address1: "27 Decoy Drive",
+        postcode: "BN22 0AD",
+    };    
+
+    // Get a key for a new Post.
+    var newMemberKey = firebase.database().ref().child('members').push().key;
+
+    var updates = {};
+    updates['/members/' + newMemberKey] = memberData;
+   
+
+    return firebase.database().ref().update(updates);
+
+    // firebase.database().ref('members/' +license.key).set({
+    //    notValidBefore: license.notValidBefore,
+    //    notValidAfter: license.notValidAfter,
+    //    customer: license.customer,
+    //    serial: license.serial,
+    //    state: license.state,
+    //    version: license.version,
+    //    s2s: license.s2s,
+    //    wrm: license.wrm,
+    //    hcf: license.hcf,
+    //    maintDate : license.maintDate,
+    //    borrowed  : license.borrowed
+    //});
+
+};
+
+
+
+ </script>
+ </body>
+
+</html>
