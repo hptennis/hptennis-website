@@ -147,7 +147,7 @@ function addMemberClicked() {
 									$('#id01mtype').val(),
 									$('#id01endDate').val());
 
-	console.log ("wrtie member to db:", JSON.stringify (membership));
+	console.log ("write member to db:", JSON.stringify (membership));
  
 	membersRef.push(membership, function () {
     console.log("data has been inserted");
@@ -155,6 +155,28 @@ function addMemberClicked() {
 
 }
 
+var table;    
+var table2;    
+$(document).ready(function() {
+    table = $('#example').DataTable();
+    table2 = $('#example2').DataTable();
+    var counter = 1;
+ 
+    $('#addRow').on( 'click', function () {
+        table2.row.add( [
+            counter +'.1',
+            counter +'.2',
+            counter +'.3',
+            counter +'.4',
+            counter +'.5'
+        ] ).draw( false );
+ 
+        counter++;
+    } );
+ 
+    // Automatically add a first row of data
+	 $('#addRow').click();
+} );
 
 var callbackAdded = function(snap) {
     
@@ -167,9 +189,15 @@ var callbackAdded = function(snap) {
 
 	//var dataRow = buildLicenseRow(snap.key, snap.val());
 //	var license = new License(row.notValidBefore,row.notValidAfter ,snap.key,row.customer,row.serial, row.hcf,row.maintDate,row.state, row.version,row.s2s,row.wrm);
+    
+	// var table = $('#example').DataTable ();
+	// table.row.add(jRow).draw();
+	// table.rows.add(row).draw();
+	
+	var dataSet = [snap.child("address1").val(), snap.child("email").val(), snap.child("address2").val(), snap.child("firstName").val(), snap.child("lastName").val()];
+    // table.row.add([dataSet]).draw();
 
-	//var table = $('#example').DataTable ();
-	//table.rows.add([license]).draw();
+	//$('#addRow').click();
 
 };
 

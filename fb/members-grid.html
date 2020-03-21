@@ -152,6 +152,29 @@
                 </div>
             </div>
 
+
+            <button id="addRow">Add new row</button>
+            <table id="example2" class="display" style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                        <th>Column 4</th>
+                        <th>Column 5</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                        <th>Column 3</th>
+                        <th>Column 4</th>
+                        <th>Column 5</th>
+                    </tr>
+                </tfoot>
+            </table>
+
         </div>
 
         <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
@@ -165,7 +188,6 @@
             crossorigin="anonymous">
         </script>
 
-        // <script src="../js/lib/jquery.min.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
         <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
@@ -176,7 +198,6 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
      
-        <!-- <script src="../firebase.js"></script>-->
      
         <script src="members.js"></script>
         <script src="membership.js"></script>
@@ -280,7 +301,7 @@
                         'copy', 'csv', 'excel', 'pdf'
                         ],
                         select: true,
-                        data: dataSet2,
+                        // data: dataSet2,
                         "order": [[3, "asc"]],
                         "scrollX": true,
                         columns: [
