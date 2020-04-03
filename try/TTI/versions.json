@@ -1,0 +1,17 @@
+{
+  "versions": [
+    {
+      "id": "Standard",
+      "text": "Standard"
+    },
+    {
+      "id": "Plus",
+      "text": "Plus"
+    },
+     {
+      "id": "Dynamic",
+      "text": "Dynamic"
+    }
+  ]
+  
+}

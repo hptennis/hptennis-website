@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Firebase Licence Mananger</title>
+    <link rel="icon" href="favicon.png">
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/5.7.2/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/5.7.2/firebase-auth.js"></script>
+    <script defer src="/__/firebase/5.7.2/firebase-database.js"></script>
+    <script defer src="/__/firebase/5.7.2/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/5.7.2/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    <script src="temp/moment.js"></script> 
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <style media="screen">
+      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+        body, #message { margin-top: 0; background: white; box-shadow: none; }
+        body { border-top: 16px solid #ffa100; }
+      }
+    </style>
+  </head>
+  <body>
+
+        <header class="w3-container w3-blue">
+                <div class="w3-row">
+                    <div class="w3-col l1">
+                        <a href="/">
+                            <img src="static/tti-logo.png" alt="TTI Logo">                 
+                        </a>
+                    </div> 
+                    <div class="w3-col l6 w3-container">
+                        <h2>TTI Licence Manager (2)</h2>
+                        <p>This contains supplementary license info</p>
+                        <div class="w3-display-topright w3-margin">
+                                <div id="user-container">
+                                        <div class="w3-hide" id=signedIn>
+                                            <i id="user-name" class="fa fa-user fa-lg"></i>  
+                                            <!-- <div  id="user-name"></div></span> -->
+                                            <button id="signOut" class="w3-button">Sign-out</button>
+                                        </div>
+                                        <div id=signedOut class="w3-show">
+                                        <!-- <button hidden id="sign-in" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--white"> -->
+                                            <i class="fa fa-user fa-lg"></i>
+                                            <button id="signIn" class="w3-button">Sign-in with TTI account</button>
+                                        </div>
+    
+                                        </button>
+                                </div>
+    
+    
+                        </div>
+                         <!--<button id="tryBtn" onclick="tryClick()" class="w3-btn w3-red">Try</button> 
+                         <button id="tryBtn2" onclick="isLicenseKey('5A64-683D-8070-3881-0F0C-726')" class="w3-btn w3-red">Try not Valid</button> -->
+                        
+                        
+                    </div>
+                </div>
+            </header>
+
+            <div class="w3-container w3-grey w3-text-brown">
+              <div>
+                 <!--<h2>try</h2>
+                  <label>select</label>
+                  <select id="hcfSelect2" class="w3-select" name="hcfs[]" multiple="multiple"></select>
+                 -->
+              </div>
+              
+
+            </div>
+          
+
+            <div id="licenseGrid" class="w3-hide w3-container">
+        
+                    <div class="w3-container w3-light-grey w3-text-brown">
+                            <h2>Licence Table</h2>
+                            <button onclick="showLicenseModal(false)" class="w3-button w3-blue">+ License</button>
+                            <table class="w3-table w3-striped w3-border w3-centered" id="example" class="display" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th>Start Date</th>
+                                            <th>End Date</th>
+                                            <th>Key</th>
+                                            <th>Customer</th>
+                                            <th>Serial</th>
+                                            <th>hcf</th>
+                                            <th>Maint date</th>
+                                            <th>State</th>
+                                            <th>Version</th>
+                                            <th>S2S</th>
+                                            <th>WRM</th>
+                                        </tr>
+                                    </thead>
+                                    <!--<tfoot>
+                                        <tr>
+                                            <th>Key</th>
+                                            <th>Customer</th>
+                                            <th>Serial</th>
+                                            <th>Version</th>
+                                            <th>Hcf</th>
+                                            <th>Maint date</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </tfoot>-->
+                                </table>
+                        </div>
+                </div>
+            
+                
+                
+            <div id="id01" class="w3-modal">
+            <div class="w3-modal-content">
+            
+                <header class="w3-container w3-blue"> 
+                    <span onclick="document.getElementById('id01').style.display='none'" 
+                    class="w3-button w3-display-topright">&times;</span>
+                    <h2>License Entry</h2>
+                </header>
+            
+                <div class="w3-container">
+                    <form id="registerFrm" name="registerFrm" class="w3-container">
+                        <input id="isUpdate" type="hidden" name="isUpdate" value="false">
+
+                        <div class="w3-row-padding">
+                            <div class="w3-half">
+                                <label class="w3-text-teal"><b>Version</b></label>
+                                <br>
+                                <select id="versionSelect" class="w3-select  w3-border w3-light-grey" name="versionSelect" >
+                                    
+                                </select>
+                            </div>
+                            <div class="w3-half">
+                                    <label class="w3-text-teal"><b>Options</b></label>
+                                    <br>
+                                    <input id="s2s" class="w3-check" type="checkbox" name="s2s">&nbsp;<label>S2S</label>
+                                    <input id="wrm"class="w3-check" type="checkbox" name="wrm">&nbsp;<label>WRM</label>
+                            </div>
+                        </div>
+
+                        <div class="w3-row-padding">
+                                <div class="w3-third">
+                                    <label class="w3-text-blue"><b>Start Date</b></label>
+                                    <br>
+                                    <input class="w3-input w3-border w3-light-grey"   readonly="readonly" id="notValidBefore" name="notValidBefore" type="text">
+                                </div>
+                                <div class="w3-third">
+                                    <label class="w3-text-blue"><b>End Date</b></label>
+                                    <br>
+                                    <input class="w3-input w3-border w3-light-grey"   readonly="readonly" id="notValidAfter" name="notValidAfter" type="text">
+                                </div>
+                                <div class="w3-third">
+                                        <label class="w3-text-blue"><b>State</b></label>
+                                        <br>
+                                        <input class="w3-input w3-border w3-light-grey"   readonly="readonly" id="state" name="state" type="input">
+                                </div>
+                            </div>
+
+                        <div class="w3-row-padding">
+                            <div class="w3-half">
+                                <label class="w3-text-teal"><b>Key</b></label>
+                                <input class="w3-input w3-border w3-light-grey" readonly="readonly" id="key" name="key" type="text">
+                            </div>
+                            <div class="w3-half">
+                                <label class="w3-text-teal"><b>Customer</b></label>
+                                <input class="w3-input w3-border w3-light-grey" id="customer" name="customer" type="text">
+                            </div>
+                        </div>
+                        <div class="w3-row-padding">
+                            <div class="w3-half">
+                                <label class="w3-text-teal"><b>Serial</b></label>
+                                <input class="w3-input w3-border w3-light-grey" name="serial" id="serial" type="text">
+                            </div>
+                            <div class="w3-half">
+                                    <label class="w3-text-teal"><b>Maintenance Date</b></label>
+                                    <input class="w3-input w3-border w3-light-grey" id="maintDate" name="maintDate" type="text">
+                                </div>
+                            </div>
+                        <div class="w3-row-padding">
+                            <div >
+                                <label class="w3-text-teal"><b>HCF</b> Select one or more hcf</label>
+                                <select id="hcfSelect" class="w3-select" name="hcfSelect" multiple="multiple">
+                                       <!-- populated dynamically --> 
+                                 </select>
+                            </div>
+                        </div>
+            
+                        <br>
+                        <div id="createBtnRow" class="w3-show w3-row-padding">
+                            <div class="w3-third">        
+                                <button id="registerBtn" class="w3-btn w3-blue">Register</button>
+                            </div>
+                        </div>
+                        <div id="loan" class="w3-container w3-hide">
+                            <div class="w3-row-padding">
+                                <div class="w3-third">
+                                    <input id="borrowed" class="w3-check" type="checkbox"  name="borrowed">&nbsp;<label>Borrowed</label>
+                                </div>
+                               
+                                    <div class="w3-third">
+                                        <label class="w3-text-teal"><b>Start Loan</b></label>
+                                        <input class="w3-input w3-border w3-light-grey" name="loanNotValidBefore" id="loanNotValidBefore" type="text">
+                                    </div>
+                                    <div class="w3-third">
+                                        <label class="w3-text-teal"><b>End Loan</b></label>
+                                        <input class="w3-input w3-border w3-light-grey" id="loanNotValidAfter" name="loanNotValidAfter" type="text">
+                                    </div>
+                               
+                               
+                            </div>
+                          </div>                          
+                        <div id="updateBtnRow" class="w3-hide w3-row-padding">
+                                      
+                                    <button id="deleteBtn" class="w3-btn w3-red">Delete</button>
+                                    <button id="updateBtn" class="w3-btn w3-blue">Update</button>
+                                    <button id="deactivateBtn" class="w3-btn w3-orange">Deactivate</button>
+                                    <button id="loanBtn" class="w3-btn w3-light-blue">Loan</button>
+                        </div>
+
+                        <br>
+                        
+                    </form>
+                </div>
+
+                <!--<select id="mySelect2" class="w3-select" name="myhcfs" multiple="multiple">-->
+                <!--    <select id="mySelect2" class="w3-select" name="myhcfs">-->
+
+                    <footer class="w3-container w3-blue">
+                        <p>TTI License Manager</p>
+                    </footer>
+                      
+                    </div>
+                </div>
+            
+              
+                <div  id="welcome" class="w3-show w3-container w3-light-grey">
+                    <!-- <p>TTI Limited additional license info</p> -->
+                    <div id="message">
+                            <h2>Welcome TTI Firebase License server</h2>
+                            <h1>Firebase Hosting Setup Complete</h1>
+                            <p>You're seeing this because TTI license server has bee initialised</p>
+                            <p>You ae signed out</p>
+                      
+                      
+                          </div>
+                          <p id="load">Firebase SDK Loading&hellip;</p>
+                </div>
+
+                <script src="temp/firebase.js"></script>
+                <!-- <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script> -->
+        <script>
+            // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAFVIceh-2NVseqr3nzK8ls2j-D0PcEQG4",
+            authDomain: "try-license.firebaseapp.com",
+            databaseURL: "https://try-license.firebaseio.com",
+            projectId: "try-license",
+            storageBucket: "try-license.appspot.com",
+            messagingSenderId: "1096847218931"
+        };
+        firebase.initializeApp(config);
+        </script>
+        
+        <script src="temp/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+        </script>
+
+         <script src="js/jquery.datetimepicker.full.js"></script>
+       
+
+        <script src="temp/jquery.dataTables.min.js"></script>
+        <script src="temp/dataTables.select.min.js"></script>
+        <script src="temp/select2.min.js"></script>
+        <script src="temp/jquery.validate.js"></script>
+        <script src="temp/additional-methods.js"></script>
+
+        <script src="index.js"></script>
+        <script src="license.js"></script>
+
+        <script>
+    
+        // gtf updates
+
+         // initialize Firebase authentication
+        initFirebaseAuth();
+
+        
+
+       
+
+        // loadLicenses();
+
+        loadVersion();
+        loadHcf();
+
+
+	
+
+        
+        
+
+        $('#hcfSelect').select2();
+
+        table = $('#example').DataTable( {
+                "processing": true,
+                select: true,
+                rowId: 'serial',
+                "ajax": "data.txt",
+                "columns": [
+                    { "data": "notValidBefore"  },
+                    { "data": "notValidAfter"  },
+                    { "data": "key" , "width" : "2%" },
+                    { "data": "customer" , "width" : "2%" },
+                    { "data": "serial" , "width" : "2%" },
+                    { "data": "hcf" },
+                    { "data": "maintDate" },
+                    { "data": "state", "width" : "10%"  },
+                    { "data": "version", "width" : "10%"  },
+                    { "data": "s2s", "width" : "10%"  },
+                    { "data": "wrm", "width" : "10%"  },
+                ],
+                "columnDefs": [
+                    
+                {
+                   "render": function ( data, type, row ) {
+                  
+                    //console.log("col[0]:" , data);
+                    // return shortDateWithToolTip(data)
+     
+                    return License.shortDateWithToolTip(data)
+                    },
+                "targets": 0
+                },
+                {
+                "render": function ( data, type, row ) {
+                  
+                    //console.log("col[1]:" , data);
+                    //return shortDateWithToolTip(data);
+                    return License.shortDateWithToolTip(data)
+                 },
+                    "targets": 1
+                },
+                {
+                "render": function ( data, type, row ) {
+                  
+                    //console.log("col[6]:" , data);
+                    // return shortDate(data);
+                    return License.shortDate(data)
+                 },
+                    "targets": 6
+                }
+                
+          
+             ]
+            } );
+
+        table.on('select', function (e, dt, type, indexes) {
+            //alert("clicked")
+            var rowData = table.rows(indexes).data().toArray();
+            console.log("row selected:" + JSON.stringify(rowData));
+           
+            
+
+           
+
+            //document.getElementById('id01').style.display = 'block';
+            showLicenseModal(true,rowData[0] )
+
+            $('#hcfSelect').select2();
+
+
+        });
+
+
+    </script>
+  </body>
+</html>

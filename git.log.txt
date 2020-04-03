@@ -1,0 +1,2072 @@
+commit 118dacb94dfa8adfa560315a6a8f798d8786fe93
+Author: gtfisher <grant@tarrant-fisher.co.uk>
+Date:   Sat Mar 21 11:18:03 2020 +0000
+
+    corona virus notice & Easter events
+
+ Calendar of Events-2020.pdf | Bin 0 -> 105102 bytes
+ index.html                  |  18 +++++++-----------
+ 2 files changed, 7 insertions(+), 11 deletions(-)
+
+commit 50171a371416e51ba21f5ac953aa78d62c5d509e
+Author: gtfisher-tti <grant@tensiontech.com>
+Date:   Mon Mar 2 08:24:07 2020 +0000
+
+    update links for page alignment, tidy up
+
+ .gitignore    | 15 +++++------
+ 404.html      | 25 ++++++++++++++++++
+ Gemfile       | 30 +++++++++++++++++++++
+ Gemfile.lock  | 84 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ _config.yml   | 61 ++++++++++++++++++++++++++++++++++++-------
+ css/style.css |  4 +++
+ index.html    | 75 +++++++++++++++++++++++++++++++++-------------------
+ 7 files changed, 250 insertions(+), 44 deletions(-)
+
+commit 51e4385615c1474916989a12b0392a12f4c8ab04
+Author: gtfisher-tti <grant@tensiontech.com>
+Date:   Fri Feb 28 10:10:20 2020 +0000
+
+    update inclusion policy
+
+ ... Tennis Club Diversity and Inclusion Policy.pdf | Bin 1069229 -> 298013 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ad114331975e8c027dd26cfa20ae28b51677b0ef
+Author: grant-hp <grant.parkview.systems@gmail.com>
+Date:   Fri Feb 28 09:58:15 2020 +0000
+
+    Update events.md
+    
+    add date
+
+ events/events.md | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit 97f1598d818482c0a1c6673bb1da596e6635b7c4
+Author: gtfisher-tti <grant@tensiontech.com>
+Date:   Fri Feb 28 09:45:36 2020 +0000
+
+    tidy up events - null layout
+
+ events/events.md | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+commit f03e0c5d593cd26dc1831e92011ffaa3d3d72677
+Author: gtfisher-tti <grant@tensiontech.com>
+Date:   Fri Feb 28 09:29:53 2020 +0000
+
+    added events section with include
+
+ .gitignore    |  1 +
+ css/style.css |  4 ++++
+ index.html    | 50 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 55 insertions(+)
+
+commit 8e74c67ddc8bc7314c84d761491a91bae9d7941f
+Author: grant-hp <grant.parkview.systems@gmail.com>
+Date:   Thu Feb 27 08:38:13 2020 +0000
+
+    Update events.md
+    
+    phone
+
+ events/events.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit b70dac79b72de87430183cb7b1b2b01e6899d631
+Author: grant-hp <grant.parkview.systems@gmail.com>
+Date:   Thu Feb 27 08:24:38 2020 +0000
+
+    Update events.md
+    
+    removed null for layout
+
+ events/events.md | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 82c6fcb7f0558ad98806cd3986104603e20064f0
+Author: grant-hp <grant.parkview.systems@gmail.com>
+Date:   Thu Feb 27 08:22:56 2020 +0000
+
+    Update events.md
+    
+    added front matter
+
+ events/events.md | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+commit 24fe52768c6dc3ee2cd2d79fb9a294db940e39dd
+Author: grant-hp <grant.parkview.systems@gmail.com>
+Date:   Thu Feb 27 08:20:05 2020 +0000
+
+    Update _config.yml
+    
+    jekyll default layout
+
+ _config.yml | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit 3d18895ebbe2b64a817ff0455369dd184ef0538a
+Author: grant-hp <grant.parkview.systems@gmail.com>
+Date:   Thu Feb 27 08:14:40 2020 +0000
+
+    Update events.md
+    
+    layout
+
+ events/events.md | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+
+commit 3ffd534b3a4d25e0699bc077bdb60ef51a2b3694
+Author: grant-hp <grant.parkview.systems@gmail.com>
+Date:   Thu Feb 27 08:12:04 2020 +0000
+
+    Update events.md
+    
+    tidy up text
+
+ events/events.md | 20 +++++++++++---------
+ 1 file changed, 11 insertions(+), 9 deletions(-)
+
+commit 586a487efabea97a2720f8b133e809fb83b3b106
+Author: grant-hp <grant.parkview.systems@gmail.com>
+Date:   Thu Feb 27 08:05:26 2020 +0000
+
+    Update _config.yml
+    
+    remove theme
+
+ _config.yml | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 5ff25bf8e589e71012e8091d3f372b8fb07af56d
+Author: grant-hp <grant.parkview.systems@gmail.com>
+Date:   Thu Feb 27 08:02:06 2020 +0000
+
+    Create CONTRIBUTING.md
+
+ CONTRIBUTING.md | 72 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 72 insertions(+)
+
+commit bf5644d76498e277818119caf5ea122e0837dc99
+Author: grant-hp <grant.parkview.systems@gmail.com>
+Date:   Thu Feb 27 08:00:42 2020 +0000
+
+    Update _config.yml
+    
+    copied config
+
+ _config.yml | 12 +++++++-----
+ 1 file changed, 7 insertions(+), 5 deletions(-)
+
+commit 8080e1d43e878c6ebf172cee4be11b5b8ed5e88e
+Author: grant-hp <grant.parkview.systems@gmail.com>
+Date:   Thu Feb 27 07:56:47 2020 +0000
+
+    Create trymd.md
+    
+    add sample text
+
+ trymd.md | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+commit ed3c0cebdfbcb72d50fa864903c5fd6193b9218c
+Author: grant-hp <grant.parkview.systems@gmail.com>
+Date:   Thu Feb 27 07:55:06 2020 +0000
+
+    Update _config.yml
+    
+    amend file name
+
+ _config.yml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 716841b8cb30eca0fa35112ce0c25244df5c7c92
+Author: grant-hp <grant.parkview.systems@gmail.com>
+Date:   Thu Feb 27 07:54:07 2020 +0000
+
+    Update _config.yml
+    
+    add temp md file
+
+ _config.yml | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit c89444bfbdbab0ba640cd3ce950bb828f98c5311
+Author: gtfisher-tti <grant@tensiontech.com>
+Date:   Thu Feb 27 07:42:05 2020 +0000
+
+    added events markdown
+
+ _config.yml      |  7 +++++++
+ events/events.md | 16 ++++++++++++++++
+ 2 files changed, 23 insertions(+)
+
+commit 03f0d63909d451f92846b9a5e752e715f823d472
+Author: gtfisher-tti <grant@tensiontech.com>
+Date:   Tue Dec 31 08:52:56 2019 +0000
+
+    add policy section and documents
+
+ index.html                                         |  83 +++++++++++++++++----
+ ... Tennis Club Diversity and Inclusion Policy.pdf | Bin 0 -> 1069229 bytes
+ ...nnis Club diversity and inclusion statement.pdf | Bin 0 -> 81941 bytes
+ ...n Park Tennis Club safeguarding full policy.pdf | Bin 0 -> 296212 bytes
+ ...pden Park Tennis Club safeguarding overview.pdf | Bin 0 -> 114006 bytes
+ ...k Tennis Club safeguarding policy statement.pdf | Bin 0 -> 112160 bytes
+ 6 files changed, 67 insertions(+), 16 deletions(-)
+
+commit b7a445ce96343faa84dabb9ce1b4722e2ba357f7
+Author: gtfisher-tti <grant@tensiontech.com>
+Date:   Sat Jun 8 11:03:28 2019 +0100
+
+    Summer coaching dates
+
+ .../3dhlRUwNrwv2N37AA-0l52bH_to2Ja985jOZo-WtgSU    |  1 -
+ index.html                                         | 23 ++++++++++++----------
+ 2 files changed, 13 insertions(+), 11 deletions(-)
+
+commit 57387d1b5707b460fb784038dff8d04f671173f5
+Author: gtfisher-tti <grant@tensiontech.com>
+Date:   Sat Jun 8 09:19:37 2019 +0100
+
+    ssl stuff
+
+ .well-known                                                          | 1 -
+ .wellknow/acme-challenge/3dhlRUwNrwv2N37AA-0l52bH_to2Ja985jOZo-WtgSU | 1 +
+ 2 files changed, 1 insertion(+), 1 deletion(-)
+
+commit c50784eb210f9314cd133b3b173c3fe9e82703e9
+Author: grant-hp <grant.parkview.systems@gmail.com>
+Date:   Sat Jun 8 08:38:55 2019 +0100
+
+    Create .well-known
+
+ .well-known | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 3ce01b4f4675d8e1fd2e879685aae2781178b9de
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Sun Mar 17 07:26:29 2019 +0000
+
+    more date corrections
+
+ index.html            | 2 +-
+ juniorMembership.html | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 6db99f753cff82ef2b913a7f984578fa32b21293
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Sat Mar 16 10:13:35 2019 +0000
+
+    year and price corrections
+
+ index.html            | 8 ++++----
+ juniorMembership.html | 6 +++---
+ membership.html       | 2 +-
+ membership.html.old   | 2 +-
+ 4 files changed, 9 insertions(+), 9 deletions(-)
+
+commit 0c2f320fc38f3c796b4bbb0bd29c095d77fad36b
+Merge: 96b0ab2 b887628
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Sat Mar 16 10:05:12 2019 +0000
+
+    Merge branch 'master' of https://github.com/hptennis/hptennis-website
+
+commit 96b0ab2a9e4f9253dc769dedf3179a5d1d1fbc2b
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Sat Mar 16 10:03:53 2019 +0000
+
+    displaydefault.js for some reason
+
+ js/displaydefault.js | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+commit b887628461ccf9975fab1b8b5e119f4e234f74ef
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Fri Mar 15 23:46:35 2019 +0000
+
+    amend prices and 2019 news letter
+
+ HPTCJuniorNewsletter2019.pdf | Bin 0 -> 101852 bytes
+ index.html                   |  30 +++++++++++++++---------------
+ juniorMembership.html        |  10 +++++-----
+ membership.html              |   2 +-
+ 4 files changed, 21 insertions(+), 21 deletions(-)
+
+commit c57e20967337e8bae6977fe34ed159181a5f2e53
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Wed Mar 13 17:57:40 2019 +0000
+
+    added easter dates
+
+ index.html | 28 +++++++++++++++-------------
+ 1 file changed, 15 insertions(+), 13 deletions(-)
+
+commit 681b4c5c92a234440fae4222c69397f6433c8d6e
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Sun Mar 10 12:30:53 2019 +0000
+
+    added sign in/out buttons, junior login and tidied up adult login
+
+ jnrfirebase.js         |  16 ++++
+ js/displaydefault.js   |   0
+ js/juniormembership.js | 226 +++++++++++++++++++++++++++++++++++++++++++++++--
+ js/membership.js       | 184 ++++++++++++++++++++++++++++++++++++++--
+ juniorMembership.html  |  68 ++++++++++++++-
+ login.html             |  67 ---------------
+ login.js               | 142 -------------------------------
+ membership.html        |  63 ++++++++++++--
+ try.html               | 100 ++++++++++++++++++++++
+ 9 files changed, 635 insertions(+), 231 deletions(-)
+
+commit 94da3f354771015eebd96d5f50dab00023e8c357
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Fri Mar 8 11:47:12 2019 +0000
+
+    tidy up from https shenanigens
+
+ .../UXSFi0ndve7UjZiF3v7P57Sfd5PkBfDkxj2BqweuNKA    |   1 -
+ .well-know/acme-challenge/index.html               |  16 -
+ .well-know/index.html                              |  16 -
+ _config.yml                                        |   1 -
+ try-auth/membership.html                           | 434 ---------------------
+ try.html                                           |  16 -
+ 6 files changed, 484 deletions(-)
+
+commit a4ffc86bd95a44ec71b901be70078a5e24dd76d9
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Fri Mar 8 08:58:30 2019 +0000
+
+    added config to serve .well-known
+
+ .well-know/index.html    |  16 ++
+ _config.yml              |   1 +
+ try-auth/membership.html | 434 +++++++++++++++++++++++++++++++++++++++++++++++
+ try.html                 |  16 ++
+ 4 files changed, 467 insertions(+)
+
+commit 100343702d51bae881bbf49dddccbcc6428ab530
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Fri Mar 8 08:37:20 2019 +0000
+
+    temp index file
+
+ .well-know/acme-challenge/index.html | 16 ++++++++++++++++
+ 1 file changed, 16 insertions(+)
+
+commit d54fb509e5619a46cd10a1b8b6bcd6daa388542a
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Fri Mar 8 08:28:37 2019 +0000
+
+    ssl verfication file
+
+ .well-know/acme-challenge/UXSFi0ndve7UjZiF3v7P57Sfd5PkBfDkxj2BqweuNKA | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 2ae2aadb58fd5d13c2411453e6f4ec735bc4581f
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Wed Mar 6 14:07:37 2019 +0000
+
+    added login to access membership info and updated fees & removed temp dir
+
+ firebase.js              |  16 ++
+ login.html               |  67 ++++++++
+ login.js                 | 142 ++++++++++++++++
+ main.html                |  26 +++
+ main.js                  |  18 ++
+ membership.html          |  72 +++++---
+ membership.html.old      | 408 ++++++++++++++++++++++++++++++++++++++++++++
+ resetpass.html           |  56 ++++++
+ style.css                |   4 +
+ try-auth/favicon.ico     | Bin 5430 -> 0 bytes
+ try-auth/firebase.js     |  16 --
+ try-auth/index.html      |  23 ---
+ try-auth/login.html      |  67 --------
+ try-auth/login.js        | 142 ----------------
+ try-auth/main.html       |  26 ---
+ try-auth/main.js         |  18 --
+ try-auth/membership.html | 434 -----------------------------------------------
+ try-auth/resetpass.html  |  56 ------
+ try-auth/style.css       |   4 -
+ 19 files changed, 786 insertions(+), 809 deletions(-)
+
+commit 440161507020dbbaf92fb34483e6401697b9cb19
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Tue Mar 5 22:47:06 2019 +0000
+
+    updates for login for Memembership update and price updates (trial area)
+
+ favicon.ico              | Bin 0 -> 5430 bytes
+ js/findMember.js         |   7 +
+ js/membership.js         |  36 +++-
+ try-auth/favicon.ico     | Bin 0 -> 5430 bytes
+ try-auth/index.html      |   5 +-
+ try-auth/login.js        |   3 +-
+ try-auth/main.js         |  12 +-
+ try-auth/membership.html | 434 +++++++++++++++++++++++++++++++++++++++++++++++
+ 8 files changed, 488 insertions(+), 9 deletions(-)
+
+commit 46f4abeff7d71ed459949bd8d29b010150692416
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Tue Mar 5 12:55:04 2019 +0000
+
+    correct signup
+
+ try-auth/login.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 4094e6d9b8ec0828d040d78dd7aac41ab484459c
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Tue Mar 5 09:14:35 2019 +0000
+
+    added firebase authentication on demo pages (try-auth)
+
+ try-auth/index.html     | 20 ++++++++++
+ try-auth/login.html     | 57 ++++++++++++++++++++++-------
+ try-auth/login.js       | 97 ++++++++++++++++++++++++++++++++++++++++++++++++-
+ try-auth/main.html      | 11 +++++-
+ try-auth/resetpass.html | 56 ++++++++++++++++++++++++++++
+ try-auth/style.css      |  4 ++
+ 6 files changed, 228 insertions(+), 17 deletions(-)
+
+commit 6637f3736450f30709af1e61037c05c1a52c03bc
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Mon Mar 4 19:48:26 2019 +0000
+
+    removed membership grid, added try-auth
+    e Please enter the commit message for your changes. Lines starting
+
+ try-auth/firebase.js                |  16 +
+ try-auth/login.html                 |  38 +++
+ try-auth/login.js                   |  46 +++
+ try-auth/main.html                  |  19 ++
+ try-auth/main.js                    |  18 ++
+ try/css/membership.css              |   9 -
+ try/grid.html                       | 135 --------
+ try/js/findMember.js                |  62 ----
+ try/js/lib/jquery-3.2.1.slim.min.js |   4 -
+ try/js/lib/jquery.min.js            |   4 -
+ try/js/membership.js                | 258 ---------------
+ try/js/tabletop.js                  | 614 ------------------------------------
+ try/js/validator2.js                |  41 ---
+ try/members-grid.html               | 508 -----------------------------
+ try/resp.html                       |   1 -
+ try/simple.html                     | 231 --------------
+ try/temp.html                       | 113 -------
+ try/template.html                   | 130 --------
+ try/testEmail.html                  |  69 ----
+ try/val.html                        | 242 --------------
+ 20 files changed, 137 insertions(+), 2421 deletions(-)
+
+commit 8989dd6e8c947220b3888e30850e3f064f2c9462
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Fri Nov 2 19:10:25 2018 +0000
+
+    Updated index.html to remove notices and added some js for datagrid
+
+ index.html                   |  37 ++-
+ js/buttons.flash.min.js      |  32 +++
+ js/buttons.html5.min.js      |  28 +++
+ js/buttons.print.min.js      |   4 +
+ js/dataTables.buttons.min.js |  39 ++++
+ js/pdfmake.min.js            |  32 +++
+ js/vfs_fonts.js              |   7 +
+ try/members-grid.html        | 544 +++++++++++++++++++++++++++++++++++--------
+ 8 files changed, 610 insertions(+), 113 deletions(-)
+
+commit 5f5b108634cc2e32e5539c8296c126775f348413
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Mon Jun 18 11:39:24 2018 +0100
+
+    removed date for junior tournament, add test page for emails
+
+ index.html            |   2 +-
+ try/members-grid.html | 152 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ try/members.html      | 152 --------------------------------------------------
+ try/testEmail.html    |  69 +++++++++++++++++++++++
+ 4 files changed, 222 insertions(+), 153 deletions(-)
+
+commit 53b3a73007380da747b0fbd25743f61f9776848c
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Mon May 14 04:32:49 2018 +0100
+
+    typo
+
+ index.html | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit c56235ded1444fff9c1f505e7c017e67f53c9b55
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Mon May 14 04:26:03 2018 +0100
+
+    fixed link
+
+ index.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit e8e057a6913f501b81bd24362066beedc1cb9fcc
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Sun May 13 21:11:46 2018 +0100
+
+    added tennis for kids
+
+ index.html | 38 ++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 38 insertions(+)
+
+commit 3639a8263bec47b61cbea6d9094a7be50becb447
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Sat May 12 07:36:54 2018 +0100
+
+    corrected times
+
+ index.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 74ac2f6122bb86eeb8c4a41af8fa39ff58ac73d3
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Fri May 11 22:11:38 2018 +0100
+
+    removed target tag from links
+
+ index.html | 23 ++++++++++++-----------
+ 1 file changed, 12 insertions(+), 11 deletions(-)
+
+commit 1d11c7be37256483a4471aca83d9bc4ad5535002
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Fri May 11 22:00:05 2018 +0100
+
+    added junior summer dates
+
+ index.html | 100 +++++++++++++++++++++++++++++++++----------------------------
+ 1 file changed, 54 insertions(+), 46 deletions(-)
+
+commit 46b5794dc311b77883d17f33246040fcaba830df
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Mon May 7 09:06:23 2018 +0100
+
+    Added members page (try)
+
+ try/grid.html        | 135 +++++++++++++++++++++++++++++++++
+ try/js/membership.js |   5 ++
+ try/members.html     | 208 +++++++++++++++++++++++++++++++++++----------------
+ try/temp.html        | 111 +++++++++++++++++++--------
+ 4 files changed, 360 insertions(+), 99 deletions(-)
+
+commit 19a9bbf03e0c0c9bfa03b8caf3b880a2f550435a
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Mon Mar 26 12:14:02 2018 +0100
+
+    formatting
+
+ HPTCJuniorNewsletter2018.pdf | Bin 239739 -> 239984 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit d0e5e52e25691fedccbee57d0b8d1ceab7f3e1b2
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Sun Mar 25 19:01:18 2018 +0100
+
+    update validation first name 2 chars
+
+ js/validation.js | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 7cd96b274e252478ec6f9f3ccfe6b1a4d8733ebc
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Sun Mar 25 18:51:00 2018 +0100
+
+    update validation
+
+ js/validation.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit b9a711b7c41e04d56d0dbfa39bffe4a6677d4fd0
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Sun Mar 25 18:47:58 2018 +0100
+
+    update validation
+
+ js/jnrValidation.js | 4 ++--
+ js/validation.js    | 2 +-
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 44ebfa988412de171e7def8e1db97beb607d21ed
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Sun Mar 25 17:26:05 2018 +0100
+
+    updated newsletter
+
+ .gitignore                   |   3 +--
+ HPTCJuniorNewsletter2018.pdf | Bin 239168 -> 239739 bytes
+ 2 files changed, 1 insertion(+), 2 deletions(-)
+
+commit 0f9ad97853d6909aa45ea2fb7d95ab08076635b2
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Fri Mar 23 10:20:28 2018 +0000
+
+    updated modal to include bank details
+
+ membership.html | 14 ++++++++++----
+ 1 file changed, 10 insertions(+), 4 deletions(-)
+
+commit 8155d91adb9d2e9e4ea819eb5cc6cf9a2a023ddb
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Thu Mar 22 09:14:00 2018 +0000
+
+    junior membership live
+
+ index.html                 |   6 +-
+ js/jnrValidation.js        | 197 ++++++++++++++++++++
+ js/juniormembership.js     | 263 ++++++++++++++++++++++++++
+ juniorMembership.html      | 456 +++++++++++++++++++++++++++++++++++++++++++++
+ try/js/jnrValidation.js    | 197 --------------------
+ try/js/juniormembership.js | 260 --------------------------
+ try/juniorMembership.html  | 456 ---------------------------------------------
+ 7 files changed, 919 insertions(+), 916 deletions(-)
+
+commit a99e37c852ce2e80eec009f506432ca6ee92e0e4
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Mon Mar 19 23:53:15 2018 +0000
+
+    hide serial field
+
+ try/juniorMembership.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit bc3171c67a092a6634dd8ad2fa6491584eae914a
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Mon Mar 19 23:50:05 2018 +0000
+
+    updated link to validation
+
+ try/juniorMembership.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit caef478ef9111164a1fa6cc4c54253ae9d09681b
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Mon Mar 19 23:49:24 2018 +0000
+
+    updated link  to validation
+
+ try/juniorMembership.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit fe9791afd0253b2f15c8c46712db63f4aeca7254
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Mon Mar 19 23:45:23 2018 +0000
+
+    Updates to model
+
+ try/js/juniormembership.js |  2 +-
+ try/juniorMembership.html  | 48 +++++++++++++++++++++++++++-------------------
+ 2 files changed, 29 insertions(+), 21 deletions(-)
+
+commit ff4be254e1b5574a7bf79a4942fc17332a4f620d
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Mon Mar 19 22:55:44 2018 +0000
+
+    initial version juniors sign-up
+
+ try/js/jnrValidation.js    | 197 +++++++++++++++++
+ try/js/juniormembership.js | 176 +++++++++++++--
+ try/js/validation.js       | 160 --------------
+ try/juniorMembership.html  | 529 ++++++++++++++++++++++-----------------------
+ try/template.html          | 130 +++++++++++
+ 5 files changed, 747 insertions(+), 445 deletions(-)
+
+commit b913fb72cefe47a8e389cb7e55626c1ab6ea123b
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Fri Mar 16 17:34:55 2018 +0000
+
+    initial draft junior membership
+
+ try/js/juniormembership.js | 124 ++++++++++++++
+ try/juniorMembership.html  | 402 ++++++++++++++++++++++++++++++++-------------
+ 2 files changed, 414 insertions(+), 112 deletions(-)
+
+commit 16e9a0d3c685ddb365cc45d409888876cd0b9253
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Fri Mar 16 09:14:34 2018 +0000
+
+    formatting updates to news letter
+
+ HPTCJuniorNewsletter2018.pdf | Bin 239145 -> 239168 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 0f47c4b998f5ca709533e1baaa960436200e963c
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Thu Mar 15 09:07:24 2018 +0000
+
+    updated junior newsletter, added junior membership page in try dir
+
+ HPTC-NEWSLETTER2017.pdf      | Bin 243368 -> 0 bytes
+ HPTCJuniorNewsletter2018.pdf | Bin 0 -> 239145 bytes
+ index.html                   |   6 +-
+ try/juniorMembership.html    | 271 +++++++++++++++++++++++++++++++++++++++++++
+ 4 files changed, 274 insertions(+), 3 deletions(-)
+
+commit 0edf8ac4eeb664469d1b33766bff96f05eb954c6
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Wed Mar 14 17:40:15 2018 +0000
+
+    changed block attributes
+
+ membership.html      | 2 +-
+ payment-details.html | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit cfb179c61c5b20fc9da2952aeca3bfdf85bdcd6a
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Wed Mar 14 17:38:02 2018 +0000
+
+    amended payment details
+
+ membership.html      |  45 +++---
+ payment-details.html |   2 +-
+ try/membership.html  | 397 ---------------------------------------------------
+ 3 files changed, 26 insertions(+), 418 deletions(-)
+
+commit e782f1c774430cc5f947c90350be2f53eaad7602
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Wed Mar 14 17:26:51 2018 +0000
+
+    added payment details page
+
+ payment-details.html     | 85 ++++++++++++++++++++++++++++++++++++++++++++++++
+ try/payment-details.html | 85 ------------------------------------------------
+ 2 files changed, 85 insertions(+), 85 deletions(-)
+
+commit 40c94551bc868795b894f37b2ef7665cdeb4e36e
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Wed Mar 14 17:22:03 2018 +0000
+
+    payment details page
+
+ try/payment-details.html | 85 ++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 85 insertions(+)
+
+commit c7ad257a9340433756806fadfab2e75ce0a5af21
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Wed Mar 14 15:10:02 2018 +0000
+
+    Updated links to new membership page
+
+ index.html | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+commit 35876d483ccc9f459773fb7ec9a9a779fec26fda
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Wed Mar 14 14:44:22 2018 +0000
+
+    remove temp file
+
+ try/temp2.html | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 4ccc2c12638b62ff0d8e12681a44b854b6130112
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Wed Mar 14 14:43:27 2018 +0000
+
+    put membership page live with speadsheet backing
+
+ css/membership.css              |   9 +
+ js/findMember.js                |  62 ++++
+ js/lib/jquery-3.2.1.slim.min.js |   4 +
+ js/lib/jquery.min.js            |   4 +
+ js/membership.js                | 253 ++++++++++++++++
+ js/tabletop.js                  | 614 +++++++++++++++++++++++++++++++++++++++
+ js/validation.js                | 160 ++++++++++
+ membership.html                 | 397 +++++++++++++++++++++++++
+ try/css/membership.css          |   8 +-
+ try/js/findMember.js            |  62 ++++
+ try/js/membership.js            | 237 ++++++++-------
+ try/js/validation.js            | 160 ++++++++++
+ try/js/validator2.js            |  41 +++
+ try/members.html                |  76 +++++
+ try/membership.html             | 625 ++++++++++++++++++++--------------------
+ try/resp.html                   |   1 +
+ try/temp.html                   |  68 +++++
+ try/temp2.html                  |   0
+ try/val.html                    | 242 ++++++++++++++++
+ 19 files changed, 2607 insertions(+), 416 deletions(-)
+
+commit da8a36d6b4d3f97d3c71236de70462c3fab74058
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Mon Mar 12 17:14:35 2018 +0000
+
+    added phone column to table
+
+ try/js/membership.js | 1 +
+ try/membership.html  | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+commit 5a8f58901eacdca53b4deecbce2d4bd4804ba673
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Mon Mar 12 17:00:51 2018 +0000
+
+    dded date filed and centered footer
+
+ try/membership.html | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 48a46ffaf302f08e4acbebfb9f37a9725f837c2f
+Author: grant-hp <grant.parkview.systems@gmail.com>
+Date:   Mon Mar 12 16:45:02 2018 +0000
+
+    updated table formatting
+
+ try/membership.html | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit 63fccbf0d56f79776ca6bf503d8051e49e395e00
+Author: grant-hp <grant.parkview.systems@gmail.com>
+Date:   Mon Mar 12 16:37:32 2018 +0000
+
+    added phone to table
+
+ try/js/membership.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 21626b21151938c16261fe3bbce2d097afde0dd6
+Author: grant-hp <grant.parkview.systems@gmail.com>
+Date:   Mon Mar 12 16:35:55 2018 +0000
+
+    Added phone to table
+
+ try/membership.html | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 93105dff56a2ce826f1d01f2efaaccbfd40206b6
+Author: grant-hp <grant.parkview.systems@gmail.com>
+Date:   Mon Mar 12 12:49:46 2018 +0000
+
+    update membership
+    
+    put in link to w3css
+
+ try/membership.html | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+commit 832f397dd8417032b1161d853b396386a6af2ce0
+Merge: f90a60a 6d5c891
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Mon Mar 12 12:44:13 2018 +0000
+
+    Merge branch 'master' of https://github.com/hptennis/hptennis-website
+
+commit f90a60aeff3ddc8420bc7baa5d6a6f0f16da5061
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Mon Mar 12 12:42:45 2018 +0000
+
+    added trial membership page
+
+ try/css/membership.css |   3 +
+ try/js/membership.js   | 227 +++++++++++++++++++++++++++++
+ try/membership.html    | 386 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 616 insertions(+)
+
+commit 6d5c891bf94eab1ae0647d6e81d4bb2822af7825
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Mon Mar 12 07:26:15 2018 +0000
+
+    updated url & added list view
+
+ try/simple.html | 50 +++++++++++++++++++++++++++++++-------------------
+ 1 file changed, 31 insertions(+), 19 deletions(-)
+
+commit c3bfb15dcdf429e879b39f77fd538416c353b2a8
+Merge: db96c81 d85224a
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Fri Mar 9 18:57:08 2018 +0000
+
+    Merge branch 'master' of https://github.com/hptennis/hptennis-website
+
+commit db96c810adafee4e13b81823c7fee32bd4e49e52
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Fri Mar 9 18:55:31 2018 +0000
+
+    simple try of forms
+
+ try/js/lib/jquery-3.2.1.slim.min.js |   4 +
+ try/js/lib/jquery.min.js            |   4 +
+ try/js/tabletop.js                  | 614 ++++++++++++++++++++++++++++++++++++
+ try/simple.html                     | 219 +++++++++++++
+ 4 files changed, 841 insertions(+)
+
+commit d85224a64f027e4f9692b2f7a024196d32661b53
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Thu Feb 1 22:16:25 2018 +0000
+
+    added east notice
+
+ index.html | 77 ++++++++++++++++++++++++++++++--------------------------------
+ 1 file changed, 37 insertions(+), 40 deletions(-)
+
+commit e559585472a85b3dbb081758fd5c990cf6124ba7
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Tue Jan 9 17:34:36 2018 +0000
+
+    removed summer events
+
+ index.html | 20 +++++++-------------
+ 1 file changed, 7 insertions(+), 13 deletions(-)
+
+commit 217dbf58cb09796253267014f677faf2d090f263
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Thu Nov 16 10:06:43 2017 +0000
+
+    remove summer events
+
+ index.html | 14 +++++++-------
+ 1 file changed, 7 insertions(+), 7 deletions(-)
+
+commit 30f36e2581ad03c305f9432f702b9472d2e27f27
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Thu Nov 16 09:51:17 2017 +0000
+
+    revert last commit
+
+ index.html | 101 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++-----
+ 1 file changed, 94 insertions(+), 7 deletions(-)
+
+commit ffaa06af98df55e38f0c29d6cd081edaa6fdfd5a
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Thu Nov 16 08:47:53 2017 +0000
+
+    remove summer events
+
+ index.html | 101 +++++--------------------------------------------------------
+ 1 file changed, 7 insertions(+), 94 deletions(-)
+
+commit a1f5c36638523c12e04f40c7125619edfdcba7c1
+Author: gtfisher27 <grant@tarrant-fisher.co.uk>
+Date:   Thu Nov 16 08:35:43 2017 +0000
+
+    D:\grant-data\Documents\TennisClub\Website\hptennis-website
+    update ignore
+
+ .gitignore | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit a4e2e353bbb115b196bb869474f3ea32a72bd70c
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Mon Jul 3 20:06:43 2017 +0100
+
+    summer events updates
+
+ index.html | 6 ++++--
+ 1 file changed, 4 insertions(+), 2 deletions(-)
+
+commit f3ae1734e248509d797bb0fcfefde341b957989a
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Mon Jul 3 09:08:49 2017 +0100
+
+    summer events changes
+
+ OpenDayFlyer.pdf | Bin 0 -> 513614 bytes
+ index.html       |  47 +++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 47 insertions(+)
+
+commit 40ad2741404e501476207de496204c0f35b300f1
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Tue May 30 07:24:22 2017 +0100
+
+    removed overlay mask on image in junior section
+
+ index.html | 17 +++++++++++------
+ 1 file changed, 11 insertions(+), 6 deletions(-)
+
+commit a3576cf03d60f228d0d64824a5b019fd693c3449
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Tue May 30 07:15:27 2017 +0100
+
+    New images for junior section
+
+ images/315-236-fun-young-group-2017.jpg | Bin 0 -> 43919 bytes
+ images/315-236-young-group-2017.jpg     | Bin 0 -> 43959 bytes
+ images/fun-young-group-2017.jpg         | Bin 0 -> 83068 bytes
+ index.html                              |   7 ++++---
+ 4 files changed, 4 insertions(+), 3 deletions(-)
+
+commit 4c2c4ea6e5fa6c86f6e790ff89c719c5d41e09a3
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Mon May 29 19:29:35 2017 +0100
+
+    Minor updates
+
+ images/young-group-2017.jpg | Bin 0 -> 74509 bytes
+ index.html                  |  36 +++++++++++++++++-------------------
+ 2 files changed, 17 insertions(+), 19 deletions(-)
+
+commit 60365606997541cc0ffb93e2034ae7a77c117476
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Mon May 15 10:02:29 2017 +0100
+
+    Amend summer coaching notice
+
+ index.html | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+
+commit b8816c50d2250cdd1c7711e0769f1ffdc13f9d4f
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Mon May 15 09:50:08 2017 +0100
+
+    Amend summer coaching notice
+
+ index.html | 11 ++++++-----
+ 1 file changed, 6 insertions(+), 5 deletions(-)
+
+commit 10b28eb86b7f365189b5c2d63859e37cdd3b71be
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Mon May 15 09:33:42 2017 +0100
+
+    Amend summer coaching notice
+
+ index.html | 9 ++++-----
+ 1 file changed, 4 insertions(+), 5 deletions(-)
+
+commit bf5f5b4d37041afa4d73c550bf28eaf92ede5279
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Mon May 15 09:29:36 2017 +0100
+
+    Amend summer coaching notice
+
+ index.html | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+
+commit 713b974f46e975545a99fed01d53a8b92fa6da68
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Sun May 14 09:39:18 2017 +0100
+
+    Added summer coaching dates and free tennis
+
+ index.html | 109 +++++++++++++++++++++++++++++++++++++++++++------------------
+ 1 file changed, 78 insertions(+), 31 deletions(-)
+
+commit 31eb5fc4d1760cf083cc122043ad21ae2ae555f1
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Sun Apr 9 07:33:25 2017 +0100
+
+    Easter dates removed
+
+ index.html | 16 +---------------
+ 1 file changed, 1 insertion(+), 15 deletions(-)
+
+commit 6b6049529e560b911e0acf5031287fb7a270eb1b
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Mon Apr 3 07:55:00 2017 +0100
+
+    Update phone number and coach title
+
+ index.html | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit b8de4be833e5db8c0ea51c899b4af8318e520adb
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Sun Apr 2 08:40:55 2017 +0100
+
+    New site live move old site to old sub dir
+
+ 16th may.htm                                       |   178 -
+ HPTC-NEWSLETTER2017.pdf                            |   Bin 0 -> 243368 bytes
+ MDB License.pdf                                    |   Bin 0 -> 669842 bytes
+ README.txt                                         |    25 +
+ about teams1.htm                                   |   134 -
+ club calender.htm                                  |   123 -
+ club coach.htm                                     |   154 -
+ coaching.htm                                       |   131 -
+ contact us.htm                                     |   185 -
+ css/bootstrap.css                                  |  9320 +++++++++++++++++
+ css/bootstrap.min.css                              |     6 +
+ css/font-awesome/font-awesome.css                  |  2337 +++++
+ css/fonts/FontAwesome.otf                          |   Bin 0 -> 134808 bytes
+ css/fonts/fontawesome-webfont.eot                  |   Bin 0 -> 165742 bytes
+ css/fonts/fontawesome-webfont.svg                  |  2671 +++++
+ css/fonts/fontawesome-webfont.ttf                  |   Bin 0 -> 165548 bytes
+ css/fonts/fontawesome-webfont.woff                 |   Bin 0 -> 98024 bytes
+ css/fonts/fontawesome-webfont.woff2                |   Bin 0 -> 77160 bytes
+ css/free/_hover-effects.css                        |   276 +
+ css/mdb.css                                        |  6740 ++++++++++++
+ css/mdb.min.css                                    |    39 +
+ css/round-about.css                                |    17 +
+ css/style.css                                      |    64 +
+ fixtures and reports.htm                           |   149 -
+ font/roboto/Roboto-Bold.eot                        |   Bin 0 -> 20966 bytes
+ font/roboto/Roboto-Bold.ttf                        |   Bin 0 -> 127744 bytes
+ font/roboto/Roboto-Bold.woff                       |   Bin 0 -> 62876 bytes
+ font/roboto/Roboto-Bold.woff2                      |   Bin 0 -> 49976 bytes
+ font/roboto/Roboto-Light.eot                       |   Bin 0 -> 20940 bytes
+ font/roboto/Roboto-Light.ttf                       |   Bin 0 -> 126792 bytes
+ font/roboto/Roboto-Light.woff                      |   Bin 0 -> 62316 bytes
+ font/roboto/Roboto-Light.woff2                     |   Bin 0 -> 49380 bytes
+ font/roboto/Roboto-Medium.eot                      |   Bin 0 -> 21364 bytes
+ font/roboto/Roboto-Medium.ttf                      |   Bin 0 -> 127488 bytes
+ font/roboto/Roboto-Medium.woff                     |   Bin 0 -> 62980 bytes
+ font/roboto/Roboto-Medium.woff2                    |   Bin 0 -> 50224 bytes
+ font/roboto/Roboto-Regular.eot                     |   Bin 0 -> 21320 bytes
+ font/roboto/Roboto-Regular.ttf                     |   Bin 0 -> 126072 bytes
+ font/roboto/Roboto-Regular.woff                    |   Bin 0 -> 61736 bytes
+ font/roboto/Roboto-Regular.woff2                   |   Bin 0 -> 49236 bytes
+ font/roboto/Roboto-Thin.eot                        |   Bin 0 -> 21659 bytes
+ font/roboto/Roboto-Thin.ttf                        |   Bin 0 -> 127584 bytes
+ font/roboto/Roboto-Thin.woff                       |   Bin 0 -> 61628 bytes
+ font/roboto/Roboto-Thin.woff2                      |   Bin 0 -> 48524 bytes
+ images/HP-Logo.gif                                 |   Bin 0 -> 5819 bytes
+ images/HP-Logo.xcf                                 |   Bin 0 -> 37216 bytes
+ images/HP-Logo1.png                                |   Bin 0 -> 15045 bytes
+ images/HP_tennis_club_logo.gif                     |   Bin 0 -> 5560 bytes
+ images/Tennis-net.jpg                              |   Bin 0 -> 41552 bytes
+ images/court-3.jpg                                 |   Bin 0 -> 31807 bytes
+ images/court-with-children.jpg                     |   Bin 0 -> 54706 bytes
+ images/court-with-children.xcf                     |   Bin 0 -> 696576 bytes
+ images/court.jpg                                   |   Bin 0 -> 3521378 bytes
+ images/court1to3.JPG                               |   Bin 0 -> 165027 bytes
+ images/court1to3P1.JPG                             |   Bin 0 -> 111527 bytes
+ images/court4to5.jpg                               |   Bin 0 -> 29066 bytes
+ images/jennyHughes.jpg                             |   Bin 0 -> 13200 bytes
+ images/junior1.jpg                                 |   Bin 0 -> 14975 bytes
+ img/lightbox/default-skin.png                      |   Bin 0 -> 547 bytes
+ img/lightbox/default-skin.svg                      |     1 +
+ img/lightbox/preloader.gif                         |   Bin 0 -> 866 bytes
+ img/overlays/01.png                                |   Bin 0 -> 211 bytes
+ img/overlays/02.png                                |   Bin 0 -> 213 bytes
+ img/overlays/03.png                                |   Bin 0 -> 209 bytes
+ img/overlays/04.png                                |   Bin 0 -> 211 bytes
+ img/overlays/05.png                                |   Bin 0 -> 213 bytes
+ img/overlays/06.png                                |   Bin 0 -> 211 bytes
+ img/overlays/07.png                                |   Bin 0 -> 215 bytes
+ img/overlays/08.png                                |   Bin 0 -> 146 bytes
+ img/overlays/09.png                                |   Bin 0 -> 137 bytes
+ img/svg/arrow_left.svg                             |     4 +
+ img/svg/arrow_right.svg                            |     4 +
+ index.htm                                          |   213 -
+ index.html                                         |   888 ++
+ index_htm_files/0.gif                              |   Bin 43 -> 0 bytes
+ index_htm_files/0_1000000.gif                      |   Bin 54 -> 0 bytes
+ index_htm_files/0_25B772E.gif                      |   Bin 54 -> 0 bytes
+ index_htm_files/0_3000000.gif                      |   Bin 44 -> 0 bytes
+ index_htm_files/1662.png                           |   Bin 604 -> 0 bytes
+ index_htm_files/1663.png                           |   Bin 98 -> 0 bytes
+ index_htm_files/1672.png                           |   Bin 646 -> 0 bytes
+ index_htm_files/1693.png                           |   Bin 585 -> 0 bytes
+ index_htm_files/1700.png                           |   Bin 10038 -> 0 bytes
+ index_htm_files/1858.png                           |   Bin 3346 -> 0 bytes
+ index_htm_files/1860.png                           |   Bin 1878 -> 0 bytes
+ index_htm_files/1861.png                           |   Bin 3572 -> 0 bytes
+ index_htm_files/2698.png                           |   Bin 16334 -> 0 bytes
+ index_htm_files/2905.png                           |   Bin 1802 -> 0 bytes
+ index_htm_files/2906.png                           |   Bin 1864 -> 0 bytes
+ index_htm_files/2907.png                           |   Bin 1878 -> 0 bytes
+ index_htm_files/2908.png                           |   Bin 1856 -> 0 bytes
+ index_htm_files/2909.png                           |   Bin 3168 -> 0 bytes
+ index_htm_files/2910.png                           |   Bin 3405 -> 0 bytes
+ index_htm_files/2912.png                           |   Bin 3272 -> 0 bytes
+ index_htm_files/2917.png                           |   Bin 10642 -> 0 bytes
+ index_htm_files/2978.png                           |   Bin 9840 -> 0 bytes
+ index_htm_files/3114.jpg                           |   Bin 29066 -> 0 bytes
+ index_htm_files/3167.jpg                           |   Bin 14892 -> 0 bytes
+ index_htm_files/3193.jpg                           |   Bin 23906 -> 0 bytes
+ index_htm_files/3195.jpg                           |   Bin 9584 -> 0 bytes
+ index_htm_files/3342.jpg                           |   Bin 34978 -> 0 bytes
+ index_htm_files/3350.jpg                           |   Bin 31807 -> 0 bytes
+ index_htm_files/3395.jpg                           |   Bin 57443 -> 0 bytes
+ index_htm_files/3402.jpg                           |   Bin 703 -> 0 bytes
+ index_htm_files/3415.jpg                           |   Bin 9911 -> 0 bytes
+ index_htm_files/3416.jpg                           |   Bin 1011 -> 0 bytes
+ index_htm_files/3417.jpg                           |   Bin 4535 -> 0 bytes
+ index_htm_files/3518.jpg                           |   Bin 1092 -> 0 bytes
+ index_htm_files/3533.png                           |   Bin 2364 -> 0 bytes
+ index_htm_files/3535.png                           |   Bin 1377 -> 0 bytes
+ index_htm_files/3546.png                           |   Bin 4299 -> 0 bytes
+ index_htm_files/3552.png                           |   Bin 1164 -> 0 bytes
+ index_htm_files/3685.png                           |   Bin 1980 -> 0 bytes
+ index_htm_files/3711.png                           |   Bin 3560 -> 0 bytes
+ index_htm_files/3724.png                           |   Bin 3765 -> 0 bytes
+ index_htm_files/3826.png                           |   Bin 2960 -> 0 bytes
+ index_htm_files/3827.png                           |   Bin 2907 -> 0 bytes
+ index_htm_files/3829.png                           |   Bin 4485 -> 0 bytes
+ index_htm_files/3933.png                           |   Bin 9816 -> 0 bytes
+ index_htm_files/3952.png                           |   Bin 2894 -> 0 bytes
+ index_htm_files/3983.png                           |   Bin 16169 -> 0 bytes
+ index_htm_files/4028.png                           |   Bin 4618 -> 0 bytes
+ index_htm_files/4032.png                           |   Bin 606 -> 0 bytes
+ index_htm_files/4083.jpg                           |   Bin 21267 -> 0 bytes
+ index_htm_files/4084.jpg                           |   Bin 20203 -> 0 bytes
+ index_htm_files/4085.jpg                           |   Bin 22813 -> 0 bytes
+ index_htm_files/4086.jpg                           |   Bin 19677 -> 0 bytes
+ index_htm_files/4116.png                           |   Bin 11016 -> 0 bytes
+ index_htm_files/4117.png                           |   Bin 10054 -> 0 bytes
+ index_htm_files/4122.png                           |   Bin 900 -> 0 bytes
+ index_htm_files/4140.png                           |   Bin 2755 -> 0 bytes
+ index_htm_files/4150.png                           |   Bin 3975 -> 0 bytes
+ index_htm_files/4155.jpg                           |   Bin 36399 -> 0 bytes
+ index_htm_files/4158.jpg                           |   Bin 36595 -> 0 bytes
+ index_htm_files/4184.jpg                           |   Bin 36624 -> 0 bytes
+ index_htm_files/4195.jpg                           |   Bin 26158 -> 0 bytes
+ index_htm_files/4197.png                           |   Bin 5909 -> 0 bytes
+ index_htm_files/4211.png                           |   Bin 1484 -> 0 bytes
+ index_htm_files/4212.png                           |   Bin 2071 -> 0 bytes
+ index_htm_files/4213.png                           |   Bin 1638 -> 0 bytes
+ index_htm_files/4214.png                           |   Bin 2001 -> 0 bytes
+ index_htm_files/4215.png                           |   Bin 1526 -> 0 bytes
+ index_htm_files/4216.png                           |   Bin 2011 -> 0 bytes
+ index_htm_files/4223.png                           |   Bin 2234 -> 0 bytes
+ index_htm_files/4224.png                           |   Bin 2855 -> 0 bytes
+ index_htm_files/4225.png                           |   Bin 2372 -> 0 bytes
+ index_htm_files/4227.png                           |   Bin 2272 -> 0 bytes
+ index_htm_files/4232.png                           |   Bin 4752 -> 0 bytes
+ index_htm_files/4234.jpg                           |   Bin 23943 -> 0 bytes
+ index_htm_files/4235.jpg                           |   Bin 22918 -> 0 bytes
+ index_htm_files/4236.jpg                           |   Bin 22645 -> 0 bytes
+ index_htm_files/4237.png                           |   Bin 1868 -> 0 bytes
+ index_htm_files/4238.png                           |   Bin 1826 -> 0 bytes
+ index_htm_files/4240.png                           |   Bin 528 -> 0 bytes
+ index_htm_files/4241.png                           |   Bin 2763 -> 0 bytes
+ index_htm_files/4242.png                           |   Bin 1904 -> 0 bytes
+ index_htm_files/4247.png                           |   Bin 43610 -> 0 bytes
+ index_htm_files/4253.png                           |   Bin 816 -> 0 bytes
+ index_htm_files/4279.png                           |   Bin 2773 -> 0 bytes
+ index_htm_files/4281.png                           |   Bin 2866 -> 0 bytes
+ index_htm_files/4330.png                           |   Bin 1996 -> 0 bytes
+ index_htm_files/4331.jpg                           |   Bin 39544 -> 0 bytes
+ index_htm_files/4335.png                           |   Bin 2856 -> 0 bytes
+ index_htm_files/4336.png                           |   Bin 2768 -> 0 bytes
+ index_htm_files/4337.png                           |   Bin 2274 -> 0 bytes
+ index_htm_files/4338.png                           |   Bin 2846 -> 0 bytes
+ index_htm_files/4448.png                           |   Bin 21735 -> 0 bytes
+ index_htm_files/4452.jpg                           |   Bin 28411 -> 0 bytes
+ ...let_Oct_2015_A4_Portrait_revised_14_10_2015.pdf |   Bin 552558 -> 0 bytes
+ ...ARK TENNIS CLUB subscription form_2015-2016.pdf |   Bin 107883 -> 0 bytes
+ ...ARK TENNIS CLUB subscription form_2016_2017.pdf |   Bin 114477 -> 0 bytes
+ index_htm_files/HPTC NEWSLETTER_2016.pdf           |   Bin 143647 -> 0 bytes
+ .../Junior memebership form _2016_2017v2.pdf       |   Bin 1073216 -> 0 bytes
+ ...ior_membership_Form_2016_2017_basic version.pdf |   Bin 142810 -> 0 bytes
+ index_htm_files/LADIES SUMMER FIXTURES 2016.docx   |   Bin 13593 -> 0 bytes
+ index_htm_files/LADIES SUMMER FIXTURES 2016.pdf    |   Bin 65479 -> 0 bytes
+ index_htm_files/MENS SUMMER FIXTURES 2016.docx     |   Bin 15605 -> 0 bytes
+ index_htm_files/MENS SUMMER FIXTURES 2016.pdf      |   Bin 105326 -> 0 bytes
+ .../Merged Junior Membership docs_2015_2016.pdf    |   Bin 1280310 -> 0 bytes
+ index_htm_files/REPORT2015.doc                     |   Bin 33792 -> 0 bytes
+ index_htm_files/REPORT2015.pdf                     |   Bin 74318 -> 0 bytes
+ index_htm_files/REPORT2016.doc                     |   Bin 33280 -> 0 bytes
+ index_htm_files/REPORT2016.pdf                     |   Bin 108010 -> 0 bytes
+ index_htm_files/SUMMER HOLIDAY CAMP_2016.pdf       |   Bin 74037 -> 0 bytes
+ index_htm_files/SUMMER TENNIS CALENDAR 2016.pdf    |   Bin 25573 -> 0 bytes
+ index_htm_files/close.png                          |   Bin 1910 -> 0 bytes
+ index_htm_files/closeX.png                         |   Bin 3665 -> 0 bytes
+ index_htm_files/controlbar-text-buttons.png        |   Bin 1300 -> 0 bytes
+ index_htm_files/controlbar-white-small.gif         |   Bin 3151 -> 0 bytes
+ index_htm_files/custom_styles.css                  |     7 -
+ index_htm_files/customs.png                        |   Bin 15208 -> 0 bytes
+ index_htm_files/fullexpand.gif                     |   Bin 209 -> 0 bytes
+ index_htm_files/geckodimmer.png                    |   Bin 2817 -> 0 bytes
+ index_htm_files/highslide-ie6.css                  |    71 -
+ index_htm_files/highslide.css                      |   917 --
+ index_htm_files/highslide.js                       |    35 -
+ index_htm_files/loader.white.gif                   |   Bin 673 -> 0 bytes
+ index_htm_files/menu.js                            |     1 -
+ index_htm_files/png.js                             |     1 -
+ index_htm_files/resize.gif                         |   Bin 70 -> 0 bytes
+ index_htm_files/roe.js                             |     1 -
+ index_htm_files/xr_files.txt                       |   105 -
+ index_htm_files/xr_fonts.css                       |     0
+ index_htm_files/xr_fontsie.css                     |     0
+ index_htm_files/xr_main.css                        |    42 -
+ index_htm_files/xr_text.css                        |    20 -
+ index_htm_files/zoomin.cur                         |   Bin 326 -> 0 bytes
+ index_htm_files/zoomout.cur                        |   Bin 326 -> 0 bytes
+ js/bootstrap.js                                    |  3535 +++++++
+ js/bootstrap.min.js                                |     7 +
+ js/jquery-2.2.3.js                                 |  9842 ++++++++++++++++++
+ js/jquery-2.2.3.min.js                             |     4 +
+ js/jquery-3.1.1.js                                 | 10220 +++++++++++++++++++
+ js/jquery-3.1.1.min.js                             |     4 +
+ js/mdb.js                                          |  5314 ++++++++++
+ js/mdb.min.js                                      |     4 +
+ js/tether.js                                       |  1726 ++++
+ js/tether.min.js                                   |     1 +
+ junior news.htm                                    |   193 -
+ junior-membership-form.html                        |    33 +
+ juniors info.htm                                   |   156 -
+ membership-form.html                               |    37 +
+ mini tennis.htm                                    |   153 -
+ new/MDB License.pdf                                |   Bin 669842 -> 0 bytes
+ new/README.txt                                     |    25 -
+ new/css/bootstrap.css                              |  9320 -----------------
+ new/css/bootstrap.min.css                          |     6 -
+ new/css/font-awesome/font-awesome.css              |  2337 -----
+ new/css/fonts/FontAwesome.otf                      |   Bin 134808 -> 0 bytes
+ new/css/fonts/fontawesome-webfont.eot              |   Bin 165742 -> 0 bytes
+ new/css/fonts/fontawesome-webfont.svg              |  2671 -----
+ new/css/fonts/fontawesome-webfont.ttf              |   Bin 165548 -> 0 bytes
+ new/css/fonts/fontawesome-webfont.woff             |   Bin 98024 -> 0 bytes
+ new/css/fonts/fontawesome-webfont.woff2            |   Bin 77160 -> 0 bytes
+ new/css/free/_hover-effects.css                    |   276 -
+ new/css/mdb.css                                    |  6740 ------------
+ new/css/mdb.min.css                                |    39 -
+ new/css/round-about.css                            |    17 -
+ new/css/style.css                                  |    64 -
+ new/font/roboto/Roboto-Bold.eot                    |   Bin 20966 -> 0 bytes
+ new/font/roboto/Roboto-Bold.ttf                    |   Bin 127744 -> 0 bytes
+ new/font/roboto/Roboto-Bold.woff                   |   Bin 62876 -> 0 bytes
+ new/font/roboto/Roboto-Bold.woff2                  |   Bin 49976 -> 0 bytes
+ new/font/roboto/Roboto-Light.eot                   |   Bin 20940 -> 0 bytes
+ new/font/roboto/Roboto-Light.ttf                   |   Bin 126792 -> 0 bytes
+ new/font/roboto/Roboto-Light.woff                  |   Bin 62316 -> 0 bytes
+ new/font/roboto/Roboto-Light.woff2                 |   Bin 49380 -> 0 bytes
+ new/font/roboto/Roboto-Medium.eot                  |   Bin 21364 -> 0 bytes
+ new/font/roboto/Roboto-Medium.ttf                  |   Bin 127488 -> 0 bytes
+ new/font/roboto/Roboto-Medium.woff                 |   Bin 62980 -> 0 bytes
+ new/font/roboto/Roboto-Medium.woff2                |   Bin 50224 -> 0 bytes
+ new/font/roboto/Roboto-Regular.eot                 |   Bin 21320 -> 0 bytes
+ new/font/roboto/Roboto-Regular.ttf                 |   Bin 126072 -> 0 bytes
+ new/font/roboto/Roboto-Regular.woff                |   Bin 61736 -> 0 bytes
+ new/font/roboto/Roboto-Regular.woff2               |   Bin 49236 -> 0 bytes
+ new/font/roboto/Roboto-Thin.eot                    |   Bin 21659 -> 0 bytes
+ new/font/roboto/Roboto-Thin.ttf                    |   Bin 127584 -> 0 bytes
+ new/font/roboto/Roboto-Thin.woff                   |   Bin 61628 -> 0 bytes
+ new/font/roboto/Roboto-Thin.woff2                  |   Bin 48524 -> 0 bytes
+ new/images/HP-Logo.gif                             |   Bin 5819 -> 0 bytes
+ new/images/HP-Logo.xcf                             |   Bin 37216 -> 0 bytes
+ new/images/HP-Logo1.png                            |   Bin 15045 -> 0 bytes
+ new/images/HP_tennis_club_logo.gif                 |   Bin 5560 -> 0 bytes
+ new/images/Tennis-net.jpg                          |   Bin 41552 -> 0 bytes
+ new/images/court-3.jpg                             |   Bin 31807 -> 0 bytes
+ new/images/court-with-children.jpg                 |   Bin 54706 -> 0 bytes
+ new/images/court-with-children.xcf                 |   Bin 696576 -> 0 bytes
+ new/images/court.jpg                               |   Bin 3521378 -> 0 bytes
+ new/images/court1to3.JPG                           |   Bin 165027 -> 0 bytes
+ new/images/court1to3P1.JPG                         |   Bin 111527 -> 0 bytes
+ new/images/court4to5.jpg                           |   Bin 29066 -> 0 bytes
+ new/images/jennyHughes.jpg                         |   Bin 13200 -> 0 bytes
+ new/images/junior1.jpg                             |   Bin 14975 -> 0 bytes
+ new/img/lightbox/default-skin.png                  |   Bin 547 -> 0 bytes
+ new/img/lightbox/default-skin.svg                  |     1 -
+ new/img/lightbox/preloader.gif                     |   Bin 866 -> 0 bytes
+ new/img/overlays/01.png                            |   Bin 211 -> 0 bytes
+ new/img/overlays/02.png                            |   Bin 213 -> 0 bytes
+ new/img/overlays/03.png                            |   Bin 209 -> 0 bytes
+ new/img/overlays/04.png                            |   Bin 211 -> 0 bytes
+ new/img/overlays/05.png                            |   Bin 213 -> 0 bytes
+ new/img/overlays/06.png                            |   Bin 211 -> 0 bytes
+ new/img/overlays/07.png                            |   Bin 215 -> 0 bytes
+ new/img/overlays/08.png                            |   Bin 146 -> 0 bytes
+ new/img/overlays/09.png                            |   Bin 137 -> 0 bytes
+ new/img/svg/arrow_left.svg                         |     4 -
+ new/img/svg/arrow_right.svg                        |     4 -
+ new/index.html                                     |   885 --
+ new/js/bootstrap.js                                |  3535 -------
+ new/js/bootstrap.min.js                            |     7 -
+ new/js/jquery-2.2.3.js                             |  9842 ------------------
+ new/js/jquery-2.2.3.min.js                         |     4 -
+ new/js/jquery-3.1.1.js                             | 10220 -------------------
+ new/js/jquery-3.1.1.min.js                         |     4 -
+ new/js/mdb.js                                      |  5314 ----------
+ new/js/mdb.min.js                                  |     4 -
+ new/js/tether.js                                   |  1726 ----
+ new/js/tether.min.js                               |     1 -
+ new/junior-membership-form.html                    |    33 -
+ new/membership-form.html                           |    37 -
+ new/sass/README.txt                                |     8 -
+ new/sass/free/_animations.scss                     |  3340 ------
+ new/sass/free/_buttons.scss                        |   473 -
+ new/sass/free/_cards-basic.scss                    |    43 -
+ new/sass/free/_carousels-basic.scss                |    51 -
+ new/sass/free/_footer.scss                         |    38 -
+ new/sass/free/_forms-basic.scss                    |   306 -
+ new/sass/free/_global.scss                         |   397 -
+ new/sass/free/_helpers.scss                        |   246 -
+ new/sass/free/_hover-effects.scss                  |   353 -
+ new/sass/free/_navbars.scss                        |   186 -
+ new/sass/free/_roboto.scss                         |    51 -
+ new/sass/free/_typography.scss                     |   190 -
+ new/sass/free/_waves.scss                          |   157 -
+ new/sass/free/data/_colors.scss                    |   865 --
+ new/sass/free/data/_mixins.scss                    |    83 -
+ new/sass/free/data/_prefixer.scss                  |   376 -
+ new/sass/free/data/_variables-b4.scss              |   666 --
+ new/sass/free/data/_variables.scss                 |   101 -
+ new/sass/mdb.scss                                  |    43 -
+ new/sass/mdb/free/_animations.scss                 |  3340 ------
+ new/sass/mdb/free/_buttons.scss                    |   550 -
+ new/sass/mdb/free/_cards-basic.scss                |    90 -
+ new/sass/mdb/free/_carousels-basic.scss            |    82 -
+ new/sass/mdb/free/_footer.scss                     |    51 -
+ new/sass/mdb/free/_forms-basic.scss                |   277 -
+ new/sass/mdb/free/_global.scss                     |   418 -
+ new/sass/mdb/free/_helpers.scss                    |   309 -
+ new/sass/mdb/free/_hover-effects.scss              |   418 -
+ new/sass/mdb/free/_navbars.scss                    |   141 -
+ new/sass/mdb/free/_roboto.scss                     |    51 -
+ new/sass/mdb/free/_typography.scss                 |   194 -
+ new/sass/mdb/free/_waves.scss                      |   157 -
+ new/sass/mdb/free/data/_colors.scss                |   875 --
+ new/sass/mdb/free/data/_mixins.scss                |   101 -
+ new/sass/mdb/free/data/_prefixer.scss              |   376 -
+ new/sass/mdb/free/data/_variables-b4.scss          |   674 --
+ new/sass/mdb/free/data/_variables.scss             |   103 -
+ new/sass/style.scss                                |    96 -
+ old/16th may.htm                                   |   179 +
+ old/about teams1.htm                               |   135 +
+ old/club calender.htm                              |   124 +
+ old/club coach.htm                                 |   155 +
+ old/coaching.htm                                   |   132 +
+ old/contact us.htm                                 |   187 +
+ old/fixtures and reports.htm                       |   150 +
+ old/index.htm                                      |   215 +
+ old/index_htm_files/0.gif                          |   Bin 0 -> 43 bytes
+ old/index_htm_files/0_1000000.gif                  |   Bin 0 -> 54 bytes
+ old/index_htm_files/0_25B772E.gif                  |   Bin 0 -> 54 bytes
+ old/index_htm_files/0_3000000.gif                  |   Bin 0 -> 44 bytes
+ old/index_htm_files/1662.png                       |   Bin 0 -> 604 bytes
+ old/index_htm_files/1663.png                       |   Bin 0 -> 98 bytes
+ old/index_htm_files/1672.png                       |   Bin 0 -> 646 bytes
+ old/index_htm_files/1693.png                       |   Bin 0 -> 585 bytes
+ old/index_htm_files/1700.png                       |   Bin 0 -> 10038 bytes
+ old/index_htm_files/1858.png                       |   Bin 0 -> 3346 bytes
+ old/index_htm_files/1860.png                       |   Bin 0 -> 1878 bytes
+ old/index_htm_files/1861.png                       |   Bin 0 -> 3572 bytes
+ old/index_htm_files/2698.png                       |   Bin 0 -> 16334 bytes
+ old/index_htm_files/2905.png                       |   Bin 0 -> 1802 bytes
+ old/index_htm_files/2906.png                       |   Bin 0 -> 1864 bytes
+ old/index_htm_files/2907.png                       |   Bin 0 -> 1878 bytes
+ old/index_htm_files/2908.png                       |   Bin 0 -> 1856 bytes
+ old/index_htm_files/2909.png                       |   Bin 0 -> 3168 bytes
+ old/index_htm_files/2910.png                       |   Bin 0 -> 3405 bytes
+ old/index_htm_files/2912.png                       |   Bin 0 -> 3272 bytes
+ old/index_htm_files/2917.png                       |   Bin 0 -> 10642 bytes
+ old/index_htm_files/2978.png                       |   Bin 0 -> 9840 bytes
+ old/index_htm_files/3114.jpg                       |   Bin 0 -> 29066 bytes
+ old/index_htm_files/3167.jpg                       |   Bin 0 -> 14892 bytes
+ old/index_htm_files/3193.jpg                       |   Bin 0 -> 23906 bytes
+ old/index_htm_files/3195.jpg                       |   Bin 0 -> 9584 bytes
+ old/index_htm_files/3342.jpg                       |   Bin 0 -> 34978 bytes
+ old/index_htm_files/3350.jpg                       |   Bin 0 -> 31807 bytes
+ old/index_htm_files/3395.jpg                       |   Bin 0 -> 57443 bytes
+ old/index_htm_files/3402.jpg                       |   Bin 0 -> 703 bytes
+ old/index_htm_files/3415.jpg                       |   Bin 0 -> 9911 bytes
+ old/index_htm_files/3416.jpg                       |   Bin 0 -> 1011 bytes
+ old/index_htm_files/3417.jpg                       |   Bin 0 -> 4535 bytes
+ old/index_htm_files/3518.jpg                       |   Bin 0 -> 1092 bytes
+ old/index_htm_files/3533.png                       |   Bin 0 -> 2364 bytes
+ old/index_htm_files/3535.png                       |   Bin 0 -> 1377 bytes
+ old/index_htm_files/3546.png                       |   Bin 0 -> 4299 bytes
+ old/index_htm_files/3552.png                       |   Bin 0 -> 1164 bytes
+ old/index_htm_files/3685.png                       |   Bin 0 -> 1980 bytes
+ old/index_htm_files/3711.png                       |   Bin 0 -> 3560 bytes
+ old/index_htm_files/3724.png                       |   Bin 0 -> 3765 bytes
+ old/index_htm_files/3826.png                       |   Bin 0 -> 2960 bytes
+ old/index_htm_files/3827.png                       |   Bin 0 -> 2907 bytes
+ old/index_htm_files/3829.png                       |   Bin 0 -> 4485 bytes
+ old/index_htm_files/3933.png                       |   Bin 0 -> 9816 bytes
+ old/index_htm_files/3952.png                       |   Bin 0 -> 2894 bytes
+ old/index_htm_files/3983.png                       |   Bin 0 -> 16169 bytes
+ old/index_htm_files/4028.png                       |   Bin 0 -> 4618 bytes
+ old/index_htm_files/4032.png                       |   Bin 0 -> 606 bytes
+ old/index_htm_files/4083.jpg                       |   Bin 0 -> 21267 bytes
+ old/index_htm_files/4084.jpg                       |   Bin 0 -> 20203 bytes
+ old/index_htm_files/4085.jpg                       |   Bin 0 -> 22813 bytes
+ old/index_htm_files/4086.jpg                       |   Bin 0 -> 19677 bytes
+ old/index_htm_files/4116.png                       |   Bin 0 -> 11016 bytes
+ old/index_htm_files/4117.png                       |   Bin 0 -> 10054 bytes
+ old/index_htm_files/4122.png                       |   Bin 0 -> 900 bytes
+ old/index_htm_files/4140.png                       |   Bin 0 -> 2755 bytes
+ old/index_htm_files/4150.png                       |   Bin 0 -> 3975 bytes
+ old/index_htm_files/4155.jpg                       |   Bin 0 -> 36399 bytes
+ old/index_htm_files/4158.jpg                       |   Bin 0 -> 36595 bytes
+ old/index_htm_files/4184.jpg                       |   Bin 0 -> 36624 bytes
+ old/index_htm_files/4195.jpg                       |   Bin 0 -> 26158 bytes
+ old/index_htm_files/4197.png                       |   Bin 0 -> 5909 bytes
+ old/index_htm_files/4211.png                       |   Bin 0 -> 1484 bytes
+ old/index_htm_files/4212.png                       |   Bin 0 -> 2071 bytes
+ old/index_htm_files/4213.png                       |   Bin 0 -> 1638 bytes
+ old/index_htm_files/4214.png                       |   Bin 0 -> 2001 bytes
+ old/index_htm_files/4215.png                       |   Bin 0 -> 1526 bytes
+ old/index_htm_files/4216.png                       |   Bin 0 -> 2011 bytes
+ old/index_htm_files/4223.png                       |   Bin 0 -> 2234 bytes
+ old/index_htm_files/4224.png                       |   Bin 0 -> 2855 bytes
+ old/index_htm_files/4225.png                       |   Bin 0 -> 2372 bytes
+ old/index_htm_files/4227.png                       |   Bin 0 -> 2272 bytes
+ old/index_htm_files/4232.png                       |   Bin 0 -> 4752 bytes
+ old/index_htm_files/4234.jpg                       |   Bin 0 -> 23943 bytes
+ old/index_htm_files/4235.jpg                       |   Bin 0 -> 22918 bytes
+ old/index_htm_files/4236.jpg                       |   Bin 0 -> 22645 bytes
+ old/index_htm_files/4237.png                       |   Bin 0 -> 1868 bytes
+ old/index_htm_files/4238.png                       |   Bin 0 -> 1826 bytes
+ old/index_htm_files/4240.png                       |   Bin 0 -> 528 bytes
+ old/index_htm_files/4241.png                       |   Bin 0 -> 2763 bytes
+ old/index_htm_files/4242.png                       |   Bin 0 -> 1904 bytes
+ old/index_htm_files/4247.png                       |   Bin 0 -> 43610 bytes
+ old/index_htm_files/4253.png                       |   Bin 0 -> 816 bytes
+ old/index_htm_files/4279.png                       |   Bin 0 -> 2773 bytes
+ old/index_htm_files/4281.png                       |   Bin 0 -> 2866 bytes
+ old/index_htm_files/4330.png                       |   Bin 0 -> 1996 bytes
+ old/index_htm_files/4331.jpg                       |   Bin 0 -> 39544 bytes
+ old/index_htm_files/4335.png                       |   Bin 0 -> 2856 bytes
+ old/index_htm_files/4336.png                       |   Bin 0 -> 2768 bytes
+ old/index_htm_files/4337.png                       |   Bin 0 -> 2274 bytes
+ old/index_htm_files/4338.png                       |   Bin 0 -> 2846 bytes
+ old/index_htm_files/4448.png                       |   Bin 0 -> 21735 bytes
+ old/index_htm_files/4452.jpg                       |   Bin 0 -> 28411 bytes
+ ...let_Oct_2015_A4_Portrait_revised_14_10_2015.pdf |   Bin 0 -> 552558 bytes
+ ...ARK TENNIS CLUB subscription form_2015-2016.pdf |   Bin 0 -> 107883 bytes
+ ...ARK TENNIS CLUB subscription form_2016_2017.pdf |   Bin 0 -> 114477 bytes
+ old/index_htm_files/HPTC NEWSLETTER_2016.pdf       |   Bin 0 -> 143647 bytes
+ .../Junior memebership form _2016_2017v2.pdf       |   Bin 0 -> 1073216 bytes
+ ...ior_membership_Form_2016_2017_basic version.pdf |   Bin 0 -> 142810 bytes
+ .../LADIES SUMMER FIXTURES 2016.docx               |   Bin 0 -> 13593 bytes
+ .../LADIES SUMMER FIXTURES 2016.pdf                |   Bin 0 -> 65479 bytes
+ old/index_htm_files/MENS SUMMER FIXTURES 2016.docx |   Bin 0 -> 15605 bytes
+ old/index_htm_files/MENS SUMMER FIXTURES 2016.pdf  |   Bin 0 -> 105326 bytes
+ .../Merged Junior Membership docs_2015_2016.pdf    |   Bin 0 -> 1280310 bytes
+ old/index_htm_files/REPORT2015.doc                 |   Bin 0 -> 33792 bytes
+ old/index_htm_files/REPORT2015.pdf                 |   Bin 0 -> 74318 bytes
+ old/index_htm_files/REPORT2016.doc                 |   Bin 0 -> 33280 bytes
+ old/index_htm_files/REPORT2016.pdf                 |   Bin 0 -> 108010 bytes
+ old/index_htm_files/SUMMER HOLIDAY CAMP_2016.pdf   |   Bin 0 -> 74037 bytes
+ .../SUMMER TENNIS CALENDAR 2016.pdf                |   Bin 0 -> 25573 bytes
+ old/index_htm_files/close.png                      |   Bin 0 -> 1910 bytes
+ old/index_htm_files/closeX.png                     |   Bin 0 -> 3665 bytes
+ old/index_htm_files/controlbar-text-buttons.png    |   Bin 0 -> 1300 bytes
+ old/index_htm_files/controlbar-white-small.gif     |   Bin 0 -> 3151 bytes
+ old/index_htm_files/custom_styles.css              |     7 +
+ old/index_htm_files/customs.png                    |   Bin 0 -> 15208 bytes
+ old/index_htm_files/fullexpand.gif                 |   Bin 0 -> 209 bytes
+ old/index_htm_files/geckodimmer.png                |   Bin 0 -> 2817 bytes
+ old/index_htm_files/highslide-ie6.css              |    71 +
+ old/index_htm_files/highslide.css                  |   917 ++
+ old/index_htm_files/highslide.js                   |    35 +
+ old/index_htm_files/loader.white.gif               |   Bin 0 -> 673 bytes
+ old/index_htm_files/menu.js                        |     1 +
+ old/index_htm_files/png.js                         |     1 +
+ old/index_htm_files/resize.gif                     |   Bin 0 -> 70 bytes
+ old/index_htm_files/roe.js                         |     1 +
+ old/index_htm_files/xr_files.txt                   |   105 +
+ old/index_htm_files/xr_fonts.css                   |     0
+ old/index_htm_files/xr_fontsie.css                 |     0
+ old/index_htm_files/xr_main.css                    |    42 +
+ old/index_htm_files/xr_text.css                    |    20 +
+ old/index_htm_files/zoomin.cur                     |   Bin 0 -> 326 bytes
+ old/index_htm_files/zoomout.cur                    |   Bin 0 -> 326 bytes
+ old/junior news.htm                                |   194 +
+ old/juniors info.htm                               |   157 +
+ old/mini tennis.htm                                |   154 +
+ old/recent activities - copy.htm                   |   173 +
+ old/summer camp 2015.htm                           |   169 +
+ old/whats on.htm                                   |   147 +
+ recent activities - copy.htm                       |   171 -
+ sass/README.txt                                    |     8 +
+ sass/free/_animations.scss                         |  3340 ++++++
+ sass/free/_buttons.scss                            |   473 +
+ sass/free/_cards-basic.scss                        |    43 +
+ sass/free/_carousels-basic.scss                    |    51 +
+ sass/free/_footer.scss                             |    38 +
+ sass/free/_forms-basic.scss                        |   306 +
+ sass/free/_global.scss                             |   397 +
+ sass/free/_helpers.scss                            |   246 +
+ sass/free/_hover-effects.scss                      |   353 +
+ sass/free/_navbars.scss                            |   186 +
+ sass/free/_roboto.scss                             |    51 +
+ sass/free/_typography.scss                         |   190 +
+ sass/free/_waves.scss                              |   157 +
+ sass/free/data/_colors.scss                        |   865 ++
+ sass/free/data/_mixins.scss                        |    83 +
+ sass/free/data/_prefixer.scss                      |   376 +
+ sass/free/data/_variables-b4.scss                  |   666 ++
+ sass/free/data/_variables.scss                     |   101 +
+ sass/mdb.scss                                      |    43 +
+ sass/mdb/free/_animations.scss                     |  3340 ++++++
+ sass/mdb/free/_buttons.scss                        |   550 +
+ sass/mdb/free/_cards-basic.scss                    |    90 +
+ sass/mdb/free/_carousels-basic.scss                |    82 +
+ sass/mdb/free/_footer.scss                         |    51 +
+ sass/mdb/free/_forms-basic.scss                    |   277 +
+ sass/mdb/free/_global.scss                         |   418 +
+ sass/mdb/free/_helpers.scss                        |   309 +
+ sass/mdb/free/_hover-effects.scss                  |   418 +
+ sass/mdb/free/_navbars.scss                        |   141 +
+ sass/mdb/free/_roboto.scss                         |    51 +
+ sass/mdb/free/_typography.scss                     |   194 +
+ sass/mdb/free/_waves.scss                          |   157 +
+ sass/mdb/free/data/_colors.scss                    |   875 ++
+ sass/mdb/free/data/_mixins.scss                    |   101 +
+ sass/mdb/free/data/_prefixer.scss                  |   376 +
+ sass/mdb/free/data/_variables-b4.scss              |   674 ++
+ sass/mdb/free/data/_variables.scss                 |   103 +
+ sass/style.scss                                    |    96 +
+ summer camp 2015.htm                               |   168 -
+ whats on.htm                                       |   146 -
+ 529 files changed, 72866 insertions(+), 72846 deletions(-)
+
+commit e658ebf6c6b43c945929693ad4caff809774aa7c
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Sat Apr 1 18:34:33 2017 +0100
+
+    Easter info added
+
+ new/css/fonts/FontAwesome.otf           |  Bin 0 -> 134808 bytes
+ new/css/fonts/fontawesome-webfont.eot   |  Bin 0 -> 165742 bytes
+ new/css/fonts/fontawesome-webfont.svg   | 2671 +++++++++++++++++++++++++++++++
+ new/css/fonts/fontawesome-webfont.ttf   |  Bin 0 -> 165548 bytes
+ new/css/fonts/fontawesome-webfont.woff  |  Bin 0 -> 98024 bytes
+ new/css/fonts/fontawesome-webfont.woff2 |  Bin 0 -> 77160 bytes
+ new/css/round-about.css                 |   17 +
+ new/images/jennyHughes.jpg              |  Bin 0 -> 13200 bytes
+ new/index.html                          |   73 +-
+ 9 files changed, 2757 insertions(+), 4 deletions(-)
+
+commit 66ae23c72222acacef0841a471f56bf78ff0457b
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Sat Apr 1 09:38:21 2017 +0100
+
+    new sections and updates
+
+ .gitignore                      |   1 +
+ new/css/style.css               |   6 +-
+ new/images/court-1-3.1.JPG      | Bin 111527 -> 0 bytes
+ new/images/court-1-3.JPG        | Bin 165027 -> 0 bytes
+ new/images/court-4-5.jpg        | Bin 29066 -> 0 bytes
+ new/images/court1to3.JPG        | Bin 0 -> 165027 bytes
+ new/images/court1to3P1.JPG      | Bin 0 -> 111527 bytes
+ new/images/court4to5.jpg        | Bin 0 -> 29066 bytes
+ new/index.html                  | 206 +++++++++++++++++++++++++++++++++++-----
+ new/junior-membership-form.html |  33 +++++++
+ 10 files changed, 222 insertions(+), 24 deletions(-)
+
+commit 1b8b48af7ac258002630aec60581c1b429492169
+Merge: c422410 658b6df
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Fri Mar 31 14:44:02 2017 +0100
+
+    Merge branch 'master' of https://github.com/hptennis/hptennis-website
+
+commit c422410472f851dd3e21a5c11a46a3356f2d61dd
+Author: Grant TF <grant@tarrant-fisher.co.uk>
+Date:   Fri Mar 31 14:43:24 2017 +0100
+
+    added new pages in new sub directory
+
+ .gitignore                                |     5 +
+ new/MDB License.pdf                       |   Bin 0 -> 669842 bytes
+ new/README.txt                            |    25 +
+ new/css/bootstrap.css                     |  9320 +++++++++++++++++++++++++
+ new/css/bootstrap.min.css                 |     6 +
+ new/css/font-awesome/font-awesome.css     |  2337 +++++++
+ new/css/free/_hover-effects.css           |   276 +
+ new/css/mdb.css                           |  6740 ++++++++++++++++++
+ new/css/mdb.min.css                       |    39 +
+ new/css/style.css                         |    60 +
+ new/font/roboto/Roboto-Bold.eot           |   Bin 0 -> 20966 bytes
+ new/font/roboto/Roboto-Bold.ttf           |   Bin 0 -> 127744 bytes
+ new/font/roboto/Roboto-Bold.woff          |   Bin 0 -> 62876 bytes
+ new/font/roboto/Roboto-Bold.woff2         |   Bin 0 -> 49976 bytes
+ new/font/roboto/Roboto-Light.eot          |   Bin 0 -> 20940 bytes
+ new/font/roboto/Roboto-Light.ttf          |   Bin 0 -> 126792 bytes
+ new/font/roboto/Roboto-Light.woff         |   Bin 0 -> 62316 bytes
+ new/font/roboto/Roboto-Light.woff2        |   Bin 0 -> 49380 bytes
+ new/font/roboto/Roboto-Medium.eot         |   Bin 0 -> 21364 bytes
+ new/font/roboto/Roboto-Medium.ttf         |   Bin 0 -> 127488 bytes
+ new/font/roboto/Roboto-Medium.woff        |   Bin 0 -> 62980 bytes
+ new/font/roboto/Roboto-Medium.woff2       |   Bin 0 -> 50224 bytes
+ new/font/roboto/Roboto-Regular.eot        |   Bin 0 -> 21320 bytes
+ new/font/roboto/Roboto-Regular.ttf        |   Bin 0 -> 126072 bytes
+ new/font/roboto/Roboto-Regular.woff       |   Bin 0 -> 61736 bytes
+ new/font/roboto/Roboto-Regular.woff2      |   Bin 0 -> 49236 bytes
+ new/font/roboto/Roboto-Thin.eot           |   Bin 0 -> 21659 bytes
+ new/font/roboto/Roboto-Thin.ttf           |   Bin 0 -> 127584 bytes
+ new/font/roboto/Roboto-Thin.woff          |   Bin 0 -> 61628 bytes
+ new/font/roboto/Roboto-Thin.woff2         |   Bin 0 -> 48524 bytes
+ new/images/HP-Logo.gif                    |   Bin 0 -> 5819 bytes
+ new/images/HP-Logo.xcf                    |   Bin 0 -> 37216 bytes
+ new/images/HP-Logo1.png                   |   Bin 0 -> 15045 bytes
+ new/images/HP_tennis_club_logo.gif        |   Bin 0 -> 5560 bytes
+ new/images/Tennis-net.jpg                 |   Bin 0 -> 41552 bytes
+ new/images/court-1-3.1.JPG                |   Bin 0 -> 111527 bytes
+ new/images/court-1-3.JPG                  |   Bin 0 -> 165027 bytes
+ new/images/court-3.jpg                    |   Bin 0 -> 31807 bytes
+ new/images/court-4-5.jpg                  |   Bin 0 -> 29066 bytes
+ new/images/court-with-children.jpg        |   Bin 0 -> 54706 bytes
+ new/images/court-with-children.xcf        |   Bin 0 -> 696576 bytes
+ new/images/court.jpg                      |   Bin 0 -> 3521378 bytes
+ new/images/junior1.jpg                    |   Bin 0 -> 14975 bytes
+ new/img/lightbox/default-skin.png         |   Bin 0 -> 547 bytes
+ new/img/lightbox/default-skin.svg         |     1 +
+ new/img/lightbox/preloader.gif            |   Bin 0 -> 866 bytes
+ new/img/overlays/01.png                   |   Bin 0 -> 211 bytes
+ new/img/overlays/02.png                   |   Bin 0 -> 213 bytes
+ new/img/overlays/03.png                   |   Bin 0 -> 209 bytes
+ new/img/overlays/04.png                   |   Bin 0 -> 211 bytes
+ new/img/overlays/05.png                   |   Bin 0 -> 213 bytes
+ new/img/overlays/06.png                   |   Bin 0 -> 211 bytes
+ new/img/overlays/07.png                   |   Bin 0 -> 215 bytes
+ new/img/overlays/08.png                   |   Bin 0 -> 146 bytes
+ new/img/overlays/09.png                   |   Bin 0 -> 137 bytes
+ new/img/svg/arrow_left.svg                |     4 +
+ new/img/svg/arrow_right.svg               |     4 +
+ new/index.html                            |   660 ++
+ new/js/bootstrap.js                       |  3535 ++++++++++
+ new/js/bootstrap.min.js                   |     7 +
+ new/js/jquery-2.2.3.js                    |  9842 +++++++++++++++++++++++++++
+ new/js/jquery-2.2.3.min.js                |     4 +
+ new/js/jquery-3.1.1.js                    | 10220 ++++++++++++++++++++++++++++
+ new/js/jquery-3.1.1.min.js                |     4 +
+ new/js/mdb.js                             |  5314 +++++++++++++++
+ new/js/mdb.min.js                         |     4 +
+ new/js/tether.js                          |  1726 +++++
+ new/js/tether.min.js                      |     1 +
+ new/membership-form.html                  |    37 +
+ new/sass/README.txt                       |     8 +
+ new/sass/free/_animations.scss            |  3340 +++++++++
+ new/sass/free/_buttons.scss               |   473 ++
+ new/sass/free/_cards-basic.scss           |    43 +
+ new/sass/free/_carousels-basic.scss       |    51 +
+ new/sass/free/_footer.scss                |    38 +
+ new/sass/free/_forms-basic.scss           |   306 +
+ new/sass/free/_global.scss                |   397 ++
+ new/sass/free/_helpers.scss               |   246 +
+ new/sass/free/_hover-effects.scss         |   353 +
+ new/sass/free/_navbars.scss               |   186 +
+ new/sass/free/_roboto.scss                |    51 +
+ new/sass/free/_typography.scss            |   190 +
+ new/sass/free/_waves.scss                 |   157 +
+ new/sass/free/data/_colors.scss           |   865 +++
+ new/sass/free/data/_mixins.scss           |    83 +
+ new/sass/free/data/_prefixer.scss         |   376 +
+ new/sass/free/data/_variables-b4.scss     |   666 ++
+ new/sass/free/data/_variables.scss        |   101 +
+ new/sass/mdb.scss                         |    43 +
+ new/sass/mdb/free/_animations.scss        |  3340 +++++++++
+ new/sass/mdb/free/_buttons.scss           |   550 ++
+ new/sass/mdb/free/_cards-basic.scss       |    90 +
+ new/sass/mdb/free/_carousels-basic.scss   |    82 +
+ new/sass/mdb/free/_footer.scss            |    51 +
+ new/sass/mdb/free/_forms-basic.scss       |   277 +
+ new/sass/mdb/free/_global.scss            |   418 ++
+ new/sass/mdb/free/_helpers.scss           |   309 +
+ new/sass/mdb/free/_hover-effects.scss     |   418 ++
+ new/sass/mdb/free/_navbars.scss           |   141 +
+ new/sass/mdb/free/_roboto.scss            |    51 +
+ new/sass/mdb/free/_typography.scss        |   194 +
+ new/sass/mdb/free/_waves.scss             |   157 +
+ new/sass/mdb/free/data/_colors.scss       |   875 +++
+ new/sass/mdb/free/data/_mixins.scss       |   101 +
+ new/sass/mdb/free/data/_prefixer.scss     |   376 +
+ new/sass/mdb/free/data/_variables-b4.scss |   674 ++
+ new/sass/mdb/free/data/_variables.scss    |   103 +
+ new/sass/style.scss                       |    96 +
+ 108 files changed, 66447 insertions(+)
+
+commit 658b6df7512d304c018e5cb8127921b34fafcaec
+Author: grant-hp <grant.parkview.systems@gmail.com>
+Date:   Sat Nov 19 11:30:21 2016 +0000
+
+    Update CNAME
+
+ CNAME | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit f73732093fe412373c6ca752c23e708377271906
+Author: Grant T-F <Grant T-F>
+Date:   Sat Nov 19 08:06:38 2016 +0000
+
+    fix typo
+
+ whats on.htm | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit c77f1117af3272c295fe7fc2a55a1c2ba75f084d
+Author: grant-hp <grant.parkview.systems@gmail.com>
+Date:   Fri Nov 18 14:53:53 2016 +0000
+
+    Create CNAME
+
+ CNAME | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 33790589ad6bcc44e77e9072f446f3162806e1dc
+Author: grant-hp <grant.parkview.systems@gmail.com>
+Date:   Fri Nov 18 14:49:29 2016 +0000
+
+    Delete CNAME
+
+ CNAME | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 123285dce7e089723276a24375267572c07cf511
+Author: grant-hp <grant.parkview.systems@gmail.com>
+Date:   Fri Nov 18 14:40:16 2016 +0000
+
+    Create CNAME
+
+ CNAME | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 510f6e75015aae2ef9085a984ad8bcab4c3e8959
+Merge: 2662bdd 945e2e1
+Author: Grant T-F <Grant T-F>
+Date:   Fri Nov 18 14:27:55 2016 +0000
+
+    merged in current website
+
+commit 945e2e13d643772c7a2b2e6e4b9121cc4857c405
+Author: Grant T-F <Grant T-F>
+Date:   Fri Nov 18 14:19:35 2016 +0000
+
+    migrate to current website
+
+ 16th may.htm                                       | 178 ++++
+ LICENSE.md                                         |  24 -
+ README.md                                          |   1 -
+ about teams1.htm                                   | 134 +++
+ another_page.html                                  |  90 --
+ club calender.htm                                  | 123 +++
+ club coach.htm                                     | 154 ++++
+ coaching.htm                                       | 131 +++
+ contact us.htm                                     | 185 +++++
+ contact.html                                       |  94 ---
+ examples.html                                      | 152 ----
+ fixtures and reports.htm                           | 149 ++++
+ index.htm                                          | 213 +++++
+ index.html                                         |  98 ---
+ index_htm_files/0.gif                              | Bin 0 -> 43 bytes
+ index_htm_files/0_1000000.gif                      | Bin 0 -> 54 bytes
+ index_htm_files/0_25B772E.gif                      | Bin 0 -> 54 bytes
+ index_htm_files/0_3000000.gif                      | Bin 0 -> 44 bytes
+ index_htm_files/1662.png                           | Bin 0 -> 604 bytes
+ index_htm_files/1663.png                           | Bin 0 -> 98 bytes
+ index_htm_files/1672.png                           | Bin 0 -> 646 bytes
+ index_htm_files/1693.png                           | Bin 0 -> 585 bytes
+ index_htm_files/1700.png                           | Bin 0 -> 10038 bytes
+ index_htm_files/1858.png                           | Bin 0 -> 3346 bytes
+ index_htm_files/1860.png                           | Bin 0 -> 1878 bytes
+ index_htm_files/1861.png                           | Bin 0 -> 3572 bytes
+ index_htm_files/2698.png                           | Bin 0 -> 16334 bytes
+ index_htm_files/2905.png                           | Bin 0 -> 1802 bytes
+ index_htm_files/2906.png                           | Bin 0 -> 1864 bytes
+ index_htm_files/2907.png                           | Bin 0 -> 1878 bytes
+ index_htm_files/2908.png                           | Bin 0 -> 1856 bytes
+ index_htm_files/2909.png                           | Bin 0 -> 3168 bytes
+ index_htm_files/2910.png                           | Bin 0 -> 3405 bytes
+ index_htm_files/2912.png                           | Bin 0 -> 3272 bytes
+ index_htm_files/2917.png                           | Bin 0 -> 10642 bytes
+ index_htm_files/2978.png                           | Bin 0 -> 9840 bytes
+ index_htm_files/3114.jpg                           | Bin 0 -> 29066 bytes
+ index_htm_files/3167.jpg                           | Bin 0 -> 14892 bytes
+ index_htm_files/3193.jpg                           | Bin 0 -> 23906 bytes
+ index_htm_files/3195.jpg                           | Bin 0 -> 9584 bytes
+ index_htm_files/3342.jpg                           | Bin 0 -> 34978 bytes
+ index_htm_files/3350.jpg                           | Bin 0 -> 31807 bytes
+ index_htm_files/3395.jpg                           | Bin 0 -> 57443 bytes
+ index_htm_files/3402.jpg                           | Bin 0 -> 703 bytes
+ index_htm_files/3415.jpg                           | Bin 0 -> 9911 bytes
+ index_htm_files/3416.jpg                           | Bin 0 -> 1011 bytes
+ index_htm_files/3417.jpg                           | Bin 0 -> 4535 bytes
+ index_htm_files/3518.jpg                           | Bin 0 -> 1092 bytes
+ index_htm_files/3533.png                           | Bin 0 -> 2364 bytes
+ index_htm_files/3535.png                           | Bin 0 -> 1377 bytes
+ index_htm_files/3546.png                           | Bin 0 -> 4299 bytes
+ index_htm_files/3552.png                           | Bin 0 -> 1164 bytes
+ index_htm_files/3685.png                           | Bin 0 -> 1980 bytes
+ index_htm_files/3711.png                           | Bin 0 -> 3560 bytes
+ index_htm_files/3724.png                           | Bin 0 -> 3765 bytes
+ index_htm_files/3826.png                           | Bin 0 -> 2960 bytes
+ index_htm_files/3827.png                           | Bin 0 -> 2907 bytes
+ index_htm_files/3829.png                           | Bin 0 -> 4485 bytes
+ index_htm_files/3933.png                           | Bin 0 -> 9816 bytes
+ index_htm_files/3952.png                           | Bin 0 -> 2894 bytes
+ index_htm_files/3983.png                           | Bin 0 -> 16169 bytes
+ index_htm_files/4028.png                           | Bin 0 -> 4618 bytes
+ index_htm_files/4032.png                           | Bin 0 -> 606 bytes
+ index_htm_files/4083.jpg                           | Bin 0 -> 21267 bytes
+ index_htm_files/4084.jpg                           | Bin 0 -> 20203 bytes
+ index_htm_files/4085.jpg                           | Bin 0 -> 22813 bytes
+ index_htm_files/4086.jpg                           | Bin 0 -> 19677 bytes
+ index_htm_files/4116.png                           | Bin 0 -> 11016 bytes
+ index_htm_files/4117.png                           | Bin 0 -> 10054 bytes
+ index_htm_files/4122.png                           | Bin 0 -> 900 bytes
+ index_htm_files/4140.png                           | Bin 0 -> 2755 bytes
+ index_htm_files/4150.png                           | Bin 0 -> 3975 bytes
+ index_htm_files/4155.jpg                           | Bin 0 -> 36399 bytes
+ index_htm_files/4158.jpg                           | Bin 0 -> 36595 bytes
+ index_htm_files/4184.jpg                           | Bin 0 -> 36624 bytes
+ index_htm_files/4195.jpg                           | Bin 0 -> 26158 bytes
+ index_htm_files/4197.png                           | Bin 0 -> 5909 bytes
+ index_htm_files/4211.png                           | Bin 0 -> 1484 bytes
+ index_htm_files/4212.png                           | Bin 0 -> 2071 bytes
+ index_htm_files/4213.png                           | Bin 0 -> 1638 bytes
+ index_htm_files/4214.png                           | Bin 0 -> 2001 bytes
+ index_htm_files/4215.png                           | Bin 0 -> 1526 bytes
+ index_htm_files/4216.png                           | Bin 0 -> 2011 bytes
+ index_htm_files/4223.png                           | Bin 0 -> 2234 bytes
+ index_htm_files/4224.png                           | Bin 0 -> 2855 bytes
+ index_htm_files/4225.png                           | Bin 0 -> 2372 bytes
+ index_htm_files/4227.png                           | Bin 0 -> 2272 bytes
+ index_htm_files/4232.png                           | Bin 0 -> 4752 bytes
+ index_htm_files/4234.jpg                           | Bin 0 -> 23943 bytes
+ index_htm_files/4235.jpg                           | Bin 0 -> 22918 bytes
+ index_htm_files/4236.jpg                           | Bin 0 -> 22645 bytes
+ index_htm_files/4237.png                           | Bin 0 -> 1868 bytes
+ index_htm_files/4238.png                           | Bin 0 -> 1826 bytes
+ index_htm_files/4240.png                           | Bin 0 -> 528 bytes
+ index_htm_files/4241.png                           | Bin 0 -> 2763 bytes
+ index_htm_files/4242.png                           | Bin 0 -> 1904 bytes
+ index_htm_files/4247.png                           | Bin 0 -> 43610 bytes
+ index_htm_files/4253.png                           | Bin 0 -> 816 bytes
+ index_htm_files/4279.png                           | Bin 0 -> 2773 bytes
+ index_htm_files/4281.png                           | Bin 0 -> 2866 bytes
+ index_htm_files/4330.png                           | Bin 0 -> 1996 bytes
+ index_htm_files/4331.jpg                           | Bin 0 -> 39544 bytes
+ index_htm_files/4335.png                           | Bin 0 -> 2856 bytes
+ index_htm_files/4336.png                           | Bin 0 -> 2768 bytes
+ index_htm_files/4337.png                           | Bin 0 -> 2274 bytes
+ index_htm_files/4338.png                           | Bin 0 -> 2846 bytes
+ index_htm_files/4448.png                           | Bin 0 -> 21735 bytes
+ index_htm_files/4452.jpg                           | Bin 0 -> 28411 bytes
+ ...let_Oct_2015_A4_Portrait_revised_14_10_2015.pdf | Bin 0 -> 552558 bytes
+ ...ARK TENNIS CLUB subscription form_2015-2016.pdf | Bin 0 -> 107883 bytes
+ ...ARK TENNIS CLUB subscription form_2016_2017.pdf | Bin 0 -> 114477 bytes
+ index_htm_files/HPTC NEWSLETTER_2016.pdf           | Bin 0 -> 143647 bytes
+ .../Junior memebership form _2016_2017v2.pdf       | Bin 0 -> 1073216 bytes
+ ...ior_membership_Form_2016_2017_basic version.pdf | Bin 0 -> 142810 bytes
+ index_htm_files/LADIES SUMMER FIXTURES 2016.docx   | Bin 0 -> 13593 bytes
+ index_htm_files/LADIES SUMMER FIXTURES 2016.pdf    | Bin 0 -> 65479 bytes
+ index_htm_files/MENS SUMMER FIXTURES 2016.docx     | Bin 0 -> 15605 bytes
+ index_htm_files/MENS SUMMER FIXTURES 2016.pdf      | Bin 0 -> 105326 bytes
+ .../Merged Junior Membership docs_2015_2016.pdf    | Bin 0 -> 1280310 bytes
+ index_htm_files/REPORT2015.doc                     | Bin 0 -> 33792 bytes
+ index_htm_files/REPORT2015.pdf                     | Bin 0 -> 74318 bytes
+ index_htm_files/REPORT2016.doc                     | Bin 0 -> 33280 bytes
+ index_htm_files/REPORT2016.pdf                     | Bin 0 -> 108010 bytes
+ index_htm_files/SUMMER HOLIDAY CAMP_2016.pdf       | Bin 0 -> 74037 bytes
+ index_htm_files/SUMMER TENNIS CALENDAR 2016.pdf    | Bin 0 -> 25573 bytes
+ index_htm_files/close.png                          | Bin 0 -> 1910 bytes
+ index_htm_files/closeX.png                         | Bin 0 -> 3665 bytes
+ index_htm_files/controlbar-text-buttons.png        | Bin 0 -> 1300 bytes
+ index_htm_files/controlbar-white-small.gif         | Bin 0 -> 3151 bytes
+ index_htm_files/custom_styles.css                  |   7 +
+ index_htm_files/customs.png                        | Bin 0 -> 15208 bytes
+ index_htm_files/fullexpand.gif                     | Bin 0 -> 209 bytes
+ index_htm_files/geckodimmer.png                    | Bin 0 -> 2817 bytes
+ index_htm_files/highslide-ie6.css                  |  71 ++
+ index_htm_files/highslide.css                      | 917 +++++++++++++++++++++
+ index_htm_files/highslide.js                       |  35 +
+ index_htm_files/loader.white.gif                   | Bin 0 -> 673 bytes
+ index_htm_files/menu.js                            |   1 +
+ index_htm_files/png.js                             |   1 +
+ index_htm_files/resize.gif                         | Bin 0 -> 70 bytes
+ index_htm_files/roe.js                             |   1 +
+ index_htm_files/xr_files.txt                       | 105 +++
+ index_htm_files/xr_fonts.css                       |   0
+ index_htm_files/xr_fontsie.css                     |   0
+ index_htm_files/xr_main.css                        |  42 +
+ index_htm_files/xr_text.css                        |  20 +
+ index_htm_files/zoomin.cur                         | Bin 0 -> 326 bytes
+ index_htm_files/zoomout.cur                        | Bin 0 -> 326 bytes
+ junior news.htm                                    | 193 +++++
+ juniors info.htm                                   | 156 ++++
+ mini tennis.htm                                    | 153 ++++
+ page.html                                          |  90 --
+ recent activities - copy.htm                       | 171 ++++
+ style/back.png                                     | Bin 226 -> 0 bytes
+ style/banner.jpg                                   | Bin 44761 -> 0 bytes
+ style/bullet.png                                   | Bin 989 -> 0 bytes
+ style/footer.png                                   | Bin 179 -> 0 bytes
+ style/graphic.png                                  | Bin 8372 -> 0 bytes
+ style/link.png                                     | Bin 911 -> 0 bytes
+ style/search.png                                   | Bin 1482 -> 0 bytes
+ style/side_back.png                                | Bin 155 -> 0 bytes
+ style/side_base.png                                | Bin 1322 -> 0 bytes
+ style/side_top.png                                 | Bin 1318 -> 0 bytes
+ style/style.css                                    | 331 --------
+ style/tab.png                                      | Bin 400 -> 0 bytes
+ style/tab_selected.png                             | Bin 357 -> 0 bytes
+ summer camp 2015.htm                               | 168 ++++
+ whats on.htm                                       | 146 ++++
+ 168 files changed, 3454 insertions(+), 880 deletions(-)
+
+commit 2662bdd1458ff294e39ec97d4dee0be3c7b6d6e7
+Merge: e9d3cf1 c957842
+Author: Grant T-F <Grant T-F>
+Date:   Fri Nov 18 13:27:42 2016 +0000
+
+    Merge branch 'develop'
+
+commit c957842493e06dbf66df1ac343efb29d8c085558
+Author: Grant T-F <Grant T-F>
+Date:   Fri Nov 18 13:26:45 2016 +0000
+
+    minor update to index.html
+
+ index.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit e9d3cf17591c1f5fe6e18676b9c4f4e4c1a8ec5d
+Merge: 536764b 776e79f
+Author: Grant T-F <Grant T-F>
+Date:   Fri Nov 18 12:58:22 2016 +0000
+
+    Merge branch 'develop'
+
+commit 776e79fc6700382414849f53bf2553d8ec466597
+Author: Grant T-F <Grant T-F>
+Date:   Fri Nov 18 12:51:59 2016 +0000
+
+    put page.html back
+
+ page.html | 90 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 90 insertions(+)
+
+commit 536764b532997394295bea9fc8ebbb6017c5e465
+Merge: f746841 bdceeb9
+Author: Grant T-F <Grant T-F>
+Date:   Fri Nov 18 12:45:49 2016 +0000
+
+    Merge branch 'master' of https://github.com/hptennis/hptennis-website
+
+commit f746841c7aba8d2d71dab2ba25b72d2bb876e461
+Author: Grant T-F <Grant T-F>
+Date:   Fri Nov 18 12:39:43 2016 +0000
+
+    remove page.html
+
+ page.html | 90 ---------------------------------------------------------------
+ 1 file changed, 90 deletions(-)
+
+commit bdceeb98b61492d6f56279695f2744d6911842f5
+Author: grant-hp <grant.parkview.systems@gmail.com>
+Date:   Thu Nov 17 18:55:18 2016 +0000
+
+    typos
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 75a9737cc0fc32c762a0d7e9d9d4b973b64e865e
+Author: Grant T-F <Grant T-F>
+Date:   Thu Nov 17 18:52:39 2016 +0000
+
+    iniital commit - sample files
+
+ LICENSE.md             |  24 ++++
+ README.md              |   1 +
+ another_page.html      |  90 ++++++++++++++
+ contact.html           |  94 ++++++++++++++
+ examples.html          | 152 +++++++++++++++++++++++
+ index.html             |  98 +++++++++++++++
+ page.html              |  90 ++++++++++++++
+ style/back.png         | Bin 0 -> 226 bytes
+ style/banner.jpg       | Bin 0 -> 44761 bytes
+ style/bullet.png       | Bin 0 -> 989 bytes
+ style/footer.png       | Bin 0 -> 179 bytes
+ style/graphic.png      | Bin 0 -> 8372 bytes
+ style/link.png         | Bin 0 -> 911 bytes
+ style/search.png       | Bin 0 -> 1482 bytes
+ style/side_back.png    | Bin 0 -> 155 bytes
+ style/side_base.png    | Bin 0 -> 1322 bytes
+ style/side_top.png     | Bin 0 -> 1318 bytes
+ style/style.css        | 331 +++++++++++++++++++++++++++++++++++++++++++++++++
+ style/tab.png          | Bin 0 -> 400 bytes
+ style/tab_selected.png | Bin 0 -> 357 bytes
+ 20 files changed, 880 insertions(+)

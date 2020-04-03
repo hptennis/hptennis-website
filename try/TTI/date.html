@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Date Test</title> 
+
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.min.css" />
+
+
+  
+
+    <!-- <link rel="stylesheet" type="text/css" href="mystyle.css"> -->
+</head>
+
+<body>
+   
+        <header class="w3-container w3-blue">
+                <div class="w3-row">
+                    <div class="w3-col l1">
+                        <a href="/">
+                            <img src="static/tti-logo.png" alt="TTI Logo">                 
+                        </a>
+                    </div> 
+                    <div class="w3-col l6 w3-container">
+                        <h2>TTI Licence Manager (2)</h2>
+                        <p>This contains supplementary license info</p>
+                        <div class="w3-display-topright w3-margin">
+                                <div id="user-container">
+                                        <div class="w3-hide" id=signedIn>
+                                            <i id="user-name" class="fa fa-user fa-lg"></i>  
+                                            <!-- <div  id="user-name"></div></span> -->
+                                            <button id="signOut" class="w3-button">Sign-out</button>
+                                        </div>
+                                        <div id=signedOut class="w3-show">
+                                        <!-- <button hidden id="sign-in" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--white"> -->
+                                            <i class="fa fa-user fa-lg"></i>
+                                            <button id="signIn" class="w3-button">Sign-in with Google</button>
+                                        </div>
+    
+                                        </button>
+                                </div>
+    
+    
+                        </div>
+                         <!--<button id="tryBtn" onclick="tryClick()" class="w3-btn w3-red">Try</button> 
+                         <button id="tryBtn2" onclick="isLicenseKey('5A64-683D-8070-3881-0F0C-726')" class="w3-btn w3-red">Try not Valid</button> -->
+                        
+                        
+                    </div>
+                </div>
+            </header>
+       
+    </div>
+    <div class="w3-container  w3-padding-16">
+
+         <div class="w3-container w3-cell">
+                        <label class="w3-text-black" for="bdateTime">
+                            <b>Start time</b>
+                        </label>
+                        <input class="w3-input w3-border w3-light-grey" type="text" value="" placeholder="Begin Time" name="begin_time" id="fromdatetimepicker" />
+                        <input class="dtp w3-input w3-border w3-light-grey" type="text" value="" placeholder="End Time" name="dateTime" id="enddatetimepicker"  />
+                    </div>
+        <!-- data grid from https://datatables.net/ -->
+           
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.23.0/moment.min.js"></script> 
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+         crossorigin="anonymous">
+    </script>
+    <script src="js/jquery.datetimepicker.full.min.js"></script>
+    
+
+
+    <script>
+
+    function twoDigit(number) {
+        var twodigit = number >= 10 ? number : "0"+number.toString();
+        return twodigit;
+    }
+
+    function isBorrowPeriodSet(borrow){
+    var result = false;    
+    try
+    {
+      console.log("isBorrowPeriodSet notValidBefore", borrow.borrowed.notValidBefore); 
+      console.log("isBorrowPeriodSet notValidAfter", borrow.borrowed.notValidAfter); 
+     if (moment(borrow.borrowed.notValidBefore, "YYYY-MM-DD", true).isValid())
+       if (moment(borrow.borrowed.notValidAfter, "YYYY-MM-DD", true).isValid())
+          { 
+            result = true;
+          }
+    }
+    catch (err)
+    {
+        console.log ("Error occured:", err);
+    }
+    finally {
+        console.log("isBorrowPeriodSet result:", result )
+        return result;
+    }
+  }
+
+    var table;
+
+
+        function loadPage() {
+
+            console.log("load Page");
+
+            console.log("isBorrowPeriodSet");           
+            var borrowed = {"borrowed":{"notValidBefore": "2019-08-31", "notValidAfter":  "2025-08-31" }}; 
+            var isSet = isBorrowPeriodSet(borrowed);
+            console.log("isBorrowPeriodSet:", isSet);  
+            
+            var b;
+            isSet = isBorrowPeriodSet(b);
+            console.log("is undefined:", isSet);  
+
+            b = {};
+            isSet = isBorrowPeriodSet(b);
+            console.log("is undefined:", isSet);  
+
+           
+            jQuery('#fromdatetimepicker').datetimepicker({
+            format: 'd-m-Y H:i'
+            });
+
+             jQuery('#enddatetimepicker').datetimepicker({
+            format: 'd-m-Y H:i'
+            });
+
+            var dateStr = moment().format('DD-MM-YYYY HH:mm');
+            var enddateStr = moment().add(5, 'years').format('DD-MM-YYYY HH:mm');
+          
+            $('#fromdatetimepicker').val(dateStr);
+
+             $('#enddatetimepicker').val(enddateStr);
+       
+
+
+            //  data grid from https://datatables.net/
+         
+
+        }
+        window.onload = loadPage;
+
+        $( "#qrySubmitBtn" ).click(function() {
+
+            event.preventDefault();
+
+            table.ajax.reload();
+
+        })
+
+    </script>
+
+</body>
+
+</html>

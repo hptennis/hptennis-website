@@ -1,0 +1,11 @@
+#versionSelect {
+    width: 150px;
+}
+
+
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+

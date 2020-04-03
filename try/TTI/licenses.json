@@ -1,0 +1,22 @@
+
+
+{
+  "5A64-6A11-8070-3881-0F0C-726D": {
+    "customer": "grant",
+    "hcf": [
+      "Cruse Ship",
+      "VLCC",
+      "Gas Tranzport (Prismatic)"
+    ],
+    "maintDate": "1-Feb-2019",
+    "serial": 6024
+  },
+  "5AB5-0CB9-8070-3881-0F0C-7275": {
+    "customer": "grant",
+    "hcf": [
+      "VLCC"
+    ],
+    "maintDate": "1-Feb-2019",
+    "serial": 6026
+  }
+}
