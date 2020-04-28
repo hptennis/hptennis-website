@@ -28,6 +28,7 @@
                 <a id="btnShow" class="w3-button w3-large w3-circle w3-xlarge w3-ripple w3-teal" style="z-index:0">+</a>
                 <button id="btnEmailView" class="w3-button w3-black">Show Email View</button>
                 <button id="btnFullView" class="w3-button w3-black">Show Full View</button>
+                <button id="tempAddMemberBtn" onclick="tempAddMemberBtn()" class="w3-btn w3-teal">Temp Add Member</button>
                 <!-- <button id="btUpdate" class="w3-button w3-black">Update</button> -->
             </div>
 
@@ -67,6 +68,9 @@
                     </tfoot>
             </table>
 
+
+            <table id="example2" class="display" width="100%"></table>
+
             <div id="id01" class="w3-modal">
                 <div class="w3-modal-content">
 
@@ -77,6 +81,7 @@
 
                     <div class="w3-container">
                         <form id="memberform">
+                            <input id="id01key" class="" type="text" name="id01key" placeholder="" hidden>
                             <input id="id01serial" class="" type="text" name="id01serial" placeholder="" hidden>
                             <div class="w3-row">
                                 <div class="w3-half">
@@ -117,9 +122,8 @@
                             </div>
                             <div class="w3-row">
                                 <div class="w3-half">
-                                    <label class="w3-text-teal" for="id01mtype">Membership Type</label>
-                                    <!-- <input id="id01mtype" class="w3-input w3-border w3-round" type="text" name="id01mtype" placeholder="Membership Type"> -->
-                                    <select id="id01mtype" class="w3-select w3-border" name="id03membershiptype" required>
+                                    <label class="w3-text-teal" for="id03membershiptype">Membership Type</label>
+                                    <select id="id03membershiptype" class="w3-select w3-border" name="id03membershiptype" required>
                                         <option value="" disabled selected>Please select your membership type</option>
                                         <option value="adult">Adult Full Membership (£180)</option>
                                         <option value="family">Family(£288)</option>
@@ -132,6 +136,16 @@
                                 <div class="w3-half">
                                     <label class="w3-text-teal" for="id01endDate">Trial End Date</label>
                                     <input id="id01endDate" class="w3-input w3-border" type="date" name="id01endDate" placeholder="Trial End Date">
+                                </div>
+                            </div>
+                            <div class="w3-row">
+                                <div class="w3-half">
+                                    <label class="w3-text-teal" for="id03rDate">Last Renewal Date</label>
+                                    <input id="id03rDate" class="w3-input w3-border" type="date" name="id03rDate" placeholder="Trial End Date">
+                                </div>
+                                <div class="w3-half">
+                                    <label class="w3-text-teal" for="id01rTime">Last Renewal Time</label>
+                                    <input id="id01rTime" class="w3-input w3-border"  name="id01rTime" placeholder="">
                                 </div>
                             </div>
                             <div id="createBtnRow" class="w3-show w3-row-padding">
@@ -165,7 +179,6 @@
             crossorigin="anonymous">
         </script>
 
-        // <script src="../js/lib/jquery.min.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
         <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.js"></script>
@@ -183,129 +196,64 @@
       
 
         <script>
-            var dataSet = [
-                ["Tiger Nixon", "System Architect", "Edinburgh", "5421", "2011/04/25", "$320,800"],
-                ["Garrett Winters", "Accountant", "Tokyo", "8422", "2011/07/25", "$170,750"],
-                ["Ashton Cox", "Junior Technical Author", "San Francisco", "1562", "2009/01/12", "$86,000"],
-                ["Cedric Kelly", "Senior Javascript Developer", "Edinburgh", "6224", "2012/03/29", "$433,060"],
-                ["Airi Satou", "Accountant", "Tokyo", "5407", "2008/11/28", "$162,700"],
-                ["Brielle Williamson", "Integration Specialist", "New York", "4804", "2012/12/02", "$372,000"],
-                ["Herrod Chandler", "Sales Assistant", "San Francisco", "9608", "2012/08/06", "$137,500"],
-                ["Rhona Davidson", "Integration Specialist", "Tokyo", "6200", "2010/10/14", "$327,900"],
-                ["Colleen Hurst", "Javascript Developer", "San Francisco", "2360", "2009/09/15", "$205,500"],
-                ["Sonya Frost", "Software Engineer", "Edinburgh", "1667", "2008/12/13", "$103,600"],
-                ["Jena Gaines", "Office Manager", "London", "3814", "2008/12/19", "$90,560"],
-                ["Quinn Flynn", "Support Lead", "Edinburgh", "9497", "2013/03/03", "$342,000"],
-                ["Charde Marshall", "Regional Director", "San Francisco", "6741", "2008/10/16", "$470,600"],
-                ["Haley Kennedy", "Senior Marketing Designer", "London", "3597", "2012/12/18", "$313,500"],
-                ["Tatyana Fitzpatrick", "Regional Director", "London", "1965", "2010/03/17", "$385,750"],
-                ["Michael Silva", "Marketing Designer", "London", "1581", "2012/11/27", "$198,500"],
-                ["Paul Byrd", "Chief Financial Officer (CFO)", "New York", "3059", "2010/06/09", "$725,000"],
-                ["Gloria Little", "Systems Administrator", "New York", "1721", "2009/04/10", "$237,500"],
-                ["Bradley Greer", "Software Engineer", "London", "2558", "2012/10/13", "$132,000"],
-                ["Dai Rios", "Personnel Lead", "Edinburgh", "2290", "2012/09/26", "$217,500"],
-                ["Jenette Caldwell", "Development Lead", "New York", "1937", "2011/09/03", "$345,000"],
-                ["Yuri Berry", "Chief Marketing Officer (CMO)", "New York", "6154", "2009/06/25", "$675,000"],
-                ["Caesar Vance", "Pre-Sales Support", "New York", "8330", "2011/12/12", "$106,450"],
-                ["Doris Wilder", "Sales Assistant", "Sidney", "3023", "2010/09/20", "$85,600"],
-                ["Angelica Ramos", "Chief Executive Officer (CEO)", "London", "5797", "2009/10/09", "$1,200,000"],
-                ["Gavin Joyce", "Developer", "Edinburgh", "8822", "2010/12/22", "$92,575"],
-                ["Jennifer Chang", "Regional Director", "Singapore", "9239", "2010/11/14", "$357,650"],
-                ["Brenden Wagner", "Software Engineer", "San Francisco", "1314", "2011/06/07", "$206,850"],
-                ["Fiona Green", "Chief Operating Officer (COO)", "San Francisco", "2947", "2010/03/11", "$850,000"],
-                ["Shou Itou", "Regional Marketing", "Tokyo", "8899", "2011/08/14", "$163,000"],
-                ["Michelle House", "Integration Specialist", "Sidney", "2769", "2011/06/02", "$95,400"],
-                ["Suki Burks", "Developer", "London", "6832", "2009/10/22", "$114,500"],
-                ["Prescott Bartlett", "Technical Author", "London", "3606", "2011/05/07", "$145,000"],
-                ["Gavin Cortez", "Team Leader", "San Francisco", "2860", "2008/10/26", "$235,500"],
-                ["Martena Mccray", "Post-Sales support", "Edinburgh", "8240", "2011/03/09", "$324,050"],
-                ["Unity Butler", "Marketing Designer", "San Francisco", "5384", "2009/12/09", "$85,675"]
-            ];
-
-            var dataSet2= [         
-    [ "06-04-2019 08:35:13",
-         1002,
-     "Chloe",
-     "Allistone",
-    "50 Woodgate road",
-     "Eastbourne",
-    "Bn228PD",
-     "07791566770",
-     "chloeallistone@yahoo.co.uk",
-    "yes",
-     "adult",
-     "multipleCheque",
-     null,
-     2019
-        ],
-  [ "15-03-2019 05:57:54",
-    1003,
-    "Gary",
-    "Ashdown",
-     "4 Mole Close, Stone Cross",
-     "Eastbourne",
-     "BN24 5QB",
-     "07711 748085",
-    "garyashdown2000@yahoo.co.uk",
-     "yes",
-     "adult",
-     "singleCheque",
-     "",
-     2019
-        ]
-]
+  
             var table;
 
-            var url = "https://script.google.com/macros/s/AKfycby6wkVv9xbATIt8JVeZR71nYxnaKy3n60UJznWo5PYdPaTH2lmT/exec";
+            var membersData = [];
 
-            $.getJSON(url, function (data) {
-                //dataSet2 = data;
-                // table.draw(true);
-                console.log("data:" + dataSet2);
-            });
+            // var url = "https://script.google.com/macros/s/AKfycby6wkVv9xbATIt8JVeZR71nYxnaKy3n60UJznWo5PYdPaTH2lmT/exec";
+
+            // $.getJSON(url, function (data) {
+            //     //dataSet2 = data;
+            //     // table.draw(true);
+            //     console.log("data:" + data);
+            // });
+
+        document.addEventListener('DOMContentLoaded', function() {
+
+            console.log("DOMContentLoaded");
+            
+            firebase_init();
+
+            // readMembersData();
 
 
-            $(document).ready(function () {
 
-                var table;
-
-                membersRef.on("child_added",callbackAdded);
-
-                // $( "#id01endDate" ).datepicker();
-
-                setTimeout(function () {
-                    table = $('#example').DataTable({
+        table = $('#example').DataTable({
                         dom: 'lBrftip',
                         buttons: [
                         'copy', 'csv', 'excel', 'pdf'
                         ],
                         select: true,
-                        data: dataSet2,
+                        data: membersData,
                         "order": [[3, "asc"]],
                         "scrollX": true,
+                        
                         columns: [
-                            { title: "Timestamp" },
-                            { title: "Serial" },
-                            { title: "Name" },
-                            { title: "Surname" },
-                            { title: "Address 1" },
-                            { title: "Address 2" },
-                            { title: "Post Code" },
-                            { title: "Phone" },
-                            { title: "Email" },
-                            { title: "By Email" },
-                            { title: "Membership" },
-                            { title: "Renewal" },
-                            { title: "Trial End" }
+                                    { title: "Date",  "data": "timestamp" },
+                                    { title: "Serial", "data": "serial" },
+                                    { title: "Name", "data": "firstname" },
+                                    { title: "Surname","data": "surname" },
+                                    { title: "Email","data": "email" },
+                                    { title: "Email Option","data": "emailoption" },
+                                    { title: "Address 1","data": "address1" },
+                                    { title: "Address 2","data": "address2" },
+                                    { title: "Postcode","data": "postcode" },
+                                    { title: "Phone","data": "phone" },
+                                    { title: "Payment","data": "paymenttype" },
+                                    { title: "Membership","data": "membershiptype" },
+                                    { title: "Trial End","data": "trailEndDate" },
+                                    { title: "Expires","data": "timestamp" }
                         ],
                         "columnDefs": [
                             {
                                 "targets": [0],
                                 //  render: $.fn.dataTable.render.moment( 'YYYY-MM-DD HH:mm:ss.SSS', 'DD-MM-YYYY HH:mm:ss' )
                                 render: function (data, type, row) {
-                                    console.info ("data:", data);
-                                    const res = moment(data,'DD-MM-YYYY HH:mm:ss').format('DD-MM-YYYY HH:mm');
-                                    console.info ("display:" , res);
+                                    // console.info ("data:", data);
+                                    // const res = moment(Math.floor(data)).format('DD-MM-YYYY HH:mm');
+                                    const res = getShortDate(data)
+                                    // console.info ("display:" , res);
                                     return res ;
                                 }
                             },
@@ -320,11 +268,24 @@
                                 render: function (data, type, row) {
                                     // var date = moment(data);
 
+                                   
 
                                     return getShortDate(data);// date.isValid() ? date.format('DD-MM-YY'): "";
                                 }
+                            },
+                            {
+                                "targets": [13],
+                                //  render: $.fn.dataTable.render.moment( 'YYYY-MM-DD HH:mm:ss.SSS', 'DD-MM-YYYY HH:mm:ss' )
+                                render: function (data, type, row) {
+                                    // var date = moment(data);
+                                    if (row.membershiptype==="trialA")
+                                   
+                                        return  moment(row.trailEndDate).format("DD-MM-YYYY");    
+                                   
+                                    return getExpiry (data,'DD-MM-YYYY')
+                                    // return getShortDate(data);// date.isValid() ? date.format('DD-MM-YY'): "";
+                                }
                             }
-
                         ]
                     }
                     );
@@ -333,21 +294,34 @@
                         .on('select', function (e, dt, type, indexes) {
                             var rowData = table.rows(indexes).data().toArray();
                             console.log("row selected:" + JSON.stringify(rowData));
-                            $("#id01serial").val(rowData[0][1]);
-                            $("#id01firstname").val(rowData[0][2]);
-                            $("#id01lastname").val(rowData[0][3]);
-                            $("#id01address1").val(rowData[0][4]);
-                            $("#id01address2").val(rowData[0][5]);
-                            $("#id01postcode").val(rowData[0][6]);
-                            $("#id01email").val(rowData[0][8]);
-                            $("#id01phone").val(rowData[0][7]);
-                            $("#id01mtype").val(rowData[0][10]);
+                            $("#id01key").val(rowData[0]["key"]);
+                            $("#id01serial").val(rowData[0]["serial"]);
+                            $("#id01firstname").val(rowData[0]["firstname"]);
+                            $("#id01lastname").val(rowData[0]["surname"]);
+                            $("#id01address1").val(rowData[0]["address1"]);
+                            $("#id01address2").val(rowData[0]["address2"]);
+                            $("#id01postcode").val(rowData[0]["postcode"]);
+                            $("#id01email").val(rowData[0]["email"]);
+                            $("#id01phone").val(rowData[0]["phone"]);
+                            $("#id03membershiptype").val(rowData[0]["membershiptype"]);
+                            $("#id03rDate").val(moment(rowData[0]["timestamp"]).format("YYYY-MM-DD"));
+                            $("#id01rTime").val(moment(rowData[0]["timestamp"]).format("HH:MM:SS"));
+
                             // var date = moment(rowData[0][12]);
                             // var dateVal = date.isValid() ? date.format('DD-MM-YY'): "";
-                            $("#id01endDate").val(getDateForInput(rowData[0][12]));
+                            $("#id01endDate").val(getDateForInput(rowData[0]["trailEndDate"]));
 
-                            showHide(false,"createButtonRow");
-                            showHide(true,"updateButtonRow");
+                            if(rowData[0]["membershiptype"]==="trialA")
+                            {
+                                $("#id01endDate").val(getDateForInput(rowData[0]["trailEndDate"]));
+                            }
+                            else
+                            {
+                                $("#id01endDate").val(getExpiry (rowData[0]["timestamp"],'YYYY-MM-DD'));
+                            }
+
+                            showHide(false,"createBtnRow");
+                            showHide(true,"updateBtnRow");
                             document.getElementById('id01').style.display = 'block'
                             // events.prepend('<div><b>' + type + ' selection</b> - ' + JSON.stringify(rowData) + '</div>');
                         })
@@ -358,17 +332,36 @@
                             // events.prepend('<div><b>' + type + ' <i>de</i>selection</b> - ' + JSON.stringify(rowData) + '</div>');
                         });
 
-                }, 2000);
+        });
+
+
+       
 
 
 
-                //  table.draw(true);
+            $(document).ready(function () {
 
+                console.log("document ready");
+
+ 
             });
+
+         
+
+            function getExpiry (timestamp,formatStr)
+            {
+                var expiry = moment(Math.floor(timestamp)) 
+                expiry.add(1,"year");
+                expiry.month("March");
+                expiry.date(31);
+                var res = expiry.format(formatStr);
+                // console.log("exipiry date is:",res)
+                return res;
+            }
 
             function getShortDate(dateStr) {
                 var date = moment(dateStr);
-                var dateVal = date.isValid() ? date.format('DD-MM-YY') : "";
+                var dateVal = date.isValid() ? date.format('DD-MM-YYYY') : "";
                 return dateVal;
             }
 
@@ -456,61 +449,34 @@
 
                 if (validateId01()) {
 
-                    var serial = $('#id01serial').val();
-                    var name = $('#id01firstname').val();
-                    var surname = $('#id01lastname').val();
-                    var address1 = $('#id01address1').val();
-                    var address2 = $('#id01address2').val();
-                    var postcode = $('#id01postcode').val();
-                    var email = $('#id01email').val();
-                    var phone = $('#id01phone').val();
-                    var membership_type = $('#id03membershiptype').val();
-                    var endDate = $("#id01endDate").val();
-
                     event.preventDefault();
+
+                    var data = {
+                            "serial": $('#id01serial').val(),
+                            "firstname": $('#id01firstname').val(),
+                            "surname": $('#id01lastname').val(),
+                            "address1":  $('#id01address1').val(),
+                            "address2": $('#id01address2').val(),
+                            "postcode": $('#id01postcode').val(),
+                            "phone": $('#id01phone').val(),
+                            "email": $('#id01email').val(),
+                            "membership_type": $('#id03membershiptype').val(),
+                            "endDate": $("#id01endDate").val()
+                        };
+
                     $("body").toggleClass("wait");
-                    $.ajax({
-                        url: url,
-                        type: "post", //send it through get method
-                        data: {
-                            ajaxid: 4,
-                            action: 'update',
-                            serial: serial,
-                            firstname: name,
-                            surname: surname,
-                            address1: address1,
-                            address2: address2,
-                            postcode: postcode,
-                            phone: phone,
-                            email: email,
-                            membership_type: membership_type,
-                            endDate: endDate
-                        },
-                        success: function (response, textStatus, jqXHR) {
-                            {
 
-                                $("body").toggleClass("wait");
-                                alert("record updated");
-                                location.reload();
+                  var writeEntryResult = writeEntry($('#id01key').val(), data);
 
-                                // alert ("success!");
-                                // disaply modal
-                                // $('#id04-modal').css("display", "block");
+                  if (writeEntryResult === "ok")
+                  {
+                        alert("record updated");
+                  }
+                  else
+                  {
+                    alert("record update failed");
+                  }
 
-                            }
-                        },
-                        error: function (jqXHR, textStatus, errorThrown) {
-                            console.log("error:", textStatus);
-
-                            alert("An error occured with update, contact grant");
-
-                            //Do Something to handle error
-                            // console.error(
-                            //     "The following error occurred: " +
-                            //     textStatus, errorThrown
-                            // );
-                        }
-                    });
                 };
 
             });
