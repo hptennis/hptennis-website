@@ -36,6 +36,12 @@ div.future {
     -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
     transition: background .5s ease-in-out, padding .5s ease-in-out;
 }
+
+.hspace {
+    padding: 40px;
+}
+
+
 /* Carousel*/
 
 .carousel {
@@ -51,6 +57,7 @@ div.future {
 .carousel-item,
 .active {
     height: 100%;
+   
 }
 
 .carousel-inner {
