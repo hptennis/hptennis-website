@@ -3,11 +3,11 @@ layout: null
 title: Hampden Park Club Sessions
 ---
 
- The club runs a number of club sessions every week, these sessions are mixin sessions, primarily doubles where we play 9 games and change round. Most sessions are usually busy, quite often filling up all 5 courts at peak times. We also have a dedicated Ladies session on Tuesday evening and Men's match practice on Sunday's
+ The club runs a number of club sessions every week, these sessions are mixin sessions, primarily doubles where we play 9 games and change round. Most sessions are usually busy, quite often filling up all 5 courts at peak times. We also have a dedicated Ladies session on Tuesday evening and Men's match practice on Sunday morning
 
  We also have dedicated two intermediate sessions on Saturday morning and Tuesday evening for those wanting to improve their game.
 
-## Times for club sessions.
+## Times for Club sessions.
 
 * Monday 10:00 - 12 mid-day (Intermediate mixin) 
 
