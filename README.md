@@ -23,3 +23,9 @@ http://mdbootstrap.com/forums/forum/support/
 
 Contact:
 office@mdbootstrap.com
+
+Run locally with jekyll
+
+```
+bundle exec jekyll serve
+```
