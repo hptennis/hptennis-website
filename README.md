@@ -24,6 +24,16 @@ http://mdbootstrap.com/forums/forum/support/
 Contact:
 office@mdbootstrap.com
 
+
+# Jekyll
+
+Hosted on Github Pages with Jekyll see http://jekyllrb.com/
+
+To update jekyll run
+
+`bundle update` 
+
+
 Run locally with jekyll
 
 ```
