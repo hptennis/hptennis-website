@@ -5,7 +5,7 @@ title: Club Coaching
 
 
 
-## Head Coaching: Richard Allingham
+## Head Coach: Richard Allingham
 
 
 <img src="./images/richard.jpg" alt="richard image" style="width:200px;"/>
