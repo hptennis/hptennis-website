@@ -15,7 +15,7 @@ title: Club Coaching
 - International Coach.
 
 
-I am an LTA Senior Performance coach who played for Grant Britain under 18's. I am currently Director of Tennis coaching at Hampden Park Tennis Club and Head Coach at Eastbourne Sports Park. I coach county, regional and national players.
+I am an LTA Senior Performance coach who played for Great Britain under 18's. I am currently Director of Tennis coaching at Hampden Park Tennis Club and Head Coach at Eastbourne Sports Park. I coach county, regional and national players.
 
 #### Individual lessons
 * 1hr £38

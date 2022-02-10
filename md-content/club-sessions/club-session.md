@@ -3,28 +3,29 @@ layout: null
 title: Hampden Park Club Sessions
 ---
 
- The club runs a number of club sessions every week, these sessions are mixin sessions, primarily doubles where we play 9 games and change round. Most sessions are usually busy, quite often filling up all 5 courts at peak times. We also have a dedicated Ladies session on Tuesday evening and Men's match practice on Sunday morning
+ The club runs several club sessions every week; these sessions are mixin sessions, primarily doubles where we play nine games and change round (Note: When there are odd numbers attending, we play seven games to reduce wait times). Most sessions are usually busy, quite often filling up all five courts at peak times. 
 
- We also have dedicated two intermediate sessions on Saturday morning and Tuesday evening for those wanting to improve their game.
+ **Note: In the Winter months (Sept to March), on Wednesday evening's players are asked to contribute £1 towards the running costs and up keep of the lights.**
+ 
+ We also have a dedicated Ladies' session on Tuesday evening and Men's match practice on Sunday morning.
+
+ We have dedicated intermediate sessions on Monday evening for those wanting to improve their game.
+
 
 ## Times for Club sessions.
 
-* Monday 10:00 - 12 mid-day (Intermediate mixin) 
+* Mondays from 13:30 (Club mixin)
 
-* Mondays from 13:30 (Club mix-in)
+* Monday 17:00 - 19:00 (Intermediate mixin) 
 
 * Tuesdays at 18:30 (Ladies practice)
 
-* Tuesdays at 18:30 (Intermediate practice)
-        
-* Wednesday at 10:00 (Club mix-in)
+* Wednesday at 10:00 (Club mixin)
 
-* Wednesday at 18:00  (Club mix-in)
+* Wednesday at 18:00  (Club mixin)
 
-* Friday at 13:30 (Club mix-in)
+* Friday at 13:30 (Club mixin)
 
-* Saturday at 12:00 until 13:30 (Intermediate practice)
+* Saturday at 13:30 (Club mixin)
 
-* Saturday at 13:30 (Club mix-in)
-
-* Sunday at 10:00 (Men's match practice)
+* Sunday at 10:00 - 12:00 (Men's match practice)
