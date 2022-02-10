@@ -18,7 +18,7 @@ title: Club Coaching
 I have played tennis for over 23 years and coached 11 years plus.
 I have worked with Level 5 master performance coach for most of my career.
 I have worked on court with Venus & Serena Williams coach, Rick Maci.
-Traveled for my coaching career over to America for my CPD and connections.
+Travelled for my coaching career over to America for my CPD and connections.
 I have been In tennis all my life and worked in clubs my whole coaching & playing career.
 Coach to county
 
