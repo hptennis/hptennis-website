@@ -2,22 +2,42 @@
 layout: null
 title: Hampden Park Tennis Events
 ---
-# Summer Holiday Junior Tennis Coaching Courses
+
+
+# Easter Tennis Camp
+
 <br>
-## Wednesday 28th July to Friday 30th July
+## **April 11th to 13th**  
 
-* **10 am until 12 noon each day**
+The camp will involve technical teaching, fun and games! 
+
+* All ages, all standards welcome. 
+Format depending on entries and numbers.
+
+
+*£21 per day or £55 for all 3 days
+
+
 <br>
-## Monday 9th Auguust - Wednesday 11th Aug
 
-* **10 am until 12 noon each day**
+**To book contact Club Coach, Francesca Scollo on 07850327695 or by email fstennis@hotmail.co.uk**
+
+---
+
+# New for 2022: **Tots Tennis**
+
+![tots tennis](images/tots-tennis.png "Tots Tennis")
 
 
-Cost  HPTC Members & HP Community Court Annual Pass holders  £36   
-         Non members £42
-All ages & standards welcome
+* It’s never too young to start playing tennis.
+* Come and join us for skills and fun on the Community Courts 
+* **Starting Tuesday 19th April 10.00- 10.30.**  
+* **£4.00 per session.**
 
-**To book contact Club Coach, Jenny Hughes on 07831097864 or by email hughes_j32@sky.com**
+**For more details or to book a place please email Frankie Scollo on 
+Email: fstennis@hotmail.co.uk**
+
+
 
 
 

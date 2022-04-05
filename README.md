@@ -36,6 +36,7 @@ To update jekyll run
 
 Run locally with jekyll
 
-```
-bundle exec jekyll serve
-```
+
+`bundle exec jekyll serve`
+
+`bundle exec jekyll serve --livereload`
