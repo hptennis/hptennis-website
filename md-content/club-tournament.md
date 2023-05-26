@@ -45,7 +45,7 @@ For those interested in the Juniors Tournament please see Billy Moon at Junior A
 
 ## Club Finals Day
 
-Club Finals day will be 3rd September 2022.
+Club Finals day will be 3rd September 2023.
 
 **Please get all you rounds played before that date.**
 
