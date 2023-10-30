@@ -5,7 +5,7 @@ title: Club Coaching
 
 ## Coach/Junior Hitter: Billy Moon
 
-<img src="./images/Billy.jpg" alt="abi" style="width:200px;"/>
+<img src="./images/billy.jpg" alt="billy" style="width:200px;"/>
 
 ### About Billy
 
