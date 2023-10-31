@@ -13,7 +13,7 @@ Abi is working towards completing her Level 3 Coaching qualification and is curr
 
 #### Individual lessons
 
-- 1hr £35
+- 1hr £25
 
 For further information about any aspects of coaching at the club feel free to get in touch:
 

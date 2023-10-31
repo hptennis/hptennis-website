@@ -14,3 +14,9 @@ Darren is a Level 4 Club Coach and primarily works on the adult programme at Ham
 **Darren coaches an Adult Group Coaching Session at the Club every Thursday 7pm-8pm.**
 
 **To book please call Darren on 07894 646569.**
+
+#### Individual lessons
+
+- 1hr £28
+
+**To book please call Darren on 07894 646569.**

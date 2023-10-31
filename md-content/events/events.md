@@ -3,20 +3,23 @@ layout: null
 title: Hampden Park Tennis Events
 ---
 
-# New for 2022: **Tots Tennis**
+# Club AGM
 
-![tots tennis](images/tots-tennis.png "Tots Tennis")
+The Tennis Club AGM is booked for Monday 13th November at 7.30 at the [Hampden Park Indoor Bowls](https://www.ediba.co.uk/) club
 
+- The club can only run successfully with the support of the members and there are going to be some big changes coming up so I would ask that people think about how they can support the club moving forward. It is easy and understandable to just want to up and play, but there has to be a team behind this to ensure the future of the club.
+- **If you can make time please try and attend** at this important time for the club.
+- If you can't attend, then please send any suggestions to <a href="secretary@hampdenparktennis.co.uk">secretary@hampdenparktennis.co.uk</a>
 
-* It’s never too young to start playing tennis.
-* Come and join us for skills and fun on the Community Courts 
-* **Starting Tuesday 19th April 10.00- 10.30.**  
-* **£4.00 per session.**
+# Mid-Winter Tournament/Club Christmas Event
 
-**For more details or to book a place please email Frankie Scollo on 
-Email: fstennis@hotmail.co.uk**
+- This will be on Wednesday 6th December (charityto be advised) - 6pm starting time.
+- Please bring along refreshments and a contribution for the nominated charity.
+- Weather permitting we will play tennis (format TBD), in the event of bad weather there will be a quiz
 
+# Winter Junior tournament
 
+- There is a Junior Tournament planned for Sat 16th December 1-3pm
+- Where: Hampden Park Community Courts.
 
-
-
+For details please contact <a href="coach@hampdenparktennis.co.uk">coach@hampdenparktennis.co.uk</a>
