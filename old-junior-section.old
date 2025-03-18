@@ -1,0 +1,156 @@
+ <section id="juniors-section" class="text-center">
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <div class="divider-new">
+            <h2 class="h2-responsive">Juniors Section</h2>
+        </div>
+
+        <div class="container">
+
+            <div class="col wow fadeIn">
+                <h1>Welcome to Hampden Park Tennis Juniors</h1>
+
+                <div class="row">
+
+
+                    <!--First columnn-->
+                    <div class="col-md-4">
+                        <div class="card">
+
+                            <!--Card image-->
+                            <img class="img-fluid" src="images/315-236-young-group-2017.jpg" alt="Card image cap">
+                            <!--<img class="img-fluid" src="images/court-3.jpg" alt="Card image cap">-->
+                            <!--<img src="images/jennyHughes.jpg" >-->
+                            <!--/.Card image-->
+
+                            <!--Card content-->
+                            <div class="card-block">
+                                <!--Title-->
+                                <h4 class="card-title">Junior Section</h4>
+                                <!--Text-->
+
+                                <div class="card-text">
+                                    <p>Very active junior section of approximately 100 junior members. Full junior
+                                        coaching programme including Mini Tennis
+                                        plus competitions, ladders, fun tournaments etc. With Club coaches Suzy
+                                        Larkin and her team.
+                                    </p>
+                                    <p>Junior membership is available for £45.00 per annum</p>
+                                    <a href="mailto:coach@hampdenparktennis.co.uk">Email Suzy for more information</a>
+                                    <!--<p>Mobile: 07850327695</p>-->
+                                </div>
+
+                                <a href="https://clubspark.lta.org.uk/HampdenParkTennisClub/Membership/Join"
+                                    class="btn btn-default">Join here</a>
+
+
+                            </div>
+                            <!--/.Card content-->
+
+                        </div>
+                        <!-- card -->
+
+                    </div>
+                    <!--Second columnn-->
+                    <div class="col-md-4">
+                        <div class="card">
+
+                            <!--Card image-->
+                            <img class="img-fluid" src="images/court-3.jpg" alt="Card image cap">
+                            <!--/.Card image-->
+
+                            <!--Card content-->
+                            <div class="card-block">
+                                <!--Title-->
+                                <h4 class="card-title">Junior coaching squads</h4>
+                                <!--Text-->
+                                <div class="card-text">
+                                    <p>These are available for all ages and standards on</p>
+                                    <ul>
+                                        <li>Saturday mornings</li>
+                                        <li>Monday, Tuesday and Wednesday evenings</li>
+                                        <li>Maximum 12 per session.</li>
+                                        <li>Check with the <a href="#calendar">Club Calender</a> for current times.</li>
+                                    </ul>
+                                    <h4>Cost: £7 per hour per child.</h4>
+
+                                    <a href="#calendar" class="btn btn-default btn-sm">Calendar</a>
+                                    <a href="HPTCJuniorNewsletter2023.pdf" class="btn btn-info">Juniors Newsletter
+                                        2023</a>
+
+
+                                </div>
+
+                                <!--<a href="#" class="btn btn-primary">Membership</a>-->
+                            </div>
+                            <!--/.Card content-->
+
+                        </div>
+                        <!-- card -->
+                    </div> <!-- second column -->
+
+                    <!--Third columnn-->
+                    <div class="col-lg-4">
+                        <!--Card-->
+                        <div class="card">
+
+                            <!--Card image-->
+                            <img src="images/315-236-fun-young-group-2017.jpg" class="img-fluid" alt="">
+                            <!--/.Card image-->
+
+
+                            <!--Card image ewith overlay mask-->
+                            <!--<div class="view overlay hm-black-slight">-->
+                            <!--<img src="images/court-3.jpg" class="img-fluid" alt="">-->
+                            <!--<img src="images/315-236-fun-young-group-2017.jpg" class="img-fluid" alt="">-->
+                            <!--<a href="#">-->
+                            <!--<div class="mask"></div>-->
+                            <!--</a>-->
+                            <!--</div>-->
+                            <!--/.Card image-->
+
+                            <!--Card content-->
+                            <div class="card-block">
+                                <!--Title-->
+                                <h4 class="card-title">Junior General Activities</h4>
+                                <!--Text-->
+                                <div class="card-text">
+                                    <p>In brief, every opportunity is given for juniors of all levels of ability to
+                                        develop a taste for the exciting sport of tennis</p>
+                                    <ul style="text-align: left" class="fa-ul">
+                                        <li><i class="fa-li fa fa-check-square"></i>Fun tournaments in school holidays.
+                                        </li>
+                                        <li><i class="fa-li fa fa-check-square"></i>Teams in Sussex Junior Tennis
+                                            leagues.</li>
+                                        <li><i class="fa-li fa fa-check-square"></i>Junior Aces - All year, Sunday
+                                            matchplay sessions.</li>
+                                        <li><i class="fa-li fa fa-check-square"></i>Crash courses in Easter and summer
+                                            holidays.</li>
+                                        <li><i class="fa-li fa fa-check-square"></i>Adult/junior tournaments.</li>
+                                        <li><i class="fa-li fa fa-check-square"></i>Junior Club Championships - Singles
+                                            and Doubles.</li>
+                                        <li><i class="fa-li fa fa-check-square"></i>Junior ladder competitions</li>
+                                        <li><i class="fa-li fa fa-check-square"></i>Junior of the year award.</li>
+                                    </ul>
+                                </div>
+                                <a href="HPTCJuniorNewsletter2023.pdf" class="btn btn-info">Juniors Newsletter 2023</a>
+                            </div>
+                            <!--/.Card content-->
+
+                        </div>
+                        <!--/.Card-->
+                    </div>
+                    <!--Third columnn-->
+
+                </div> <!-- row -->
+
+            </div>
+        </div>
+
+
+    </section>

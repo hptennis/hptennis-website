@@ -14,8 +14,17 @@ Ferrero Tennis academy in Spain. She held a world ranking of 620 and has played 
 tournaments across the world. Her coaching aims to inspire and encourage both new and
 established players.
 
+**Adult Drills Group Coaching Session at the Club every Monday 6pm – 7.30pm**
+
 **Suzy coaches all ages and standards.**
 
 #### Individual lessons
 
-- Please contact Suzy for details
+- Please contact Suzy for full details of the coaching programme.
+
+Tel: 07923 482049
+
+Email: coach@hampdenparktennis.co.uk
+
+
+

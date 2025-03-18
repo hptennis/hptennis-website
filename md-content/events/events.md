@@ -5,7 +5,7 @@ title: Hampden Park Tennis Events
 
 # Club AGM
 
-The Tennis Club AGM is booked for Monday 13th November at 7.30 at the [Hampden Park Indoor Bowls](https://www.ediba.co.uk/) club
+The Tennis Club AGM is booked for Monday 25th November at 7.30 at the [Hampden Park Indoor Bowls](https://www.ediba.co.uk/) club
 
 - The club can only run successfully with the support of the members and there are going to be some big changes coming up so I would ask that people think about how they can support the club moving forward. It is easy and understandable to just want to up and play, but there has to be a team behind this to ensure the future of the club.
 - **If you can make time please try and attend** at this important time for the club.
@@ -13,13 +13,9 @@ The Tennis Club AGM is booked for Monday 13th November at 7.30 at the [Hampden P
 
 # Mid-Winter Tournament/Club Christmas Event
 
-- This will be on Wednesday 6th December (charityto be advised) - 6pm starting time.
+- This will be on Wednesday 4th December  - 6pm starting time.
 - Please bring along refreshments and a contribution for the nominated charity.
 - Weather permitting we will play tennis (format TBD), in the event of bad weather there will be a quiz
 
-# Winter Junior tournament
-
-- There is a Junior Tournament planned for Sat 16th December 1-3pm
-- Where: Hampden Park Community Courts.
 
 For details please contact <a href="coach@hampdenparktennis.co.uk">coach@hampdenparktennis.co.uk</a>
