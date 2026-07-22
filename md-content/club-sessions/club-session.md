@@ -9,7 +9,7 @@ title: Hampden Park Club Sessions
  
 
 
- We have dedicated intermediate sessions on Wednesday afternoon for those wanting to improve their game.
+ We have a dedicated Intermediate session on Tuesday evenings  at 6:30 pm for those wanting to improve their game.
 
 
 ## Times for Club sessions.
@@ -20,7 +20,7 @@ title: Hampden Park Club Sessions
 
 * Tuesdays at 18:30 (Club Intermediate mixin)
 
-* Wednesday at 10:00 (Club mixin)
+* Wednesday at 09:30 (Club mixin)
 
 * Wednesday at 17:30  (Club mixin)
 
