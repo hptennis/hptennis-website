@@ -17,5 +17,5 @@ Hampden Park Tennis club includes full tennis coaching facilities from our fully
 
 School Holiday activties include:
 
-- Fun Tournements
+- Fun Tournaments
 - Crash courses
