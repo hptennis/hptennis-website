@@ -87,3 +87,22 @@ hr.rounded {
     border-top: 4px solid #8adb98;
   border-radius: 5px;
   }
+
+  #events-content h2 {
+  color: #1b5415;             /* Changes the text colour */
+  font-family: Arial, sans-serif; /* Changes the font */
+  font-size: 1.75rem;
+  font-weight: bold;         /* Adjusts the text size */
+  margin-top: 1.5rem;         /* Adds space above the heading */
+  border-bottom: 2px solid #eee; /* Adds a clean underline rule */
+  padding-bottom: 0.25rem;    /* Space between text and underline */
+}
+
+ #events-content h3 {
+  color: #1b5415;             /* Changes the text colour */
+  font-family: Arial, sans-serif; /* Changes the font */
+  font-size: 1.25rem;         /* Adjusts the text size */
+  margin-top: 1.5rem;         /* Adds space above the heading */
+  border-bottom: 2px solid #eee; /* Adds a clean underline rule */
+  padding-bottom: 0.25rem;    /* Space between text and underline */
+}

@@ -3,19 +3,65 @@ layout: null
 title: Hampden Park Tennis Events
 ---
 
-# Club AGM
+## Ongoing Weekly Junior Events
 
-The Tennis Club AGM is booked for Date TBA November at 7.30 at the [Hampden Park Indoor Bowls](https://www.ediba.co.uk/) club
+| Day | Time | Event |
+| :--- | :--- | :--- |
+| **Monday** | 4.00 – 5.00pm | Coaching – 5-11 years beginners |
+| **Monday** | 5.00 – 6.00pm | Coaching – 12-16 years intermediates |
 
-- The club can only run successfully with the support of the members and there are going to be some big changes coming up so I would ask that people think about how they can support the club moving forward. It is easy and understandable to just want to up and play, but there has to be a team behind this to ensure the future of the club.
-- **If you can make time please try and attend** at this important time for the club.
-- If you can't attend, then please send any suggestions to <a href="secretary@hampdenparktennis.co.uk">secretary@hampdenparktennis.co.uk</a>
+---
 
-# Mid-Winter Tournament/Club Christmas Event
-
-- This will be on a Wednesday Evening  early December (Date TBA)  - 6pm starting time.
-- Please bring along refreshments and a contribution for the nominated charity.
-- Weather permitting we will play tennis (format TBD), in the event of bad weather there will be a quiz
+## Club Events & Tournaments
 
 
-For details please contact <a href="coach@hampdenparktennis.co.uk">coach@hampdenparktennis.co.uk</a>
+### LTA Adult Doubles Competition
+* **Date/Time:** Saturday 11th April – morning
+* **Details:** This is an official LTA tournament that will progress to the county level on grass. Organized by Suzy Larkin.
+
+### Ball Crew
+* **Date/Time:** Wednesday 15th April – evening (Runs weekly up until the Tournament)
+* **Details:** Pupils from Cavendish School will attend the evening Advanced-Player Club Session with their teacher, Katie Allan. They will be training for Ball Person duties at the Lexus Eastbourne Open Tennis Tournament. Courts are booked from 5.30pm for the Club Session on these weeks to enable maximum training.
+
+### Julie Marks Memorial Tournament
+* **Date/Time:** Saturday 25th April (Starts at 2pm, practice courts available from 1.30pm)
+* **Details:** This will be a doubles event; partners will be rotated on the day – no need to pre-arrange a partner.
+
+### Ladies Spring Getogether
+* **Date/Time:** Monday May 25th – morning
+* **Details:** We invite all ladies' members for some friendly tennis, tea / coffee and cake, whether interested in teams or social play, ready for the new season. Hosted by Sue Holmes.
+
+### Meads Go Grass 2026
+* **Date/Time:** Sunday 2nd August (Approx. 9.45am to 3pm)
+* **Details:** This is an invitation event from Meads to compete in an interclub grass tournament. We have been invited to field 4 mixed-doubles teams. Jenny will be co-ordinating our Teams.
+
+### Junior / Adult Club Finals Day & Club Coffee Event
+* **Date/Time:** Sunday 6th September
+
+### Ladies Autumn Getogether
+* **Date/Time:** Sept / Oct – TBA
+* **Details:** We invite all ladies' members for some friendly tennis and afternoon tea, whether interested in teams or social play. If not playing, just come along and enjoy the company and cake.
+
+### Autumn Tournament
+* **Date/Time:** Saturday 3rd October (Starts at 2pm, practice courts available from 1.30pm)
+* **Details:** This will be a doubles event; partners will be rotated on the day – no need to pre-arrange a partner. All members are invited to attend, plus guests (£5 guest fee).
+
+### A.G.M.
+* **Date/Time:** Monday 23rd November – 7pm
+* **Details:** Anticipated to be at Eastbourne & District Indoor Bowls Club at Hampden Park.
+
+### Mid-Winter Tournament / Club Christmas Event
+* **Date/Time:** Wednesday 2nd December – 6pm start (Charity to be advised)
+* **Details:** We invite all members for a Christmas themed event. Includes a closely fought tournament, a Christmas buffet (please contribute!), and a Quiz. Mulled wine and soft alternatives provided. Please come along, whether playing or not.
+
+---
+
+## Club Matches
+
+> ⚠️ **Court Availability Note:** On the dates of Club Team home matches, courts will not be available at certain times.
+
+* **Sunday Matches:** Generally start at 10.00 – 10.30 am.
+* **Saturday Matches:** Timing will be advised.
+* **Bookings:** Court Bookings for all home matches will be managed in Clubspark once finalised, and take strict priority over all other bookings.
+
+
