@@ -29,3 +29,11 @@ title: Hampden Park Club Sessions
 * Saturday at 13:30 (Club mixin)
 
 * Sunday at 9:00 - 11:00 (Men's match practice)
+
+### Ongoing Weekly Junior Events
+<br>
+* Monday 4.00 – 5.00pm Coaching – 5-11 years beginners
+
+* Monday 5.00 – 6.00 pm Coaching – 12-16 years intermediates
+
+ <p class="text-center font-italic">updated Jul-2026</p>
