@@ -20,6 +20,9 @@ title: Hampden Park Club Sessions
 
 * Tuesdays at 18:30 (Club Intermediate mixin)
 
+* Tuesdays at 19:30 Team Practice (Members £5.00)
+
+
 * Wednesday at 09:30 (Club mixin)
 
 * Wednesday at 17:30  (Club mixin)
