@@ -24,6 +24,8 @@ title: Hampden Park Club Sessions
 
 * Wednesday at 17:30  (Club mixin)
 
+* Thursdays from 19:00 - 20:00  Beginers/Improvers Group Coaching (Members £7.00 , Non Members £10.00)
+
 * Friday at 13:30 (Club mixin)
 
 * Saturday at 13:30 (Club mixin)
