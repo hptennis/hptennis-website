@@ -14,6 +14,7 @@ title: Hampden Park Tennis Events
 
 ## Club Events & Tournaments
 
+<!-- 
 
 ### LTA Adult Doubles Competition
 * **Date/Time:** Saturday 11th April – morning
@@ -34,6 +35,8 @@ title: Hampden Park Tennis Events
 ### Meads Go Grass 2026
 * **Date/Time:** Sunday 2nd August (Approx. 9.45am to 3pm)
 * **Details:** This is an invitation event from Meads to compete in an interclub grass tournament. We have been invited to field 4 mixed-doubles teams. Jenny will be co-ordinating our Teams.
+
+-->
 
 ### Junior / Adult Club Finals Day & Club Coffee Event
 * **Date/Time:** Sunday 6th September
