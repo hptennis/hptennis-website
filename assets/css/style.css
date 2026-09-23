@@ -88,13 +88,7 @@ main { padding-bottom: 3rem; flex: 1; width: 100%; }
   text-decoration: none;
 }
 .brand:hover { color: #fff; }
-.ball {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background: var(--yellow);
-  flex: none;
-}
+.brand img { display: block; height: 52px; width: auto; border-radius: 0; }
 .menu-toggle {
   background: none;
   border: 1px solid rgba(255, 255, 255, 0.6);
@@ -223,6 +217,7 @@ th { background: var(--bg-soft); }
 
 /* Room for the full menu on one line */
 @media (min-width: 1000px) {
+  .brand img { height: 60px; }
   .menu-toggle { display: none; }
   .site-nav { display: block; width: auto; }
   .site-nav ul { display: flex; align-items: center; gap: 1.25rem; padding: 0; }
