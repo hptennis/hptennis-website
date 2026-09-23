@@ -15,4 +15,8 @@
       <li><a href="{{ '/policies/' | relative_url }}">Club policies</a></li>
     </ul>
   </div>
+  {% comment %} Both dates come from when the site was last published, so they update automatically. {% endcomment %}
+  <div class="container footer-copyright">
+    © {{ site.time | date: "%Y" }} {{ site.data.club.name }} · Updated {{ site.time | date: "%-d %B %Y" }}
+  </div>
 </footer>

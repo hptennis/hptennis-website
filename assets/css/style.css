@@ -24,6 +24,10 @@ body {
   line-height: 1.6;
   color: var(--text);
   background: var(--bg);
+  /* Keeps the footer at the bottom of short pages */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 img, iframe { max-width: 100%; }
@@ -43,7 +47,7 @@ h3 { font-size: 1.2rem; }
   padding: 0 16px;
 }
 
-main { padding-bottom: 3rem; }
+main { padding-bottom: 3rem; flex: 1; width: 100%; }
 
 /* Buttons */
 .button {
@@ -191,6 +195,13 @@ th { background: var(--bg-soft); }
 .site-footer a { color: #fff; }
 .footer-inner { display: grid; gap: 1.25rem; }
 .site-footer ul { list-style: none; margin: 0; padding: 0; }
+.footer-copyright {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
 
 /* Wider screens */
 @media (min-width: 800px) {
