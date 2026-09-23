@@ -1,0 +1,15 @@
+{% assign groups = "Adult sessions|Junior sessions" | split: "|" %}
+{% for group in groups %}
+  {% if forloop.first %}{% assign rows = page.adult_sessions %}{% else %}{% assign rows = page.junior_sessions %}{% endif %}
+  {% if rows %}
+  <h2>{{ group }}</h2>
+  <table>
+    <thead><tr><th>Day</th><th>Time</th><th>Session</th></tr></thead>
+    <tbody>
+    {% for row in rows %}
+      <tr><td>{{ row.day }}</td><td>{{ row.time }}</td><td>{{ row.details }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+{% endfor %}

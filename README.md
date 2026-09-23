@@ -1,49 +1,42 @@
-Material Design for Bootstrap
+# Hampden Park Tennis Club website
 
-Version: MDB Free 4.1.1
+Static site for <https://hampdenparktennis.co.uk>, built by Jekyll and hosted free on GitHub Pages. GitHub also provides the HTTPS certificate and renews it automatically.
 
-Documentation:
-http://mdbootstrap.com/
+Membership and court booking are handled by ClubSpark. This site only links to it.
 
-Getting started:
-http://mdbootstrap.com/getting-started/
+**Volunteers updating content: see [EDITING.md](EDITING.md).**
 
-Tutorials:
-MDB-Bootstrap: http://mdbootstrap.com/bootstrap-tutorial/
-MDB-Wordpress: http://mdbootstrap.com/wordpress-tutorial/
+## Where things are
 
-Templates:
-http://mdbootstrap.com/templates/
+| Path | What it is |
+| --- | --- |
+| `index.md`, `sessions.md`, `events.md`, ... | One file per page: front matter plus Markdown text |
+| `_notices/` | "What's On" cards on the home page, one file each |
+| `_coaches/` | Coach profiles, one file each |
+| `_data/club.yml` | Address, emails, ClubSpark and calendar links |
+| `_data/membership.yml` | Membership fees |
+| `_data/navigation.yml` | Menu items |
+| `_layouts/`, `_includes/` | HTML templates |
+| `assets/css/style.css` | All styling (one file, no framework) |
+| `.pages.yml` | Pages CMS editor config: what volunteers can edit |
+| `_config.yml` | Site settings, plus which blocks each page shows (`extras`) |
 
-License:
-http://mdbootstrap.com/license/
+Page structure (layout, permalinks, extra blocks such as the fees table) is set in `_config.yml` defaults rather than in each page, so the web editor can't remove it.
 
-Support:
-http://mdbootstrap.com/forums/forum/support/
+## Run locally
 
-Contact:
-office@mdbootstrap.com
+```
+bundle install
+bundle exec jekyll serve --livereload
+```
 
+Then open <http://localhost:4000>.
 
-# Jekyll
+## Giving someone edit access
 
-Hosted on Github Pages with Jekyll see http://jekyllrb.com/
+1. Add their GitHub account as a collaborator on the `hptennis/hptennis-website` repository with **Write** access.
+2. Send them [EDITING.md](EDITING.md).
 
-To update jekyll run
+## Custom domain / HTTPS
 
-`bundle update` 
-
-
-Run locally with jekyll
-
-
-`bundle exec jekyll serve`
-
-`bundle exec jekyll serve --livereload`
-
-
-# Fixtures Page
-
-https://docs.google.com/spreadsheets/d/e/2PACX-1vTjf06oCmF_Rj5aenvlgdjW1sD1HEB0TgbV2OEa804Hu6gi_-ofR7ZFxyg-xIaOuhpQytF_-vMogJEz/pubhtml
-
-https://opensheet.elk.sh/1EALtPeHgte5QHE9lbrqQ2eBA36nHAFRdFHw3lbMIoMA/Master-Fixture-List
+DNS: apex `A` records point to GitHub Pages (185.199.108-111.153) and `www` is a `CNAME` to `hptennis.github.io`. In the repository's Settings → Pages, the custom domain is `hampdenparktennis.co.uk` and **Enforce HTTPS** is ticked. If the certificate ever fails to renew, remove and re-add the custom domain there.

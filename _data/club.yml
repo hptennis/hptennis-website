@@ -1,0 +1,19 @@
+# Club details used across the whole site (header, footer, contact page).
+name: Hampden Park Tennis Club
+tagline: A thriving, friendly club for all levels
+address: 7 Hampden Park Drive, Hampden Park, Eastbourne BN22 9QR
+map_query: "50.794379,0.271862"
+
+emails:
+  - label: Club Secretary
+    address: secretary@hampdenparktennis.co.uk
+  - label: Coaching
+    address: coach@hampdenparktennis.co.uk
+
+# ClubSpark handles membership and court booking.
+clubspark:
+  join: https://clubspark.lta.org.uk/HampdenParkTennisClub/Membership/Join
+  booking: https://clubspark.lta.org.uk/HampdenParkTennisClub/Booking
+  home: https://clubspark.lta.org.uk/HampdenParkTennisClub
+
+google_calendar: https://calendar.google.com/calendar/embed?wkst=1&ctz=Europe%2FLondon&showPrint=0&showTz=0&showTitle=0&hl=en_GB&src=cG9rMWd1YmlqdG90aTdrN3E3NjJrY3E1cjhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23E4C441

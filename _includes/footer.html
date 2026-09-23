@@ -1,0 +1,18 @@
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <strong>{{ site.data.club.name }}</strong><br>
+      {{ site.data.club.address }}
+    </div>
+    <ul>
+      {% for email in site.data.club.emails %}
+      <li>{{ email.label }}: <a href="mailto:{{ email.address }}">{{ email.address }}</a></li>
+      {% endfor %}
+    </ul>
+    <ul>
+      <li><a href="{{ site.data.club.clubspark.join }}">Join / renew membership</a></li>
+      <li><a href="{{ site.data.club.clubspark.booking }}">Book a court</a></li>
+      <li><a href="{{ '/policies/' | relative_url }}">Club policies</a></li>
+    </ul>
+  </div>
+</footer>

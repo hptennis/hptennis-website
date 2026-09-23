@@ -1,0 +1,208 @@
+/* Hampden Park Tennis Club - the whole site's styles.
+   Mobile first: base styles are for phones, the media query at the
+   bottom adds the wider-screen layout. Colours are set once here. */
+
+:root {
+  --green: #1f6b3a;
+  --green-dark: #154d29;
+  --yellow: #e4c441;
+  --text: #1d2521;
+  --muted: #5b6660;
+  --bg: #ffffff;
+  --bg-soft: #f3f6f2;
+  --border: #dde4dc;
+  --radius: 8px;
+  --max: 1100px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+img, iframe { max-width: 100%; }
+img { height: auto; border-radius: var(--radius); }
+
+a { color: var(--green); }
+a:hover { color: var(--green-dark); }
+
+h1, h2, h3 { line-height: 1.25; color: var(--green-dark); }
+h1 { font-size: 2rem; margin: 1.5rem 0 1rem; }
+h2 { font-size: 1.5rem; margin-top: 2.5rem; }
+h3 { font-size: 1.2rem; }
+
+.container {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+main { padding-bottom: 3rem; }
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 0.7rem 1.3rem;
+  border-radius: var(--radius);
+  background: var(--green);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.button:hover { background: var(--green-dark); color: #fff; }
+.button.secondary { background: var(--yellow); color: var(--text); }
+.button.secondary:hover { background: #d1b030; color: var(--text); }
+.button.small { padding: 0.4rem 0.9rem; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+
+/* Header and menu */
+.site-header {
+  background: var(--green-dark);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.header-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 64px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+}
+.brand:hover { color: #fff; }
+.ball {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--yellow);
+  flex: none;
+}
+.menu-toggle {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #fff;
+  border-radius: var(--radius);
+  padding: 0.4rem 0.9rem;
+  font: inherit;
+  cursor: pointer;
+}
+.site-nav { display: none; width: 100%; }
+.site-nav.open { display: block; }
+.site-nav ul { list-style: none; margin: 0; padding: 0.5rem 0 1rem; }
+.site-nav a:not(.button) {
+  display: block;
+  padding: 0.6rem 0;
+  color: #fff;
+  text-decoration: none;
+}
+.site-nav a[aria-current="page"] { color: var(--yellow); }
+.site-nav .button { margin-top: 0.5rem; }
+
+/* Home page banner */
+.hero {
+  background-color: var(--green-dark);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+.hero-inner {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.hero h1 { color: #fff; font-size: 2.2rem; margin-top: 0; }
+.hero p { font-size: 1.2rem; }
+
+/* Highlighted box, e.g. the trial offer */
+.highlight h2 { margin-top: 0; }
+.highlight {
+  background: var(--bg-soft);
+  border-left: 5px solid var(--yellow);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius);
+  margin: 1.5rem 0;
+}
+
+/* Cards: What's On notices and coaches */
+.cards { display: grid; gap: 1rem; margin: 1rem 0; }
+.card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  background: var(--bg);
+}
+.card h3 { margin-top: 0.25rem; }
+.coach img { width: 160px; float: right; margin: 0 0 1rem 1rem; }
+.coach::after { content: ""; display: block; clear: both; }
+
+/* Two columns of text and a photo */
+.split img { width: 100%; }
+.split { display: grid; gap: 1.5rem; align-items: center; margin: 1.5rem 0; }
+
+/* Tables (used by Markdown tables and the fees list) */
+table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+th, td { text-align: left; padding: 0.6rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { background: var(--bg-soft); }
+
+/* On phones each fee becomes its own block */
+.fees thead { display: none; }
+.fees tr { display: block; padding: 0.75rem 0; border-bottom: 1px solid var(--border); }
+.fees td { display: block; padding: 0.1rem 0; border: 0; }
+.fees td:first-child { font-weight: 700; }
+
+.embed {
+  width: 100%;
+  border: 0;
+  border-radius: var(--radius);
+}
+.embed.calendar { height: 600px; }
+.embed.map { height: 320px; }
+
+.muted { color: var(--muted); font-style: italic; }
+
+/* Footer */
+.site-footer {
+  background: var(--green-dark);
+  color: #fff;
+  padding: 2rem 0;
+  font-size: 0.95rem;
+}
+.site-footer a { color: #fff; }
+.footer-inner { display: grid; gap: 1.25rem; }
+.site-footer ul { list-style: none; margin: 0; padding: 0; }
+
+/* Wider screens */
+@media (min-width: 800px) {
+  h1 { font-size: 2.4rem; }
+  .hero-inner { padding-top: 7rem; padding-bottom: 7rem; }
+  .hero h1 { font-size: 3rem; }
+  .cards { grid-template-columns: repeat(2, 1fr); }
+  .split { grid-template-columns: 1fr 1fr; }
+  .fees thead { display: table-header-group; }
+  .fees tr { display: table-row; padding: 0; }
+  .fees td { display: table-cell; padding: 0.6rem; border-bottom: 1px solid var(--border); }
+  .fees td:first-child { font-weight: 400; }
+  .embed.calendar { height: 750px; }
+  .footer-inner { grid-template-columns: 2fr 2fr 1fr; }
+}
+
+/* Room for the full menu on one line */
+@media (min-width: 1000px) {
+  .menu-toggle { display: none; }
+  .site-nav { display: block; width: auto; }
+  .site-nav ul { display: flex; align-items: center; gap: 1.25rem; padding: 0; }
+  .site-nav .button { margin-top: 0; }
+}

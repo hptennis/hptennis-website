@@ -1,0 +1,15 @@
+# Menu links, in order.
+- title: Home
+  url: /
+- title: Club Sessions
+  url: /sessions/
+- title: Coaching
+  url: /coaching/
+- title: Events
+  url: /events/
+- title: Teams
+  url: /matches/
+- title: Membership
+  url: /membership/
+- title: Contact
+  url: /contact/

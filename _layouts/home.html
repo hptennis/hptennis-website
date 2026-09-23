@@ -1,0 +1,18 @@
+---
+layout: default
+---
+{% if page.offer.show %}
+<div class="highlight">
+  <h2>{{ page.offer.title }}</h2>
+  <p>{{ page.offer.text }}</p>
+  <a class="button" href="{{ site.data.club.clubspark.join }}">Join here</a>
+</div>
+{% endif %}
+
+<div class="split">
+  <div>{{ content }}</div>
+  {% if page.photo %}<img src="{{ page.photo | relative_url }}" alt="The courts at Hampden Park">{% endif %}
+</div>
+
+<h2>What's on</h2>
+{% include notices.html %}

@@ -1,0 +1,15 @@
+<p class="actions">
+  <a class="button" href="{{ site.data.club.clubspark.join }}">Join or renew</a>
+  <a class="button secondary" href="{{ site.data.club.clubspark.booking }}">Book a court</a>
+</p>
+
+<h2>Fees</h2>
+<table class="fees">
+  <thead><tr><th>Membership</th><th>Price</th><th>Details</th></tr></thead>
+  <tbody>
+  {% for fee in site.data.membership.fees %}
+    <tr><td>{{ fee.type }}</td><td>{{ fee.price }}</td><td>{{ fee.notes }}</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+<p class="muted">Fees updated {{ site.data.membership.updated }}</p>
