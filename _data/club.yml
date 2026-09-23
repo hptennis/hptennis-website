@@ -17,3 +17,7 @@ clubspark:
   home: https://clubspark.lta.org.uk/HampdenParkTennisClub
 
 google_calendar: https://calendar.google.com/calendar/embed?wkst=1&ctz=Europe%2FLondon&showPrint=0&showTz=0&showTitle=0&hl=en_GB&src=cG9rMWd1YmlqdG90aTdrN3E3NjJrY3E1cjhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23E4C441
+
+# Team fixtures: the Google Sheet published as CSV (File > Share > Publish to web > CSV).
+fixtures_csv: https://docs.google.com/spreadsheets/d/e/2PACX-1vTlIGosSgLYazGuMdqRvSigRz43OJvbuWKJt6A9N9zFSPDyZq_ipgPjMxtbTYH1Bg5Lusb8gjqdf9KQ/pub?gid=1636683236&single=true&output=csv
+lta_teams: https://competitions.lta.org.uk/league/448771A1-BD83-40DB-A81C-A309CE99CA3B/club/40

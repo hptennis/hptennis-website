@@ -158,3 +158,5 @@ content:
           - { name: booking, label: Court booking link, type: string }
           - { name: home, label: ClubSpark home, type: string }
       - { name: google_calendar, label: Google Calendar embed link, type: string }
+      - { name: fixtures_csv, label: Fixtures Google Sheet (published CSV link), type: string }
+      - { name: lta_teams, label: LTA club teams page link, type: string }

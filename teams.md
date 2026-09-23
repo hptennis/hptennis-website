@@ -11,4 +11,4 @@ Home matches are normally played on Sundays, generally starting at 10:00 – 10:
 - Ladies' teams: [hughes_j32@sky.com](mailto:hughes_j32@sky.com)
 - Men's teams: [grant@hampdenparktennis.co.uk](mailto:grant@hampdenparktennis.co.uk)
 
-Fixtures for the season will be added here when available.
+Fixtures below are for the current season. Home matches take priority over other court bookings.

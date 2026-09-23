@@ -23,7 +23,7 @@ defaults:
   - scope: { path: "index.md" }
     values: { layout: home }
   - scope: { path: "teams.md" }
-    values: { permalink: /matches/ }
+    values: { permalink: /matches/, extras: [fixtures] }
   - scope: { path: "sessions.md" }
     values: { extras: [sessions] }
   - scope: { path: "coaching.md" }

@@ -1,0 +1,14 @@
+{% assign fixtures_page = site.data.club.fixtures_csv | replace: "/pub?", "/pubhtml?" | remove: "&output=csv" %}
+<h2>Fixtures</h2>
+<form id="fixtures-controls" class="filters" hidden>
+  <label>Team
+    <select id="fixtures-team"><option value="">All teams</option></select>
+  </label>
+  <label><input type="checkbox" id="fixtures-home"> Home matches only</label>
+  <label><input type="checkbox" id="fixtures-past"> Show past matches</label>
+</form>
+<div id="fixtures" data-csv="{{ site.data.club.fixtures_csv | escape }}" data-fallback="{{ fixtures_page | escape }}">
+  <p class="muted">Loading fixtures…</p>
+</div>
+<p><a href="{{ site.data.club.lta_teams }}">All club teams and league tables on the LTA site</a></p>
+<script src="{{ '/assets/js/fixtures.js' | relative_url }}" defer></script>
