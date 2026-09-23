@@ -1,0 +1,9 @@
+{% assign notices = site.notices | where: "show", true | sort: "order" %}
+<div class="cards">
+  {% for notice in notices %}
+  <article class="card">
+    <h3>{{ notice.title }}</h3>
+    {{ notice.content | markdownify }}
+  </article>
+  {% endfor %}
+</div>

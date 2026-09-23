@@ -1,0 +1,34 @@
+# Membership fees shown on the Membership page.
+updated: Jul 2026
+
+fees:
+  - type: Adult
+    price: £222 a year (£20 a month)
+    notes: ""
+  - type: Student
+    price: £60 a year
+    notes: Students in education under 25 in normal circumstances, otherwise refer to the committee.
+  - type: Off-Peak
+    price: £150 a year (£14 a month)
+    notes: Weekday use before 4pm.
+  - type: Junior
+    price: £45 a year
+    notes: "Under 18. Includes £1 for a racket string dampener, excludes coaching. 1st additional sibling £35, 2nd additional sibling £25."
+  - type: Family
+    price: £360 a year (£32.50 a month)
+    notes: Couples and their children under 18.
+  - type: Parent
+    price: Free
+    notes: To play with your own children (junior members) only.
+  - type: Country
+    price: £55 a year
+    notes: For those living more than 25 miles from the club, occasional use only.
+  - type: Adult Trial
+    price: £48 for 3 months
+    notes: Includes four free group lessons (Monday drills or Thursday improvers).
+  - type: Junior Trial
+    price: £15 for 3 months
+    notes: Includes one free group lesson.
+  - type: Guest
+    price: £5 per visit
+    notes: Guests must be known to and signed in by a full member.

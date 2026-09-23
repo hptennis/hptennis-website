@@ -1,0 +1,162 @@
+# Pages CMS (https://pagescms.org) - the web editor volunteers use to
+# update the site. Each entry below is one item in the editor's menu.
+
+media:
+  input: images
+  output: /images
+
+content:
+  - name: notices
+    label: What's On
+    type: collection
+    path: _notices
+    view:
+      fields: [title, show, order]
+    fields:
+      - { name: title, label: Heading, type: string, required: true }
+      - { name: show, label: Show on the home page, type: boolean, default: true }
+      - { name: order, label: Position (1 = first), type: number, default: 10 }
+      - { name: body, label: Text, type: rich-text }
+
+  - name: events
+    label: Events
+    type: file
+    path: events.md
+    fields:
+      - { name: title, label: Page title, type: string }
+      - { name: body, label: Events, type: rich-text, description: "Use a Heading 3 for each event name." }
+
+  - name: sessions
+    label: Club Sessions
+    type: file
+    path: sessions.md
+    fields:
+      - { name: title, label: Page title, type: string }
+      - { name: updated, label: Last updated (e.g. Sep 2026), type: string }
+      - { name: body, label: Introduction, type: rich-text }
+      - name: adult_sessions
+        label: Adult sessions
+        type: object
+        list: true
+        fields:
+          - { name: day, label: Day, type: string }
+          - { name: time, label: Time, type: string }
+          - { name: details, label: Session, type: string }
+      - name: junior_sessions
+        label: Junior sessions
+        type: object
+        list: true
+        fields:
+          - { name: day, label: Day, type: string }
+          - { name: time, label: Time, type: string }
+          - { name: details, label: Session, type: string }
+
+  - name: coaches
+    label: Coaches
+    type: collection
+    path: _coaches
+    view:
+      fields: [title, order]
+    fields:
+      - { name: title, label: "Name (e.g. Coach: Jane Smith)", type: string, required: true }
+      - { name: order, label: Position (1 = first), type: number, default: 10 }
+      - { name: photo, label: Photo, type: image }
+      - { name: phone, label: Phone, type: string }
+      - { name: email, label: Email, type: string }
+      - { name: body, label: About, type: rich-text }
+
+  - name: membership
+    label: Membership fees
+    type: file
+    path: _data/membership.yml
+    fields:
+      - { name: updated, label: Fees last updated (e.g. Apr 2027), type: string }
+      - name: fees
+        label: Fees
+        type: object
+        list: true
+        fields:
+          - { name: type, label: Membership type, type: string }
+          - { name: price, label: Price, type: string }
+          - { name: notes, label: Details, type: text }
+
+  - name: membership-page
+    label: Membership page text
+    type: file
+    path: membership.md
+    fields:
+      - { name: title, label: Page title, type: string }
+      - { name: body, label: Text, type: rich-text }
+
+  - name: home
+    label: Home page
+    type: file
+    path: index.md
+    fields:
+      - name: hero
+        label: Banner
+        type: object
+        fields:
+          - { name: image, label: Background photo, type: image }
+          - { name: title, label: Heading, type: string }
+          - { name: text, label: Sub-heading, type: string }
+      - name: offer
+        label: Offer box
+        type: object
+        fields:
+          - { name: show, label: Show the offer box, type: boolean }
+          - { name: title, label: Heading, type: string }
+          - { name: text, label: Text, type: text }
+      - { name: photo, label: Photo next to the text, type: image }
+      - { name: body, label: About the club, type: rich-text }
+
+  - name: coaching-page
+    label: Coaching page text
+    type: file
+    path: coaching.md
+    fields:
+      - { name: title, label: Page title, type: string }
+      - { name: body, label: Text, type: rich-text }
+
+  - name: teams
+    label: Teams page
+    type: file
+    path: teams.md
+    fields:
+      - { name: title, label: Page title, type: string }
+      - { name: body, label: Text, type: rich-text }
+
+  - name: policies
+    label: Club policies page
+    type: file
+    path: policies.md
+    fields:
+      - { name: title, label: Page title, type: string }
+      - { name: body, label: Text, type: rich-text }
+
+  - name: club
+    label: Club details (address, emails, links)
+    type: file
+    path: _data/club.yml
+    fields:
+      - { name: name, label: Club name, type: string }
+      - { name: tagline, label: Tagline, type: string }
+      - { name: address, label: Address, type: string }
+      - { name: map_query, label: Map location (latitude,longitude), type: string }
+      - name: emails
+        label: Contact emails
+        type: object
+        list: true
+        fields:
+          - { name: label, label: Who, type: string }
+          - { name: address, label: Email address, type: string }
+      - name: clubspark
+        label: ClubSpark links
+        type: object
+        fields:
+          - { name: join, label: Join / membership link, type: string }
+          - { name: booking, label: Court booking link, type: string }
+          - { name: home, label: ClubSpark home, type: string }
+      - { name: google_calendar, label: Google Calendar embed link, type: string }
+      - { name: fixtures_csv, label: Fixtures Google Sheet (published CSV link), type: string }
+      - { name: lta_teams, label: LTA club teams page link, type: string }

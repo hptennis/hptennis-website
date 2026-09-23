@@ -1,0 +1,7 @@
+<p><strong>Address:</strong> {{ site.data.club.address }}</p>
+<ul>
+  {% for email in site.data.club.emails %}
+  <li><strong>{{ email.label }}:</strong> <a href="mailto:{{ email.address }}">{{ email.address }}</a></li>
+  {% endfor %}
+</ul>
+<iframe class="embed map" src="https://maps.google.com/maps?q={{ site.data.club.map_query }}&amp;z=15&amp;output=embed" title="Map showing the club" loading="lazy"></iframe>

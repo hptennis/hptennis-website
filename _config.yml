@@ -1,54 +1,44 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
+# Site settings. Most day-to-day content lives in the Markdown pages,
+# _data/, _coaches/ and _notices/ - see EDITING.md.
+title: Hampden Park Tennis Club
+description: A friendly tennis club in Hampden Park, Eastbourne with five floodlit courts, coaching and teams for all levels.
+url: "https://hampdenparktennis.co.uk"
+baseurl: ""
 
-title: Hampden Park Tennis
-email: grant@hampdenparktennis.co.uk
-description: >- # this means to ignore newlines until "baseurl:"
-  Hampden PArk Tennis Club Website
-baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://hampdenparktennis.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
-github_username:  grant-hp
+markdown: kramdown
+permalink: pretty
 
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
-#  - jekyll-default-layout
+collections:
+  coaches:
+    output: false
+  notices:
+    output: false
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+  # Page structure lives here (not in the pages) so the web editor can't remove it.
+  - scope: { path: "index.md" }
+    values: { layout: home }
+  - scope: { path: "teams.md" }
+    values: { permalink: /matches/, extras: [fixtures] }
+  - scope: { path: "sessions.md" }
+    values: { extras: [sessions] }
+  - scope: { path: "coaching.md" }
+    values: { extras: [coaches] }
+  - scope: { path: "membership.md" }
+    values: { extras: [fees] }
+  - scope: { path: "events.md" }
+    values: { extras: [calendar] }
+  - scope: { path: "contact.md" }
+    values: { extras: [contact] }
+exclude:
+  - README.md
+  - EDITING.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - temp
+  - fb.zip

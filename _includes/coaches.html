@@ -1,0 +1,13 @@
+<h2>Our coaches</h2>
+{% assign coaches = site.coaches | sort: "order" %}
+<div class="cards">
+  {% for coach in coaches %}
+  <article class="card coach">
+    <h3>{{ coach.title }}</h3>
+    {% if coach.photo %}<img src="{{ coach.photo | relative_url }}" alt="{{ coach.title }}">{% endif %}
+    {{ coach.content | markdownify }}
+    {% if coach.phone %}<p>Phone: <a href="tel:{{ coach.phone | remove: ' ' }}">{{ coach.phone }}</a></p>{% endif %}
+    {% if coach.email %}<p>Email: <a href="mailto:{{ coach.email }}">{{ coach.email }}</a></p>{% endif %}
+  </article>
+  {% endfor %}
+</div>
