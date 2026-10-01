@@ -10,11 +10,6 @@ title: Events
 
 All ladies members are invited for friendly tennis and afternoon tea, whether you're interested in teams or social play. Not playing? Just come along and enjoy the company and cake.
 
-### Autumn Tournament
-**When:** Saturday 3 October, 2pm start (practice courts from 1:30pm)
-
-A doubles event with partners rotated on the day, so there's no need to arrange a partner. All members are welcome, plus guests (£5 guest fee).
-
 ### AGM
 **When:** Monday 23 November, 7pm
 
