@@ -4,11 +4,20 @@ title: Events
 
 ## Club events and tournaments
 
+### Tennis & Pizza Evening
 
+![pizza poster](../images/pizza-poster.png)
+
+
+
+
+<!--
 ### Ladies' Autumn Get-together
 **When:** September / October, date to be announced
 
 All ladies members are invited for friendly tennis and afternoon tea, whether you're interested in teams or social play. Not playing? Just come along and enjoy the company and cake.
+
+-->
 
 ### AGM
 **When:** Monday 23 November, 7pm
