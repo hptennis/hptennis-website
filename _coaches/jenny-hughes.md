@@ -1,7 +1,7 @@
 ---
 title: "Coach: Jenny Hughes"
 order: 3
-photo: /images/jennyHughes.jpg
+photo: /images/jennyHughes1.jpg
 phone: 07831 097864
 email: hughes_j32@sky.com
 ---

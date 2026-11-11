@@ -4,9 +4,13 @@ title: Events
 
 ## Club events and tournaments
 
-### Tennis & Pizza Evening
+### Christmas Tournament & Quiz
 
-![pizza poster](../images/pizza-poster.png)
+## Date and Time
+
+**When:** Wednesday 2nd December, 6pm start
+
+![pizza poster](../images/xmas-quiz-202612.png)
 
 
 
