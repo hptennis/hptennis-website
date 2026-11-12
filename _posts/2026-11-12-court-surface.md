@@ -49,6 +49,6 @@ Comparing **astroturf** (synthetic grass carpet with sand infill) and **artifici
 
 ## Helpful Resources
 * [LTA Tennis Court Surface Guide](https://www.lta.org.uk/play/tennis-tips-and-techniques/hard-clay-grass-and-astroturf-tennis-court-surface-guide/) – Overview of how hard, clay, grass, and astroturf surfaces affect play style and ball bounce.
-* [LTA Porous Court Surfaces Guidance Note (PDF)](https://www.lta.org.uk/4ad170/siteassets/about-lta/file/court-surfaces-guidance.pdf) – Technical breakdown of construction specs, maintenance, lifespans, and sinking funds for artificial grass and artificial clay.
+* [LTA Porous Court Surfaces Guidance Note 2026 (PDF)](https://www.lta.org.uk/siteassets/roles/venues/file/court-surfaces-guidance-note-2026.pdf) – Technical breakdown of construction specs, maintenance, lifespans, and sinking funds for artificial grass and artificial clay.
 * [ITF Recognised Tennis Courts & Classifications](https://www.itftennis.com/en/about-us/tennis-tech/recognised-courts/) – Official International Tennis Federation standards and Court Pace Ratings (CPR) for synthetic surfaces.
 * [SAPCA Tennis Court Surfaces Overview](https://sapca.org.uk/blog/everything-you-always-wanted-to-know-about-tennis-surfaces-but-were-afraid-to-ask/) – Insights from the Sports and Play Construction Association on grassroots court construction and upkeep.

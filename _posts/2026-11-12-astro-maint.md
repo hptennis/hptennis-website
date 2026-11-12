@@ -20,6 +20,6 @@ You should drag-brush an astroturf tennis court **once a week, or roughly every 
 * **Enforce proper footwear:** Require clean, non-marking tennis shoes to avoid bringing mud, grit, or clay onto the turf.
 
 ### Resources
-* [LTA Porous Court Surfaces Guidance Note (PDF)](https://lta.org.uk) – Official Lawn Tennis Association guidance on synthetic grass upkeep, moss control, and lifespan planning.
+* [LTA Porous Court Surfaces Guidance Note 2026 (PDF)](https://www.lta.org.uk/siteassets/roles/venues/file/court-surfaces-guidance-note-2026.pdf) – Official Lawn Tennis Association guidance on synthetic grass upkeep, moss control, and lifespan planning.
 * [SAPCA Code of Practice for Maintenance of Synthetic Sports Surfaces](https://sapca.org.uk) – Industry best practices from the Sports and Play Construction Association on brushing, infill care, and deep cleaning.
 * [Tennis Court Supplies: Artificial Grass Court Maintenance Tips](https://tenniscourtsupplies.co.uk) – Practical guidance on drag-brushing directions, silica sand top-ups, and seasonal moss treatments.
