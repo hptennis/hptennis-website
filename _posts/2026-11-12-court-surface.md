@@ -47,6 +47,17 @@ Comparing **astroturf** (synthetic grass carpet with sand infill) and **artifici
 
 ---
 
+## Sussex Clubs 
+
+Note from Jenny:
+
+- Notably, lots of Sussex clubs have switched from astro to clay over the last few years 
+- Whenever asked, they all say if they have any astro left that no one plays on it anymore as they all prefer the clay!
+- There are fewer & fewer clubs with astro now!
+- A lot of teams when visiting HP complain about astro surfaces, preferring the clay courts instead.
+
+
+
 ## Helpful Resources
 * [LTA Tennis Court Surface Guide](https://www.lta.org.uk/play/tennis-tips-and-techniques/hard-clay-grass-and-astroturf-tennis-court-surface-guide/) – Overview of how hard, clay, grass, and astroturf surfaces affect play style and ball bounce.
 * [LTA Porous Court Surfaces Guidance Note 2026 (PDF)](https://www.lta.org.uk/siteassets/roles/venues/file/court-surfaces-guidance-note-2026.pdf) – Technical breakdown of construction specs, maintenance, lifespans, and sinking funds for artificial grass and artificial clay.
