@@ -1,0 +1,14 @@
+{% if site.posts.size > 0 %}
+<div class="news-list">
+  {% for post in site.posts %}
+  <article class="news-item">
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <p class="muted">{{ post.date | date: "%-d %B %Y" }}</p>
+    {{ post.summary | default: post.excerpt | strip_html | truncatewords: 40 | prepend: "<p>" | append: "</p>" }}
+    <p><a href="{{ post.url | relative_url }}">Read more</a></p>
+  </article>
+  {% endfor %}
+</div>
+{% else %}
+<p class="muted">No news yet.</p>
+{% endif %}

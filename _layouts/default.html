@@ -15,6 +15,7 @@
 
   <main class="container">
     {% unless page.hero %}<h1>{{ page.title }}</h1>{% endunless %}
+    {% if page.collection == "posts" %}<p class="muted">{{ page.date | date: "%-d %B %Y" }} · <a href="{{ '/news/' | relative_url }}">All news</a></p>{% endif %}
 
     {{ content }}
 

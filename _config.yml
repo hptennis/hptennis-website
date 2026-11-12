@@ -32,6 +32,10 @@ defaults:
     values: { extras: [fees] }
   - scope: { path: "events.md" }
     values: { extras: [calendar] }
+  - scope: { path: "news.md" }
+    values: { extras: [news] }
+  - scope: { type: posts }
+    values: { permalink: /news/:title/ }
   - scope: { path: "contact.md" }
     values: { extras: [contact] }
 exclude:

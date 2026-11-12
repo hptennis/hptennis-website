@@ -19,6 +19,7 @@ You don't need any technical knowledge to update the website. You edit it in you
 | I want to... | Go to |
 | --- | --- |
 | Add, change or hide a notice on the home page | **What's On**. Untick *Show on the home page* to hide one without deleting it. |
+| Add a news article | **News articles**. Click *Add an entry*, give it a title and date, and write the article. It appears at the top of the News page. |
 | Update upcoming events | **Events**. Use *Heading 3* for each event name. |
 | Change session times | **Club Sessions**. Add, remove or drag rows in the lists. |
 | Change membership prices | **Membership fees**. Update *Fees last updated* too. |
