@@ -3,14 +3,14 @@
 
 # SumUp payment link, e.g. https://pay.sumup.com/b2c/XXXXXXXX
 # (SumUp app or dashboard > Payment links). Leave blank to hide the SumUp option.
-sumup_link: ""
+sumup_link: "https://pay.sumup.com/b2c/QAPWEGYL"
 
 # Bank transfer details. Leave account_number blank to hide the bank option.
 bank:
-  account_name: ""
-  sort_code: ""
-  account_number: ""
+  account_name: "Hampden Park Tennis Club"
+  sort_code: "30-98-90"
+  account_number: "15344868"
 
 # Web app address of the Google Apps Script that records each payment request
 # in the Google Sheet (see README.md, "Payment pages"). Ends in /exec.
-sheet_script_url: ""
+sheet_script_url: "https://script.google.com/macros/s/AKfycbz_HgmQYwyxc_Vrz8UtUzG_2ZbQeJgsxJZY72XtuGbsvvCfPL9LxSxHAayVeDk85EV62A/exec"
