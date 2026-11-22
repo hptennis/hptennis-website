@@ -4,6 +4,46 @@ title: Astroturf vs. Artificial Clay for Tennis
 
 Comparing **astroturf** (synthetic grass carpet with sand infill) and **artificial clay** (synthetic carpet with a specialized clay and sand infill) highlights key differences in ball bounce, player movement, and court maintenance.
 
+We have been quotes for the following:
+
+1.Tigerturf Advantage Pro Synthetic Grass
+
+[Advantage Pro Brochure](https://emeraldsportssurfaces.ie/wp-content/uploads/2022/11/Advantage-Pro-Brochure.pdf)
+
+Supply and install the 13mm Tigerturf Advantage Pro synthetic grass surface over the existing
+macadam surface
+13mm pile height
+71,400 tufts (m2)
+Monofilament yarn
+Colours will be dark green play & light green outer
+Lines are woven into carpet except centre net line & surface box lines
+Base lines will be 100mm wide
+Infilled with 2EW Garside sand.
+6-year warrantee
+
+
+
+
+2.Lano Grand 12 Clay Surface
+
+[Grand Clay 12 Brochure](https://pdf.archiexpo.com/viewerCatalog/lano-sports/grand-clay-12/88644-214099.html#open)
+
+Supply and install the 12mm LANO GRAND CLAY surface over the existing macadam surface.
+12mm pile height
+44,100 tufts (m2)
+Monofilament yarn
+Colours Red or Green
+Lines woven into carpet except centre line & surface box lines
+Base Lines 100mm
+Infilled with Acecourt Red or Green
+6-year guarantee
+
+Maintenance Equipment: Supply 2 drag mats & 2 line brushes.
+
+
+Note: the cost of the Clay suface is **£14,788** more expensive that the Astroturf (Synthetic Grass) option.
+
+
 ## Astroturf (Synthetic Grass)
 
 ### Pros
