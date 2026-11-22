@@ -60,6 +60,8 @@ main { padding-bottom: 3rem; flex: 1; width: 100%; }
   text-decoration: none;
 }
 .button:hover { background: var(--green-dark); color: #fff; }
+button.button { font: inherit; border: 0; cursor: pointer; }
+button.button:disabled { opacity: 0.6; cursor: default; }
 .button.secondary { background: var(--yellow); color: var(--text); }
 .button.secondary:hover { background: #d1b030; color: var(--text); }
 .button.small { padding: 0.4rem 0.9rem; }
@@ -229,3 +231,23 @@ th { background: var(--bg-soft); }
 .news-item h2 { margin: 0 0 0.25rem; font-size: 1.3rem; }
 .news-item h2 a { text-decoration: none; }
 .news-item .muted { margin: 0; }
+
+/* Payment pages (/store/) */
+.payment-form { max-width: 32rem; }
+.payment-form label { display: block; font-weight: 600; margin-top: 1rem; }
+.payment-form input[type="text"],
+.payment-form input[type="date"] {
+  display: block;
+  width: 100%;
+  margin-top: 0.3rem;
+  padding: 0.6rem;
+  font: inherit;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.payment-form fieldset { border: 0; padding: 0; margin: 1.5rem 0; }
+.payment-form legend { font-weight: 600; }
+.payment-form .choice { font-weight: 400; margin-top: 0.5rem; }
+.payment-form .choice input { margin-right: 0.5rem; }
+.price { font-size: 2rem; font-weight: 700; color: var(--green-dark); margin: 0.5rem 0; }
+.date-display { margin: 0.3rem 0 0; color: var(--muted); }

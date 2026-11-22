@@ -1,0 +1,54 @@
+{% assign store = site.data.store %}
+<form id="payment-form" class="payment-form"
+      data-script="{{ store.sheet_script_url | escape }}"
+      data-item="{{ page.title | escape }}"
+      data-code="{{ page.code | escape }}"
+      data-amount="{{ page.price | escape }}">
+  <p class="price">£{{ page.price }}</p>
+
+  <label for="pay-date">Date</label>
+  <input type="date" id="pay-date" name="date" required>
+  <p class="date-display" id="date-display"></p>
+
+  <label for="pay-name">Your name</label>
+  <input type="text" id="pay-name" name="name" required maxlength="60" autocomplete="name">
+
+  <fieldset>
+    <legend>How would you like to pay?</legend>
+    {% if store.sumup_link.size > 0 %}
+    <label class="choice"><input type="radio" name="method" value="SumUp" required> Card, Apple Pay or Google Pay (SumUp)</label>
+    {% endif %}
+    {% if store.bank.account_number.size > 0 %}
+    <label class="choice"><input type="radio" name="method" value="Bank transfer" required> Bank transfer</label>
+    {% endif %}
+    {% unless store.sumup_link.size > 0 or store.bank.account_number.size > 0 %}
+    <p class="muted">Online payment isn't set up yet. Please pay at the club.</p>
+    {% endunless %}
+  </fieldset>
+
+  <button class="button" type="submit">Continue to payment</button>
+</form>
+
+<div id="pay-sumup" class="highlight" hidden>
+  <h2>Pay £{{ page.price }} with SumUp</h2>
+  <p>Thanks, <span data-fill="name"></span>. This payment is for <strong data-fill="dateText"></strong>.</p>
+  <p>Your reference: <strong data-fill="reference"></strong>. If SumUp asks for the amount or a note, enter £{{ page.price }} and this reference.</p>
+  <p><a class="button" href="{{ store.sumup_link }}" target="_blank" rel="noopener">Pay £{{ page.price }} with SumUp</a></p>
+  <p class="muted" data-fill="recordNote"></p>
+</div>
+
+<div id="pay-bank" class="highlight" hidden>
+  <h2>Pay £{{ page.price }} by bank transfer</h2>
+  <p>Thanks, <span data-fill="name"></span>. This payment is for <strong data-fill="dateText"></strong>.</p>
+  <table>
+    <tr><th>Account name</th><td>{{ store.bank.account_name }}</td></tr>
+    <tr><th>Sort code</th><td>{{ store.bank.sort_code }}</td></tr>
+    <tr><th>Account number</th><td>{{ store.bank.account_number }}</td></tr>
+    <tr><th>Amount</th><td>£{{ page.price }}</td></tr>
+    <tr><th>Reference</th><td><strong data-fill="reference"></strong></td></tr>
+  </table>
+  <p>Please use the reference exactly as shown so we can match your payment.</p>
+  <p class="muted" data-fill="recordNote"></p>
+</div>
+
+<script src="{{ '/assets/js/payment.js' | relative_url }}" defer></script>
