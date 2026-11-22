@@ -36,6 +36,8 @@ defaults:
     values: { extras: [news] }
   - scope: { type: posts }
     values: { permalink: /news/:title/ }
+  - scope: { path: "store" }
+    values: { extras: [payment] }
   - scope: { path: "contact.md" }
     values: { extras: [contact] }
 exclude:
@@ -46,3 +48,4 @@ exclude:
   - vendor
   - temp
   - fb.zip
+  - scripts

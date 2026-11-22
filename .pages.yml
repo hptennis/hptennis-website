@@ -177,3 +177,30 @@ content:
       - { name: google_calendar, label: Google Calendar embed link, type: string }
       - { name: fixtures_csv, label: Fixtures Google Sheet (published CSV link), type: string }
       - { name: lta_teams, label: LTA club teams page link, type: string }
+
+  - name: store-settings
+    label: Payment settings (SumUp, bank, Google Sheet)
+    type: file
+    path: _data/store.yml
+    fields:
+      - { name: sumup_link, label: SumUp payment link, type: string, description: "Leave blank to hide the SumUp option." }
+      - name: bank
+        label: Bank transfer details
+        type: object
+        fields:
+          - { name: account_name, label: Account name, type: string }
+          - { name: sort_code, label: Sort code, type: string }
+          - { name: account_number, label: Account number, type: string, description: "Leave blank to hide the bank transfer option." }
+      - { name: sheet_script_url, label: Google Sheet recorder link (Apps Script /exec URL), type: string }
+
+  - name: store
+    label: Payment pages
+    type: collection
+    path: store
+    view:
+      fields: [title, price]
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - { name: price, label: "Price in £ (e.g. 2.00)", type: string, required: true }
+      - { name: code, label: "Reference code (2-3 capital letters, e.g. WL)", type: string, required: true }
+      - { name: body, label: Description, type: rich-text }

@@ -44,3 +44,5 @@ junior_sessions:
 The club runs several sessions every week. Most are mix-in sessions, mainly doubles: we play nine games and then change round (seven games when there are odd numbers, to cut waiting times). Sessions are usually busy and often fill all five courts at peak times.
 
 **In the winter months (September to March), players at Wednesday evening sessions are asked to contribute £2 towards the cost of the floodlights.**
+
+[Pay the £2 floodlights contribution online](/store/wedslights/)
