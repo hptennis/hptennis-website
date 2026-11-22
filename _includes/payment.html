@@ -37,6 +37,11 @@
   <p class="muted" data-fill="recordNote"></p>
 </div>
 
+<div id="pay-done" class="highlight" hidden>
+  <h2>Thank you</h2>
+  <p>If your card payment went through, it will be recorded as paid automatically. If you didn't finish paying, <a href="{{ page.url | relative_url }}">start again</a>.</p>
+</div>
+
 <div id="pay-bank" class="highlight" hidden>
   <h2>Pay £{{ page.price }} by bank transfer</h2>
   <p>Thanks, <span data-fill="name"></span>. This payment is for <strong data-fill="dateText"></strong>.</p>

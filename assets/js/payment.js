@@ -1,9 +1,17 @@
 // Payment pages under /store/. Records each payment request in the club's
-// Google Sheet (via the Apps Script web app in scripts/payments-sheet.gs),
-// then shows the SumUp link or bank details with a reference to quote.
+// Google Sheet (via the Apps Script web app in scripts/payments-sheet.gs).
+// Card payments go to a SumUp checkout the script creates with the payer's
+// name and reference; bank transfers show the bank details and reference.
 (function () {
   var form = document.getElementById('payment-form');
   if (!form) return;
+
+  // Back from SumUp's payment page.
+  if (/[?&]paid=1\b/.test(location.search)) {
+    form.hidden = true;
+    document.getElementById('pay-done').hidden = false;
+    return;
+  }
 
   var dateInput = form.elements.date;
   var dateDisplay = document.getElementById('date-display');
@@ -25,26 +33,32 @@
     var checked = form.querySelector('input[name="method"]:checked');
     var data = {
       item: form.dataset.item,
+      code: form.dataset.code,
       amount: form.dataset.amount,
       date: dateInput.value,
       name: form.elements.name.value.trim(),
-      method: checked ? checked.value : ''
+      method: checked ? checked.value : '',
+      return_page: location.origin + location.pathname + '?paid=1'
     };
-    data.reference = makeReference(form.dataset.code, data.date, data.name);
+    data.reference = makeReference(data.code, data.date, data.name);
 
-    record(form.dataset.script, data).then(function (recorded) {
-      showPayment(data, recorded);
+    record(form.dataset.script, data).then(function (result) {
+      if (data.method === 'SumUp' && result && result.checkout_url) {
+        button.textContent = 'Taking you to SumUp…';
+        location.href = result.checkout_url;
+        return;
+      }
+      showPayment(data, Boolean(result && result.ok));
     });
   });
 
-  // Sends the request to the Google Sheet. Resolves true if it was saved.
+  // Sends the request to the Google Sheet. Resolves with the script's reply, or null.
   function record(url, data) {
-    if (!url) return Promise.resolve(false);
+    if (!url) return Promise.resolve(null);
     return fetch(url, { method: 'POST', body: new URLSearchParams(data) })
-      .then(function (response) { return response.ok; })
-      .catch(function () { return false; });
+      .then(function (response) { return response.ok ? response.json() : null; })
+      .catch(function () { return null; });
   }
-
   function showPayment(data, recorded) {
     var box = document.getElementById(data.method === 'SumUp' ? 'pay-sumup' : 'pay-bank');
     var values = {
